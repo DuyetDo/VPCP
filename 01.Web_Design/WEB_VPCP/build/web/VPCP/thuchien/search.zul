@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:w="client">
+    <style>
+        <!--        .z-north-body{
+        height: 100%;
+        }-->
+
+        .z-tablechildren{
+        padding: 5px 10px;
+        }
+
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        font-weight: bold;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        .label-right{
+        padding-left: 200px;
+        }
+    </style>
+    <vlayout>
+       
+        <button id="ba" sclass="bt" label="Tìm kiếm nâng cao"  style="float:right;" w:onClick="jq(this.$f('t')).hide().slideDown(),jq(this.$f('ba')).css('display','none')" />
+        <groupbox id="t" style="display:none">		
+            <panel  border="none" collapsible="true" sclass="transparent">
+                <caption  label="Thông tin tìm kiếm "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                                
+                        <tablechildren width="10%">
+                            <label value="Số/Kí hiệu"></label>
+                        </tablechildren>
+                                
+                        <tablechildren width="32%">
+                            <textbox  />
+                        </tablechildren>
+                                
+                        <tablechildren width="26%" sclass="label-right">
+                            <label value="Độ mật"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="32%">
+                            <combobox placeholder="0" >
+                                        
+                            </combobox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Ngày văn bản từ"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <datebox ></datebox>
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            <label value="Đến"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <datebox ></datebox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Trích yếu"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <textbox multiline="true" rows="2" />
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            <label value="Nội dung"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <textbox multiline="true" rows="2" />
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Đơn vị theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox ></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            <label value="Chuyên viên theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox ></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Trạng thái"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <combobox placeholder="--Tất cả--">
+                            </combobox>
+                        </tablechildren>
+                        
+                        <tablechildren sclass="label-right">
+                            <label value="Người chỉ đạo"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <chosenbox ></chosenbox>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Thời hạn từ"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <datebox></datebox>
+                        </tablechildren>
+                        
+                        <tablechildren sclass="label-right">
+                            <label value="Đến"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <datebox></datebox>
+                        </tablechildren>
+                                        
+                        <tablechildren colspan="4">
+                            <panel >
+                                <panelchildren >
+                                    <hlayout style="float: right">
+                                        <button sclass="bt" label="Tìm kiếm" style="margin-right:10px;"  image="/images/icon/search.png" onClick="" />
+                                        <button sclass="bt" label="Ẩn tìm kiếm nâng cao"  w:onClick="jq(this.$f('t')).show().slideUp(),jq(this.$f('ba')).css('display','inline')" />
+                                    </hlayout>
+                                </panelchildren>
+                            </panel>
+                        </tablechildren>       
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>	
+    </vlayout>
+</zk>

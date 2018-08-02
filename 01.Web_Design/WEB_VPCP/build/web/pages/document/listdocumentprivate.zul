@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <groupbox  hflex="1" vflex="1"  contentStyle="border:0;padding:0px;margin:0px"  
+            apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('com.viettel.voffice.action.DocumentMailViewController')">
+<!--        <hlayout id="ctlhlayout">
+            <button id="revertBtn" width="115px" label="Revert Letters" onClick="@command('revertMail')" />
+            <button id="rmAllBtn" width="115px" label="Delete All"
+                    disabled="@load(empty vm.mailData.mails)" onClick="@command('deleteAllMail')" />
+        </hlayout>
+        <separator />
+        Inbox mails : <label value="@load(vm.mailData.size)" />
+        <separator />-->
+        <grid hflex="1" vflex="1" height="100%" span="1" model="@load(vm.mailData.mails)"
+              emptyMessage="Nothing in Inbox.">
+            <columns>
+                <column label="Icon" width="50px" />
+                <column label="Subject" />
+                <column label="Received" width="150px" />
+                <column label="Size" width="80px" />
+                <column label="Ctrl" width="100px" />
+            </columns>
+            <template name="model">
+                <row>
+                    <image
+                        src="/img/Centigrade-Widget-Icons/EnvelopeOpen-16x16.png" />
+                    <label value="@load(each.subject)" />
+                    <label value="@load(each.date)" />
+                    <label value="@load(each.size)" />
+                    <button label="Delete" onClick="@command('removeMail', mail=each)" />
+                </row>
+            </template>
+        </grid>
+         
+    </groupbox>
+</zk>

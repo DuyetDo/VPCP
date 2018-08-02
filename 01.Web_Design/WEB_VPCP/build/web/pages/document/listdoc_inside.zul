@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    
+    
+    <style src="../style/widgets/getting_started/menu_toolbar/style.css" />
+    <style>
+        .searchform {
+        float: right;
+        display: inline-block;
+        *display: inline;
+        }
+ 
+        .searchform .searchfield {
+        background: #fff;
+        width: 202px;
+        border: solid 1px #bcbbbb;
+        outline: none;
+        }
+ 
+        .myroundbtn.z-button{
+        background: #2664cf;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px background: -webkit-gradient(linear, left top, left bottom, from(#0a8ffe),
+        to(#2b5cc6));
+        background: -moz-linear-gradient(top, #0a8ffe, #2b5cc6);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a8ffe',
+        endColorstr='#2b5cc6')
+        }
+    </style>
+<!--    <toolbar style="display: inline-block;" width="100%" >
+        <toolbarbutton style="font-weight: bold;" label="Năm nay"  image="../style/widgets/famfamfam/icons/calendar.png" tooltiptext="Lấy danh sách văn bản trong năm nay"/>
+        <toolbarbutton style="font-weight: bold;" label="Tháng này" image="../style/widgets/famfamfam/icons/calendar.png" tooltiptext="Văn bản đến trong tháng này" onClick=""/>
+        <toolbarbutton style="font-weight: bold;" label="Tuần này" image="../style/widgets/famfamfam/icons/calendar.png" tooltiptext="Văn bản đến trong tuần"/>
+        <toolbarbutton style="font-weight: bold;" label="Hôm nay" image="../style/widgets/famfamfam/icons/calendar.png" tooltiptext="Văn bản đến trong ngày"/>
+        <box  align="right"  orient="horizontal" sclass="searchform" height="15px" style="float: right;">
+            <textbox sclass="searchfield" placeholder="Tìm kiếm văn bản" />
+              <button label="Search" sclass="mybtn"  />
+        </box>
+    </toolbar>-->
+    
+    <div apply="org.zkoss.bind.BindComposer"  vflex="1" 
+         viewModel="@id('vm') @init('com.viettel.voffice.action.document.DocumentInsideAction')">
+        
+        <include  src="/pages/document/toolbardoc/toolbarDocuments.zul" />
+        <grid id="grid"  
+              model="@load(vm.documentListOutside)"
+              mold="paging"  pageSize="20" 
+              vflex="1" onSelect="@command('selectedItem', selectId = self.getSelectedItem().getId())">
+            <!--            <grid id="grid"
+            model="@load(vm.documentListOutside)"
+            vflex="1" onSelect="@command('selectedItem', selectId = self.getSelectedItem().getId())">-->
+            <columns>
+                <column width="50px" label="id" align="center" />
+                <column hflex="1" label="Số đến cấp trên" align="left" />
+                <column hflex="1" label="Ngày đến" align="left" />
+                <column hflex="1" label="Ngày ban hành" align="left" />
+                <column hflex="2" label="Số/Ký hiệu" align="left" />
+                <column hflex="2" label="Trích yếu" align="left" />
+                <column hflex="1" label="Đơn vị ban hành" align="left" />
+                <column hflex="1" label="Hạn xử lý" align="left" />
+            </columns>
+            <rows >
+                <template name="model">
+                    <!--id="${each.document_receive_id}"-->
+                    <row   onClick="@command('selectedItem', selectId = each.document_receive_id)">
+                        <label value="@load(each.document_receive_id)" />
+                        <label value="@load(each.document_code)" />
+                        <!--style="white-space:nowrap;overflow:hidden;padding:5px"-->
+                        <label value="@load(each.create_time)" />
+                        <label value="@load(each.publish_date)" />
+                        <label value="@load(each.book_number)" />
+                        <label value="@load(each.absTract)" />
+                        <label value="@load(each.dept_name)" />
+                        <label value="@load(each.deadline)" />
+                    </row>
+                </template>
+            </rows>
+        </grid>
+        <!--        <paging pageSize="@load(vm.pageSize)" totalSize="@load(vm.totalSize)"
+        activePage="@save(vm.activePage)" detailed="true"/>-->
+    </div>
+    
+    <!--<div visible="false" style="border-style: solid;border-width: 1px;border-color:#f1f1f1" fulfill="=document/detail_document.zul" width="100%" height="100%"/>-->
+</zk>

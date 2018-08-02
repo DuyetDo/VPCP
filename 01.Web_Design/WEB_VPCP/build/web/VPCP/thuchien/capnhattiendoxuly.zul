@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    <style>
+        .font{
+        font-style: italic;
+        }
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-tablechildren{
+        padding: 5px 10px;
+        }
+
+        .z-button-image{
+        width:20px;
+        }
+        
+        
+    </style>
+    <window title="Cập nhật tiến độ xử lý" border="normal" closable="true" width="55%">
+        <tablelayout columns="4" width="100%">
+            <tablechildren width="15%">
+                <label value="Trạng thái"/>
+            </tablechildren>
+            
+            <tablechildren width="35%">
+                <combobox placeholder="Đang thực hiện">
+                    <comboitem label="Đang thực hiện"/>
+                    <comboitem label="Chưa thực hiện"/>
+                </combobox>
+            </tablechildren>
+            
+            <tablechildren width="15%">
+                <label value="Ngày thực hiện"/>
+                <label value="*" style="color:red"/>
+            </tablechildren>
+            
+            <tablechildren width="35%">
+                <datebox />
+            </tablechildren>
+            
+            <tablechildren >
+                <label value="Diễn giả trạng thái"/>
+                <label value="*" style="color:red"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3" >
+                <textbox rows="2"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value="File đính kèm"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <button id="btn" image="/images/icon/clip1.png" label="Chọn file" upload="true,maxsize=1,multiple=true" style="background: rgb(66, 129, 208); color: white;"/>
+                <label value="Định dạng file hỗ trợ (" style="margin-left: 15px" sclass="font"/> 
+                <span sclass="font" style="color: red;">File không được quá 20Mb</span> 
+                <label sclass="font" value="), Tên file không đặt tiếng Việt có dấu"></label>
+            </tablechildren>
+        </tablelayout>
+        
+        <separator height="30px"/>
+        <div align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Ghi lại" style="margin-right:10px;"  image="/images/icon/save-file-option.png" onClick="" />
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png" onClick=""/>
+            </hbox>
+        </div>
+        <separator height="20px"/>
+    </window>
+</zk>

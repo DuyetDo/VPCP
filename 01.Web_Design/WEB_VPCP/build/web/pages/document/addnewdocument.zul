@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <groupbox  >
+        <grid hflex="true" >
+            <columns>
+                <column width="120px"/>
+                <column/>
+            </columns>
+            <rows>
+                <row>
+                    Id
+                    <hlayout>
+                        <label value="@load(fx.id)" />
+                        <image src="@load(fxStatus.dirty?'exclamation.png':'')" />
+                    </hlayout>
+                </row>
+                <row>Description <textbox value="@bind(fx.description)"/></row>
+                <row>Quantity
+                    <intbox value="@bind(fx.quantity) "/>
+                </row>                    
+                <row>Price 
+                    <doublebox value="@bind(fx.price)" format="###,##0.00" />
+                </row>
+                <row>Total Price 
+                    <label value="@load(fx.totalPrice)" />
+                </row>
+                <row>Creation Date 
+                    <datebox value="@bind(fx.creationDate)"/>
+                </row>
+                <row>Shipping Date 
+                    <datebox value="@bind(fx.shippingDate)"/>
+                </row>    
+            </rows>
+        </grid>
+    </groupbox>
+</zk>

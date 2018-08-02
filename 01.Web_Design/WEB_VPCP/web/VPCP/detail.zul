@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vlayout width="300px">
+    <label value="${student.id}" style="font-size: 14px; font-weight: bold;" />
+    <grid>
+        <rows>
+            <row>
+                Id:
+                <label value="${student.id}" />
+            </row>
+           
+            <row>
+                Name:
+                <label value="${student.username}" />
+            </row>
+            <row>
+                Age:
+                <label value="${student.password} " />
+            </row>
+           
+        </rows>
+    </grid>
+</vlayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-tablechildren{
+        padding: 5px 10px;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+          
+        .label-right{
+        padding-left: 130px;
+        }
+    </style>
+    <window  sclass="title-widow" border="normal" title="Sửa cuộc họp theo tuần" closable="true" width="85%">
+        <tablelayout columns="4" width="100%">
+            <tablechildren>
+                <hbox>
+                    <label value="Nội dung"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <textbox placeholder="Nội dung cuộc họp" rows="2"></textbox>
+            </tablechildren>
+            
+            <tablechildren width="11%">
+                <label value="Lãnh đạo VPCP"/>
+            </tablechildren>
+            
+            <tablechildren width="34%">
+                <chosenbox/>
+            </tablechildren>
+            
+            <tablechildren width="21%" sclass="label-right">
+                <label value="Thành phần tham gia"/>
+            </tablechildren>
+            
+            <tablechildren width="34%">
+                <chosenbox/>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Loại thời gian"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <combobox placeholder="Thời gian chính xác" >
+                    <comboitem label="Thời gian chính xác"/>
+                    <comboitem label="Thời gian không chính xác"/>
+                </combobox>
+            </tablechildren>
+            
+            <tablechildren sclass="label-right">
+                <hbox>
+                    <label value="Ngày"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+                
+            <tablechildren>
+                <datebox />
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Từ"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox spacing="20px" width="100%">
+                    <textbox placeholder="08" hflex="1"/>
+                    <label value="Giờ"/>
+                    <textbox placeholder="30" hflex="1"/>
+                    <label value="Phút"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren sclass="label-right">
+                <hbox>
+                    <label value="Đến"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox spacing="20px" width="100%">
+                    <textbox placeholder="10" hflex="1"/>
+                    <label value="Giờ"/>
+                    <textbox placeholder="30" hflex="1"/>
+                    <label value="Phút"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value="Địa điểm"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox/>
+            </tablechildren>
+            
+            <tablechildren sclass="label-right">
+                <label value="Phòng họp"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <combobox placeholder="--Chọn phòng họp--">
+                    <comboitem label=""/>
+                </combobox>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value="Đã làm giấy mời"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <checkbox id="" label="" onCheck="" />
+            </tablechildren>
+            
+            <tablechildren>
+                <label value="Yêu cầu khác"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox rows="2"/>
+            </tablechildren>
+            
+            <tablechildren sclass="label-right">
+                <label value="Ghi chú"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox rows="2"/>
+            </tablechildren>
+        </tablelayout>
+        
+        <separator height="25px"/>
+        
+        <div align="center">
+            <hbox align="center">
+                <button label="Ghi lại" image="/images/icon/save-file-option.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+        </div>
+        <separator height="15px"/>
+    </window>
+</zk>

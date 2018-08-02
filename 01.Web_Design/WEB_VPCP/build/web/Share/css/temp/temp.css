@@ -1,0 +1,168 @@
+.docSubmitBolder .z-tabpanels-ver {
+    width: auto !important;
+}
+
+.docSubmitBolder {
+    border-radius: 17px 17px 17px 17px;
+    -moz-border-radius: 17px 17px 17px 17px;
+    -webkit-border-radius: 17px 17px 17px 17px;
+    border: 8px solid #bf8667;
+}
+
+/*#templateContentDiv img {
+        width: 248px;
+}*/
+
+#templateContentDiv {
+    /* A4 size */
+    width: 9.67in;
+    height: 7.4in;
+    background: none repeat scroll 0 0 white;
+    overflow-y: scroll;
+    margin: 0 auto; 
+    box-shadow: 10px 10px 5px #888888;
+    background-color: white;
+}
+
+.tempTabPublish {
+
+}
+
+.tempTabReceive {
+
+}
+
+.tempTabReceive .z-tabbox-ver {
+    height: auto !important;
+}
+
+.tempTabReceive .z-tabpanel-ver {
+    height: auto !important;
+}
+
+.tempTabReceive .z-tabs-ver {
+    height: auto !important;
+}
+
+.tempDivCmtCreate {
+    width: 230px;
+    height: 150px;
+    background: #F07F6F;
+    position: absolute;
+}
+
+.tempPopupComment {
+    font-size: 17px;
+    max-height: 150px;
+    min-height: 21px;
+    width: 230px;
+    background: rgb(123, 153, 199);
+    position: absolute;
+}
+
+.tempOptionComment {
+    width: 18px;
+    height: 18px;
+    background: url("/voffice/Share/img/icon/list-icon.png");
+    background-size: 18px 18px;
+    position: absolute;
+    top: -20px;
+    right: 1px;
+    opacity: 0.8;
+    border-radius: 3px;
+    /* display: none; */
+}
+.tempOptionCommentCreate {
+    width: 18px;
+    height: 18px;
+    background-image: url("/voffice/Share/img/icon/comment-icon.png");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    right: 21px;
+    opacity: 0.8;
+    border-radius: 3px;
+    /* display: none; */
+}
+.tempOptionComment:active, .tempOptionComment:hover, 
+.tempOptionComment:focus, .tempOptionComment:visited {
+    display: block;
+}
+
+.vt_voTemp_class {
+    position: relative;
+}
+
+
+.tempDivCmt{
+    /*height: 102px;*/
+}
+.tempDivCmtCreate{
+    font-size: 17px;
+    height: 98px;
+    z-index: 1;
+}
+
+.tempDivCmtCreate textarea {
+    width: 220px;
+    height: 40px;
+    margin-left: 2px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: none;
+}
+
+.tempDivListCmt {
+
+}
+.tempDivTitleCmtCreate {
+    text-align: center;
+    height: 21px;
+    background-color: #F7604B;
+    padding-top: 2px;
+    color: white;
+}
+
+.tempDivTitleCmt {
+    text-align: center;
+    height: 21px;
+    background-color: rgb(104, 148, 133);
+    padding-top: 4px;
+    color: white;
+}
+
+.tempDivLisCmtEmpty {
+    background-color: rgb(152, 215, 193);
+    border: 1px solid rgb(104, 148, 133);
+}
+
+.tempDivLisCmtEntity {
+    background-color: rgb(152, 215, 193);
+    border: 1px solid rgb(104, 148, 133);
+}
+
+.tempDivCmtCreate button {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(244, 98, 78);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: white;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#templateVersionDiv {  
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    background-color: rgb(119, 154, 229);
+    top: 4px;
+    left: 8.2in;
+    z-index: 100;
+    opacity: 0.6;
+}

@@ -1,0 +1,12 @@
+.icon{
+	margin:20px 20px 20px 20px;
+	padding: 5px;
+}
+.icon:hover{  
+	border-radius:5px;
+	padding: 3px;
+	border: 2px solid #77AAFF;
+}
+.taskbar{
+	background-color:lightgray;
+}

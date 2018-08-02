@@ -1,0 +1,207 @@
+.borderBoxLogin {
+    border: 1px dashed #bad4eb;
+    border-radius: 10px;
+    padding: 3px;
+}
+.bgBoxlogin {
+    border-radius: 10px;
+	background:rgba(255, 255, 255, 0.7);
+}
+.frmLogin input
+{
+	border:1px solid #56a9ce;
+}
+.infoDT
+{
+	color: #fff;
+    margin-left: 25px;
+    margin-right: 14px;
+	font-family:arial;
+}
+.col01, .col02
+{
+	display:table-cell;
+	vertical-align:top;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align: left;
+}
+.brdtop
+{
+	border-top: 1px dashed #92bfe1;
+}
+.address
+{
+	padding-left:15px;
+}
+@media screen and (max-width: 991px)
+{
+	.infoDT 
+	{
+		display:none;
+	}
+}
+.form-control::-moz-placeholder
+{
+	color: #414141;
+}
+.frmLogin .form-group {
+    margin-bottom: 10px;
+	
+}
+.frmLogin .form-group  input
+{
+	padding: 9px 12px 9px 35px;
+}
+/*.inputlanguage input
+{
+	background
+}*/
+.language input{
+	height: 43px;
+    border: 1px solid rgb(86, 169, 206) !important;
+    padding: 9px 12px 9px 35px;
+    background: url("../img/language.png") left 8px center no-repeat #fff !important;
+}
+.language a{
+	height: 43px;
+    border: 1px solid rgb(86, 169, 206);
+}
+
+.z-icon-caret-down:before {
+    vertical-align: -webkit-baseline-middle;
+}
+/* --------------css bổ sung 06/02/2018 ----------------- */
+.p0{padding: 0;}
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mt0{margin-top:0px;}
+.mt1{margin-top:1px;}
+.mt2{margin-top:2px;}
+.mt3{margin-top:3px;}
+.mt4{margin-top:4px;}
+.mt5{margin-top:5px;}
+.mt6{margin-top:6px;}
+.mt7{margin-top:7px;}
+.mt8{margin-top:8px;}
+.mt9{margin-top:9px;}
+.mt10{margin-top:10px;}
+.mt11{margin-top:11px;}
+.mt12{margin-top:12px;}
+.mt13{margin-top:13px;}
+.mt14{margin-top:14px;}
+.mt15{margin-top:15px;}
+.mt16{margin-top:16px;}
+.mt17{margin-top:17px;}
+.mt18{margin-top:18px;}
+.mt19{margin-top:19px;}
+.mt20{margin-top:20px;}
+.mt21{margin-top:21px;}
+.mt22{margin-top:22px;}
+.mt23{margin-top:23px;}
+.mt24{margin-top:24px;}
+.mt25{margin-top:25px;}
+.mt26{margin-top:26px;}
+.mt27{margin-top:27px;}
+.mt28{margin-top:28px;}
+.mt29{margin-top:29px;}
+.mt30{margin-top:30px;}
+.mt35{margin-top:35px;}
+a:focus{
+	outline: none;
+}
+@media only screen and (max-width: 991px) {
+	.hide-on-medium-and-down{display: none;}
+	.li-nav-a::after{
+		content: "\f107";
+		position: absolute;
+		font-family: fontawesome;
+		font-size: 16px;
+		right: 12px;
+		
+	}
+}
+@media only screen and (min-width: 992px) {
+	.hide-on-large-and-up{display: none !important;}
+}
+
+.z-select-5 {
+	appearance:none;
+    -moz-appearance: none;
+	-o-appearance: none;
+	-webkit-appearance: none;
+    background: #fff url("../images/ic_arrow_drop_down_48px-20.png") right 10px center no-repeat !important;
+	height: 39px;
+	border-radius: 24px;
+	font-weight: bold;
+	padding-left: 15px !important;
+}
+.schedule {
+	display: block;
+}
+.tit_week {
+    
+    border-radius: 5px;
+    padding-left: 6px;
+}
+.tit_lanhdao {
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+.tit_lanhdao img {
+    float: left;
+    margin-right: 7px;
+    margin-top: 0px;
+    width: 20px;
+}
+.tit_lanhdao a {
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 15px;
+    height: 18px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 1px #666666;
+}
+.txtnoidung {
+    font-size: 14px;
+    display: block;
+    line-height: 17px;
+    text-align: justify;
+    font-family: arial !important;
+}
+.daytime {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.lanhdao ul li {
+    border-bottom: 1px dashed #f0f2f4;
+    font-size: 13px;
+    padding: 0px;
+    background: url(images/bg_li_tour.png) no-repeat right center;
+    overflow: hidden;
+	margin-top: 9px;
+}
+.lanhdao ul {
+    margin-left: 0px;
+}
+.view-title {
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.calendarTitle > span {
+    font-weight: bold;
+    color:#0F3B82;
+    font-size:16px;
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="Sửa yêu cầu cuộc họp"  sclass="title-widow" width="85%" closable="true" border="normal">
+            
+        <style>
+            .z-tablechildren{
+            padding: 5px 30px 5px 10px;
+            }
+<!--
+            .z-label{
+            color:#161819;
+            font-size:13px;
+            }-->
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        } 
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+
+        
+        
+        </style>
+        <tablelayout columns="4" width="100%">
+            <tablechildren width="10%">
+                <label value="Nội dung"/>
+                <label sclass="note" value="*"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <textbox rows="2" placeholder="Nội dung cuộc họp"/>
+            </tablechildren>
+            
+            <tablechildren width="11%">
+                <label value="Lãnh đạo VPCP"/>
+            </tablechildren>
+            
+            <tablechildren width="39%">
+                <chosenbox ></chosenbox>
+            </tablechildren>
+            
+            <tablechildren width="15%">
+                <label value="Thành phần tham gia"/>
+            </tablechildren>
+            
+            <tablechildren width="35%">
+                <chosenbox ></chosenbox>
+            </tablechildren>
+            
+            <tablechildren width="10%">
+                <label value="Ghi chú"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <textbox rows="2"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value="Ngày yêu cầu"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <datebox />
+            </tablechildren>
+        </tablelayout>
+        
+        <separator height="40px"/>
+        <div align="center">
+            <hbox align="center">
+                <button label="Ghi lại" image="/images/icon/save-file-option.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+        </div>
+        <separator height="10px"/>
+    </window>
+</zk>

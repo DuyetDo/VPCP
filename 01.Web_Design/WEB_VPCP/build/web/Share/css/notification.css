@@ -1,0 +1,161 @@
+/*
+body{
+	font-size: 12px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+ul.root-cm li{
+	
+}
+
+.root-cm-item{
+list-style: outside none none;
+}
+
+.root-cm-item .item-content{
+	font-size: 13px;
+	line-height: 18px;
+	overflow: hidden;;
+}
+*/
+
+body{
+	font-family: helvetica,arial,sans-serif;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	color: #3B5998;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img{
+	border: 0px none;
+}
+
+.UFIList{
+	background-color: #ffffff !important; /*#F6F7F8;*/
+	border-radius: 0px 0px 3px 3px;
+	color: #141823;
+	overflow: visible;
+	width: auto;
+}
+
+.UFIRow{
+	background-color: #ffffff !important; /*#F6F7F8;*/
+	margin: 0px 12px;
+	padding: 4px 0px;
+	position: relative;
+	word-wrap: break-word;
+	font-size: 12px;
+}
+
+.UFIRow .UFIImageBlockImage{
+	margin: 0px;
+	padding-left: 8px;
+}
+
+.UFIComment .UFIImageBlockImage{
+	position: relative;
+}
+
+.UFICommentContentBlock{
+	padding-right: 12px;
+	position: relative;
+}
+
+.UFICommentContentBlock .UFICommentContent{
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+.UFICommentActorName{
+	font-weight: bold;
+}
+
+.UFIReplyList{
+	background-color: transparent;
+	margin-top: -10px;
+	padding: 8px 12px 6px 44px;
+}
+
+.UFIReplyList .UFIComponent{
+	border-left: 2px solid #DCDEE3;
+	padding-left: 8px;
+	margin-left: 2px;
+}
+
+.UFIReplyList .UFIRow{
+	border-bottom: 0px none;
+	border-top: 0px none;
+	padding: 4px;
+	margin-top: 0px;
+}
+
+/*
+.UFIReplyList .UFIFirstComponent{
+	border-top: 1px solid #E1E2E3;
+	margin: 0px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.UFIReplyList .UFIComponent.UFIFirstComponent{
+	position: relative;
+	margin-left: 0px;
+	border-left-width: 0px;
+}
+*/
+
+.UFICommentActions{
+	clear: both;
+	padding-top: 2px;
+}
+
+.UFIShareLink{
+	display: block;
+}
+
+.UFIReplySocialSentenceRow{
+	line-height: 20px;
+}
+
+.UFIRow .UFIImageBlockContent {
+	margin: 0px;
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+.UFIReplyList .UFIPagerIcon{
+	background-image: url("page-icon.png");
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	background-position: 0px -90px;
+	height: 9px;
+	margin: 0px -2px 0px -1px;
+	position: relative;
+	top: 4px;
+	width: 20px;
+}
+
+.UFIPagerIcon{
+	display: block;
+	bottom: 2px;
+}
+
+span.timestamp{
+	color: #9197A3;
+}
+
+.lfloat{
+	float: left;
+}
+

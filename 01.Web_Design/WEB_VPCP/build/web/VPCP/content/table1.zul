@@ -1,0 +1,53 @@
+<zk>
+    <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+        <caption  label="Nhiệm vụ,công việc Bộ, địa phương trả lại "/>
+ 
+        <panelchildren >
+            <separator />
+            <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" width="100%" >
+                <columns >
+                    <column label="STT" width="5%" />
+                    <column label="Thao tác"/>
+                    <column label="Số/Kí hiệu" />
+                    <column label="Ngày văn bản" />
+                    <column label="Trích yếu" />
+                    <column label="Chuyên viên soạn thảo" width="11%"/>
+                    <column label="ĐV theo dõi" />
+                    <column label="Chuyên viên theo dõi" width="11%" />
+                    <column label="Nội dung theo dõi"/>
+                    <column label="Cơ quan được giao" />
+                    <column label="Lý do"/>
+                </columns>
+                <rows>
+                    <row>
+                        <label value="1"/>
+          
+          
+                        <hbox>
+                            <a href="" id="renewal1">
+                                <image  src="/images/icon/calendar.png" sclass="image"/>
+                            </a>
+                            <a href="" id="edit1"> 
+                                <image  src="/images/icon/pencil.png" sclass="image"/>
+                            </a>
+                            <a href="" id="delete"> 
+                                <image  src="/images/icon/delete.png" sclass="image"/>
+                            </a>   
+                        </hbox>
+                        <a href="" id="detail1">value</a>   
+                        <label value="1"/>
+                        <label sclass="green" value="$16.45"/>
+                        <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                        <label value="on huong huong huong"/>
+                        <label sclass="green" value="$16.45"/>
+                        <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                        <label value="on huong huong huong"/>
+                        <label sclass="green" value="$16.45"/>
+          
+                    </row>
+                   
+                </rows>
+            </grid>
+        </panelchildren>
+    </panel>
+</zk>

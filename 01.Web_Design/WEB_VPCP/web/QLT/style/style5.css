@@ -1,0 +1,49 @@
+ .z-tablechildren{
+        padding-bottom: 10px;
+        }
+
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        
+        .z-textbox{
+        width:100%;
+        }
+        
+        .z-datebox{
+        width: 100%;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        }
+        
+        .z-combobox{
+        width: 100%;
+        }
+        
+        .z-datebox-input{
+        width: 94%;
+        }
+        
+        .z-combobox-input{
+        width: 94%;
+        }
+        
+        .label-right{
+            padding-left: 80px !important;
+        }
+        
+        .note{
+            color: red;
+        }
+        .z-window-header{
+    font-weight: bold;
+    color: #f7f7f7 !important;
+    font-size:13px;
+}
+.tt{
+        color: blue !important;
+        }
+        

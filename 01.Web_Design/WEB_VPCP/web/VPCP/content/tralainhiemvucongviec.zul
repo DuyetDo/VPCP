@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+  
+    <window sclass="window" title="Trả lại nhiệm vụ, công việc" border="normal" width="55%" closable="true">
+        <style>
+            .z-columnchildren{
+            padding:5px 15px;
+            }
+        </style>
+        <separator height="20px"/>
+        <columnlayout>
+            <columnchildren width="14%">
+                <hbox>
+                    <label value="Lý do trả lại"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </columnchildren>
+            <columnchildren width="86%">
+                 <textbox width="100%" rows="3"/>
+            </columnchildren>
+        </columnlayout>
+        <separator  height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button label="Trả lại" image="/images/icon/reply.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+        </div>
+        <separator height="10px"/>
+    </window>
+</zk>

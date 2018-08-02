@@ -1,0 +1,85 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="http://www.zkoss.org/2005/zk/native" xmlns="http://www.zkoss.org/2005/zul">
+
+    <h:div id="breadcrumbs" class="breadcrumbs breadcrumbs-fixed" style="padding-top: 4px">
+        <h:div class="tableTools-container">
+            <h:div class="btn-group btn-overlap">
+                <button class="DTTT_button btn btn-white btn-primary" sclass="btn-calendar"
+                                iconSclass ="fa fa-calendar-o" tooltiptext="${labels.toolbar.thisYear}" 
+                                style="color: #478fca;border-color: #8fbcd9;height: 28px;float:left;margin-right: 5px;">
+                    Năm nay
+                    <custom-attributes time="year" />
+                </button>
+                <button class="DTTT_button pink btn btn-white btn-primary " iconSclass ="fa fa-calendar" sclass="btn-calendar"
+                                style="color: #c6699f !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;" tooltiptext="${labels.toolbar.thisMonth}">
+                    Tháng này
+                    <custom-attributes time="month" />
+                </button>
+                <button class="DTTT_button btn btn-white btn-primary green" iconSclass ="fa fa-calendar-check-o" sclass="btn-calendar"
+                        style="color:#69aa46 !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;" tooltiptext="${labels.toolbar.thisWeek}">
+                    Tuần này
+                    <custom-attributes time="week" />
+                </button>
+                <button class="DTTT_button btn btn-white btn-primary red" sclass="btn-calendar"
+                        tooltiptext="${labels.toolbar.thisDay}" iconSclass ="fa fa-calendar-minus-o" 
+                        style="color:#dd5a43 !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;">
+                    Hôm nay
+                    <custom-attributes time="today" />
+                </button>
+            
+                <button class="DTTT_button btn btn-white btn-primary grey" iconSclass ="fa fa-search-plus" 
+                        style="color: #478fca;border-color: #8fbcd9;height: 28px;margin-right: 5px;"
+                        tooltiptext="${labels.search.seachTitle}" id="btnAdvanceSearch" />
+            
+                <button class="DTTT_button btn btn-white btn-primary blue" iconSclass ="fa fa-folder-o" 
+                        style="color: #478fca;border-color: #8fbcd9;height: 28px;margin-right: 5px;" 
+                        label="${labels.btn.changeToReceivedToKnow}" id="btnReceiveToKnow" visible="${arg.visibleBtnReceiveToKnow}" />
+            
+                <button class="DTTT_button btn btn-white btn-primary blue" iconSclass ="fa fa-copy" 
+                        style="color: #478fca;border-color: #8fbcd9;height: 28px;margin-right: 5px;" 
+                        label="${labels.attachFolder.copy}" tooltiptext="Sao chép" id="btnCopyDocument" visible="${arg.visibleBtnCopyDocument}" />
+            
+                <button visible="${arg.visibleBtnSendDocuments}"  iconSclass ="fa fa-mail-forward" 
+                        style="color: #478fca;border-color: #8fbcd9;height: 28px;margin-right: 5px;"
+                        class="DTTT_button btn btn-white btn-primary blue"
+                        label="${labels.action.transformToProcess}" id="btnActions" 
+                        tooltiptext="${labels.action.transformToProcess}" />
+            
+<!--                <zk if="${arg.visibleBtnExport}">
+                    <button label=" Excel" class="btnExport DTTT_button btn btn-white btn-info green button-height-28px" 
+                            sclass="btnExport"
+                            iconSclass ="fa fa-file-excel-o"  style="color: #69aa46 !important;height: 28px;" tooltiptext="${labels.tooltip.export.excel}">
+                        <custom-attributes type="jxl" />
+                    </button>
+                    <button label=" Pdf" class="btnExport DTTT_button btn btn-white btn-info pink button-height-28px" iconSclass ="fa fa-file-pdf-o"
+                            sclass="btnExport" 
+                            style="color: #c6699f !important;height: 28px;" tooltiptext="${labels.tooltip.export.pdf}">
+                        <custom-attributes type="pdf" />
+                    </button>
+                    <button label=" Word" class="btnExport DTTT_button btn btn-white btn-info button-height-28px" sclass="btnExport"
+                            iconSclass ="fa fa-file-word-o" tooltiptext="${labels.tooltip.export.word}" style="height: 28px;">
+                        <custom-attributes type="rtf" />
+                    </button>
+                </zk>-->
+                <!--<menupopup id="popup"></menupopup>-->
+            </h:div>
+        </h:div>
+        <h:div class="nav-search">
+            <h:div class="form-search">
+<!--                <h:div class="ColVis btn-group">
+                    <button id="btnCreateDocument" class="ColVis_Button ColVis_MasterButton btn btn-white btn-info blue button-height-28px"
+                                        iconSclass="fa fa-plus" visible="${arg.isFileClerk}" tooltiptext="Thêm mới" />
+                </h:div>
+                <h:div id="divLbxYearBySearch" class="ColVis btn-group">
+                    <h:select id="lbxYearBySearch" style="border: 1px solid rgb(138, 175, 206); min-height: 28px; width: 70px;" onChange="yearBySearchToolbarDocumnetChange();" class="form-control z-select-ex">
+                    </h:select>
+                </h:div>-->
+                <h:span class="input-icon">
+                    <textbox id="tbxFullSearch" maxlength="200" class="nav-search-input" placeholder="${labels.common.search.tooltip}" />
+                    <h:i class="ace-icon fa fa-search nav-search-icon"></h:i>
+                </h:span>
+                <image style="display:none;" id="imgFullSeach" class="searchImg" src="Share/img/icon/search.jpg"></image>
+            </h:div>
+        </h:div>
+    </h:div>
+</zk>

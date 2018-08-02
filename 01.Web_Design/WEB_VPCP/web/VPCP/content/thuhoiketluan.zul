@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window sclass="window" title="Thu hồi kết luận" border="normal" width="55%" closable="true">
+        <style>
+            .z-columnchildren{
+            padding: 0px 10px;
+            }
+        </style>
+        <separator height="20px"/>
+        <columnlayout width="100%">
+            <columnchildren width="15%">
+                <hbox>
+                <label value="Lý do thu hồi "/>
+                <label sclass="note" value="*"/>
+                </hbox>
+            </columnchildren>
+            
+            <columnchildren width="85%">
+                <textbox width="100%" rows="3"/>
+            </columnchildren>
+        </columnlayout>
+        
+       
+        
+        
+
+        <separator  height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button label="Thu hồi" image="/images/icon/reply.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+        </div>
+        <separator height="10px"/>
+    </window>
+</zk>

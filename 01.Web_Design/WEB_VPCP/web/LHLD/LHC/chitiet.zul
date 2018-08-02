@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="Chi tiết lịch công tác"  sclass="title-widow" width="90%" closable="true" border="normal">
+            
+        <style>
+            .z-tablechildren{
+            padding: 5px 10px;
+            }
+
+            .z-label{
+            color:#161819;
+            font-size:13px;
+            }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+            
+            .label-right{
+            padding-left: 100px;
+            }
+        </style>
+        <vlayout spacing="20px">
+            <groupbox>		
+                <panel  border="none" collapsible="true" sclass="transparent">
+                    <caption label="Điều kiện tìm kiếm"/>
+ 
+                    <panelchildren>
+                        <separator />
+                        <tablelayout columns="4" width="100%">
+                            <tablechildren width="10%">
+                                <label value="Nội dung"/>
+                                <label sclass="note" value="*"/>
+                            </tablechildren>
+            
+                            <tablechildren colspan="3">
+                                <textbox placeholder="Nội dung lịch họp" rows="2"/>
+                            </tablechildren>
+            
+                            <tablechildren width="10%">
+                                <label value="Lãnh đạo VPCP"/>
+                            </tablechildren>
+            
+                            <tablechildren width="35%">
+                                <chosenbox/>
+                            </tablechildren>
+            
+                            <tablechildren width="20%" sclass="label-right">
+                                <label value="Thành phần tham gia"/>
+                            </tablechildren>
+            
+                            <tablechildren width="35%">
+                                <chosenbox/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <label value="Loại thời gian"/>
+                                <label sclass="note" value="*"/>
+                            </tablechildren>
+                
+                            <tablechildren>
+                                <combobox placeholder="Thời gian chính xác" >
+                                    <comboitem label="Thời gian chính xác"/>
+                                </combobox>
+                            </tablechildren>
+            
+                            <tablechildren sclass="label-right">
+                                <label value="Ngày"/>
+                                <label sclass="note" value="*"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <datebox />
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <label value="Từ"/>
+                                <label sclass="note" value="*"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <hbox width="100%" spacing="8px">
+                                    <textbox hflex="1"></textbox>
+                                    <label value="Giờ"/>
+                                    <textbox hflex="1"></textbox>
+                                    <label value="Phút"/>
+                                </hbox>
+                            </tablechildren>
+            
+                            <tablechildren sclass="label-right">
+                                <label value="Đến"/>
+                                <label sclass="note" value="*"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <hbox width="100%" spacing="8px">
+                                    <textbox hflex="1"></textbox>
+                                    <label value="Giờ"/>
+                                    <textbox hflex="1"></textbox>
+                                    <label value="Phút"/>
+                                </hbox>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <label value="Địa điểm"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <textbox/>
+                            </tablechildren>
+            
+                            <tablechildren sclass="label-right">
+                                <label value="Phòng họp"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <combobox placeholder="--Chọn phòng họp--" >
+                                    <comboitem label="--Chọn phòng họp--"/>
+                                </combobox>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <label value="Đã làm giấy mời"/>
+                            </tablechildren>
+            
+                            <tablechildren colspan="3">
+                                <checkbox id="" label="" onCheck="" />
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <label value="Yêu cầu khác"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <textbox rows="2"/>
+                            </tablechildren>
+            
+                            <tablechildren sclass="label-right">
+                                <label value="Ghi chú"/>
+                            </tablechildren>
+            
+                            <tablechildren>
+                                <textbox rows="2"/>
+                            </tablechildren>
+                        </tablelayout>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.MeetingScheduleController">
+               
+                    <caption>
+                        <label value="Lịch sử chỉnh sửa/cập nhật" sclass="caption-table" />
+                                
+                    </caption>    
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                            <columns >
+                                <column label="Người sửa" />
+                                <column label="Thời gian" />
+                            
+                  
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>
+          
+                                    <label value="on huong huong huong"/>
+                        
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            
+            
+            
+            </groupbox>
+            <hlayout style="margin-left:47%">
+                <button sclass="bt" label="Đóng" style="margin-right:10px;"  image="/images/icon/delete1.png" onClick="" />
+                                       
+            </hlayout>
+        
+        </vlayout>
+    </window>
+</zk>

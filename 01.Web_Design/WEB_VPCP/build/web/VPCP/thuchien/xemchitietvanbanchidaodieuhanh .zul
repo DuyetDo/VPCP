@@ -1,0 +1,561 @@
+<zk >
+    <style>
+        .z-tablechildren{
+        padding: 10px;
+        }
+        .title{
+        color:#161819;
+        font-size:13px;
+        font-weight: bold;
+        }
+    </style>
+    <window title="Xem chi tiết văn bản chỉ đạo điều hành" border="normal" closable="true" width="85%">
+        <vlayout sclass="page-content" spacing="20px" >
+            <panel border="normal" collapsible="true" sclass="transparent" width="100%">
+                <caption label="THÔNG TIN VĂN BẢN CHỈ ĐẠO ĐIỀU HÀNH"/>
+                <panelchildren>
+                    <tablelayout columns="4" width="100%">
+                        <tablechildren colspan="4">
+                            <label sclass="title" value="Thông tin văn bản phát hành"/>
+                        </tablechildren>
+                        
+                        <tablechildren  width="9%">
+                            <label value="Ngày nhập"/>
+                        </tablechildren>
+                        
+                        <tablechildren width= "40%">
+                            <label sclass="title" value="13/06/2018"/>
+                        </tablechildren>
+                        
+                        <tablechildren width="11%">
+                            <label value="Số/ Ký hiệu"/>
+                        </tablechildren>
+                        
+                        <tablechildren width= "40%">
+                            <label sclass="title" value="136/BC/TH"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Ngày văn bản"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="29/05/2018"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Độ mật"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="0"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Loại văn bản"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Loại ý kiến"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="Bình thường"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Trích yếu"/>
+                        </tablechildren>
+                        
+                        <tablechildren colspan="3">
+                            <textbox placeholder="Trình văn bản 29052018" width="100%" rows="2"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Người ký"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="Vương Văn Huệ"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Chức vụ"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="Phó thủ tướng chính phủ"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Đơn vị"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="HC"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Chuyên viên"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="Nguyễn Thị An"/>
+                        </tablechildren>
+                        
+                        <tablechildren colspan="4">
+                            <label sclass="title" value="Thông tin văn bản đến"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Đơn vị trình"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="13/06/2018 09:05"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Số văn bản trình"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="29052018"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Trích yếu"/>
+                        </tablechildren>
+                        
+                        <tablechildren colspan="3">
+                            <textbox placeholder="Trình văn bản 29052018" width="100%" rows="2"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Đơn vị chủ trì"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="HC"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Ngày tiếp nhận VB"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title" value="29/05/2018"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Ngày trình LĐCP"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Ngày LĐCP cho ý kiến"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Người chỉ đạo"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Loại văn bản"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label sclass="title"/>
+                        </tablechildren>
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+            
+            <panel border="normal" sclass="transparent" width="100%">
+                <caption label="THÔNG TIN THEO DÕI VĂN BẢN"/>
+                <panelchildren>
+                    <panel border="0" collapsible="true" sclass="transparent"  >
+                        <caption sclass="header"  label="Bộ công an: Nội dung công việc "/>
+                        <panelchildren>
+                            <tablelayout width="100%" columns="4">
+                                <tablechildren width="10%">
+                                    <label value="Nội dung công việc"/>
+                                </tablechildren>
+                            
+                                <tablechildren colspan="3">
+                                    <textbox multiline="true" width="100%" rows="2"/>
+                                </tablechildren>
+                            
+                                <tablechildren width="10%">
+                                    <label value="Cơ quan được giao"/>
+                                </tablechildren>
+                        
+                                <tablechildren width="40%">
+                                    <label sclass="title" value="Bộ Công An"/>
+                                </tablechildren>
+                        
+                                <tablechildren width="11%">
+                                    <label value="Cơ quan phối hợp"/>
+                                </tablechildren>
+                        
+                                <tablechildren width="39%">
+                                    <label sclass="title" value="Bộ Công Thương"/>
+                                </tablechildren>
+                                
+                                <tablechildren>
+                                    <label value="Hạn xử lý"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label sclass="title" value="Có thời hạn cụ thể"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label value="Thời hạn"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label sclass="title" value="30/06/2018"/>
+                                </tablechildren>
+                                
+                                <tablechildren>
+                                    <label value="Đơn vị theo dõi"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label sclass="title" value="Vụ Hành chính"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label value="Chuyên viên theo dõi"/>
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label sclass="title" value="Phạm Kiểu Hưng"/>
+                                </tablechildren>
+                            </tablelayout>
+                        </panelchildren>
+                    </panel>
+                </panelchildren>
+            </panel>
+            
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent">
+                    <caption sclass="header"  label="Tiến độ xử lý :$ lần cập nhật tiến độ "/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border: 1px solid black;" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Ngày cập nhật"/>
+                                <column label="Ngày thực hiện" />
+                                <column label="Trạng thái" />
+                                <column label="Nội dung" />
+                                <column label="Người cập nhật" width="11%"/>
+                                <column label="File đính kèm" />
+                    
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>  
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+           
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+ 
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent">
+                    <caption sclass="header"  label="Lịch sử gửi/ trả lại "/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border: 1px solid black;" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Ngày gửi/trả lại"/>
+                                <column label="Hành động " />
+                                <column label="Nội dung" />
+                                <column label="Người gửi" />
+                                <column label="Đơn vị gửi"/>
+                                <column label="Người nhận" />
+                                <column label="Đơn vị nhận" />
+                    
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>  
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+           
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+ 
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent">
+                    <caption sclass="header"  label="Lịch sử gửi/ trả lại Bộ, Địa phương"/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border: 1px solid black;" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Ngày gửi/trả lại"/>
+                                <column label="Hành động " />
+                                <column label="Nội dung" />
+                                <column label="Người gửi" />
+                                <column label="Đơn vị gửi"/>
+                                <column label="Người nhận" />
+                                <column label="Đơn vị nhận" />
+                    
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>  
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+           
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+ 
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent">
+                    <caption sclass="header"  label="Lịch sử đôn đốc nhiệm vụ, công việc "/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border: 1px solid black;" >
+                            <columns>
+                                <column label="STT" width="5%"/>
+                                <column label="Ngày tạo"/>
+                                <column label="Ngày đôn đốc" />
+                                <column label="Người đôn đốc" />
+                                <column label="Hính thức đôn đóc" />
+                                <column label="Nội dung"/>
+                                <column label="File đính kèm" />
+                                <column label="Ngày xử lý" />
+                                <column label="Người xử lý" />
+                    
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>  
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+           
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+ 
+ 
+            <groupbox>
+                <panel border="none" collapsible="true" sclass="transparent">
+                    <caption sclass="header" label="Lịch sử gia hạn"/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border: 1px solid black;" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Hạn cũ"/>
+                                <column label="Hạn mới" />
+                                <column label="Người gia hạn" />
+                                <column label="Ngày thực hiện ra hạn" />
+                                <column label="Lý do"/>
+      
+                                <column label="File đính kèm" />
+                    
+                    
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>  
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+           
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                                <row>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+          
+          
+                                </row>
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+
+            <div sclass="gbt" align="center">
+                <hbox >
+                    <button sclass="bt" label="Giao cập nhật"  image="/images/icon/send1.png"/>
+                    <button  sclass="bt" label="Cập nhật tiến độ" image="/images/icon/graph.png"/>
+                    <button  sclass="bt" label="Báo cáo VPCP" image="/images/icon/check.png"/>
+                    <button  sclass="bt" label="Trả lại VPCP" image="/images/icon/reply.png"/>
+                    <button  sclass="bt" label="Đóng" image="/images/icon/delete1.png"/>
+                </hbox>
+            </div>
+        </vlayout>
+
+    </window>
+</zk>

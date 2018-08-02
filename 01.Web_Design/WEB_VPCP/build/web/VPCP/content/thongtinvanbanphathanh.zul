@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+   
+    <style>
+        .title{
+        font-weight: bold;
+        font-size: 13px;
+        }
+        .z-tablechildren{
+        padding: 5px 10px;
+        }
+    </style>
+    
+    <window sclass="window" title="Thông tin văn bản phát hành" border="normal" width="80%">
+        <separator width="20px"/>
+        <tablelayout columns="4" width="100%">
+            <tablechildren width="13%">                    
+                <label sclass="title" value="Ngày nhập"/>
+            </tablechildren>
+
+            <tablechildren width="37%">                    
+                <label value="13/06/2018 09:05"/>
+            </tablechildren>
+
+            <tablechildren width="13%"> 
+                <label sclass="title" value="Báo cáo giải trình"/>
+            </tablechildren>
+
+            <tablechildren width="37%">                    
+                <checkbox/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Số văn bản đi"/>
+            </tablechildren>
+
+            <tablechildren>
+                <label value="Quyết đinh quy phạm của Thủ tướng"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Số/ Ký hiệu"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="136/BC/TH"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Loại văn bản"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="Quyết định quy phạm"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Ngày VB"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="12/06/2018"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Loại ý kiến"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="Bình thưởng"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Độ mật"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="0"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Trích yếu"/>
+            </tablechildren>
+
+            <tablechildren colspan="3">
+                <textbox placeholder="VBPH 29052018" width="100%" multiline="true"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Người ký"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="Vương Văn Huệ"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Chức vụ"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="Phó thủ tướng Chính Phủ"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label sclass="title" value="Đơn vị"/>
+            </tablechildren>
+
+            <tablechildren>                    
+                <label value="HC"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Chuyên viên"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="Nguyên Thị An"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Số bản"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="1"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Gửi bản điện tử"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox spacing="20px">
+                    <checkbox/>
+                    <label value="Ký điện tử"/>
+                    <checkbox/>
+                    <label value="Thông báo gia hạn"/>
+                    <checkbox/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>  
+                <label sclass="title" value="Tình trạng xử lý"/>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <textbox width="100%" multiline="true"/>
+            </tablechildren>
+            
+            <tablechildren>            
+                <label sclass="title" value="Nơi nhận bên ngoài"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label/>
+            </tablechildren>
+            
+            <tablechildren> 
+                <label sclass="title" value="Đơn vị nhận giấy"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label sclass="title" value="Hạn cho ý kiến"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Ghi chú"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Cá nhân nhận"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label sclass="title" value="Người nhập"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label/>
+            </tablechildren>
+            
+            <tablechildren> 
+                <label sclass="title" value="Thu hồi văn bản khác"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <checkbox/>
+            </tablechildren>
+
+        </tablelayout>
+        <separator height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox>
+                <button label="Chuyển hạn cập nhật" image="/images/icon/calendar1.png"/>
+                <button label="Chuyển loại theo dõi" image="/images/icon/pencil1.png"/>
+                <button label="Chuyển theo dõi chỉ đạo" image="/images/icon/pencil1.png"/>
+                <button label="Hồ sơ đính kèm" image="/images/icon/clip1.png"/>
+                <button label="Tệp đính kèm" image="/images/icon/clip1.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+        </div>
+        <separator height="20px"/>
+    </window>
+</zk>

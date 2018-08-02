@@ -1,0 +1,26 @@
+<zk >
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+  
+    <vlayout sclass="page-content" spacing="20px">
+ 
+	    			
+        <include src="/VPCP/content/searchnew.zul" hflex="5"/>
+	      
+        <groupbox >
+	    			
+            <include src="/VPCP/content/table1.zul" hflex="5"/>
+        </groupbox>
+    
+        <groupbox  >
+	    			
+            <include src="/VPCP/content/table2.zul" hflex="5"/>
+        </groupbox>
+        <groupbox  >
+	    			
+            <include src="/VPCP/content/table3.zul" hflex="5"/>
+        </groupbox>
+  
+    </vlayout>
+	
+</zk>

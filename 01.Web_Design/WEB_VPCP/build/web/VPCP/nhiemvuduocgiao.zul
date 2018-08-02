@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+  
+    <vlayout sclass="page-content" spacing="20px">
+ 
+	    			
+        <include src="/VPCP/thuchien/search.zul" hflex="5"/>
+        <groupbox>
+            <include src="/VPCP/thuchien/luufile.zul" hflex="5"/>
+        </groupbox>
+	      
+    </vlayout>
+</zk>

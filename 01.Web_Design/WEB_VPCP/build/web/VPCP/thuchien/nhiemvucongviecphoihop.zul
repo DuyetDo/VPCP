@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel border="1" collapsible="true" sclass="transparent">
+        <caption  label="Kết quả tìm kiếm: 1 nhiệm vụ "/>
+ 
+        <panelchildren >
+            <separator />
+            <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                <columns >
+                    <column width="30px">STT</column>
+                    <column>Số/Ký hiệu</column>
+                    <column>Ngày văn bản</column>
+                    <column>Trích yếu</column>
+                    <column>ĐV theo dõi</column>
+                    <column>Chuyên viên theo dõi</column>
+                    <column>Nội dung theo dõi</column>
+                    <column>Hạn xử lý</column>
+                    <column>Đơn vị cập nhật</column>
+                    <column>Tình hình TH</column>
+                </columns>
+                <rows>
+                    <row>
+                       
+                        <label value="1"/>
+                        
+                        <label value="136/BC/TH"/>
+                        <label value="10/03/2018"/>
+                        <label value="VBPH 13062018"/>
+                        <label value="Vụ hành chính"/>
+                        <label value ="Phạm Kiểu Hưng"/>
+                        <label value ="1306 công việc 1"/>
+                        <label value ="02/06/2018"/>
+                        <label value ="Bộ công an"/>
+                        <label value ="Đã hoàn thành"/>
+                       
+                    </row>
+          
+                </rows>
+            
+            </grid>
+        </panelchildren>
+    </panel>
+</zk>

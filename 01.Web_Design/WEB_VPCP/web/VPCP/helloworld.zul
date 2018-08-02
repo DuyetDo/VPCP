@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="win" title="Operating document" border="normal"
+        apply="org.zkoss.bind.BindComposer"
+        viewModel="@id('vm') @init('com.viettel.voffice.action.FormMV')">
+        <separator/>
+        <grid width="99.5%" sclass="fgrid">
+          <rows>
+                <row>
+                   UserName: 
+                    <textbox id="userName" sclass="text" maxlength="25" value="@bind(vm.userName)"/>
+                </row>
+                <row>
+                    <label value="Password" sclass="flabel"/>
+                    <textbox id="password" sclass="text" maxlength="25" value="@bind(vm.passWord)"/>
+                </row>
+            </rows>
+        </grid>
+         <button id="submitButton" label="Submit" onClick="@command('submit')" />
+    </window>
+</zk>

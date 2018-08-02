@@ -1,0 +1,109 @@
+<zk>
+    <style>
+        .z-messagebox .z-label,.z-panel-header {
+        font-family: Verdana;
+        font-size: 14px;
+        }
+
+        .z-window-header {
+        color: white;
+        font-family: Verdana;
+        font-size: 14px;
+        border: none;
+        }
+
+        .z-messagebox-window {
+        border: none;
+        background: blue;
+}
+        .z-window-close{
+        background: blue;
+        }
+        .z-window-icon{
+        color: white;
+        }
+
+        
+        /* ----------------------------------------------------------------------------------------------- */
+        /*  Button			  		   													   	   			   */
+        /* ----------------------------------------------------------------------------------------------- */
+        .myMessagebox .z-button {
+        -moz-box-shadow: 0px 10px 14px -7px #cf866c;
+        -webkit-box-shadow: 0px 10px 14px -7px #cf866c;
+        box-shadow: 0px 10px 14px -7px #cf866c;
+        background: #f78d1d;
+        background: -webkit-gradient(linear, left top, left bottom, from(#faa51a),
+        to(#f47a20));
+        background: -moz-linear-gradient(top, #faa51a, #f47a20);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a',
+        endColorstr='#f47a20');
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 5px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #3d768a;
+        border: medium none;
+        }
+
+        .myMessagebox .z-window-icon {
+        border: medium none;
+        height: 26px;
+        padding-top: 10px;
+        width: 29px;
+        }
+
+        .myMessagebox .z-window-icon .z-icon-times:before {
+        content: none;
+        }
+        
+        .z-messagebox-button .z-button{
+        text-color: white;
+        }
+        
+        .z-messagebox-button{
+        background: blue !important;
+        }
+        
+        .z-button{
+        color:white !important;
+        font-family: Verdana;
+        }
+        
+        .z-label{
+        color: white;
+        }
+        .z-button{
+        background:blue;
+        }
+    </style>
+    <window apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('demo.ButtonVM')">
+        <vlayout spacing="15px">
+            Message Dialog
+            <hlayout>
+                <button label="Warning" width="100px"
+                        onClick="@command('showWarning')">
+                </button>
+                <button label="Question" width="100px"
+                        onClick="@command('showQuestion')">
+                </button>
+                <button label="Information" width="100px"
+                        onClick="@command('showInformation')">
+                </button>
+                <button label="Error" width="100px"
+                        onClick="@command('showerror')">
+                </button>
+            </hlayout>
+            Interactive Dialog
+            <button label="Save " width="100px"
+                    onClick="@command('showSave')">
+            </button>
+        </vlayout>
+    </window>
+</zk>

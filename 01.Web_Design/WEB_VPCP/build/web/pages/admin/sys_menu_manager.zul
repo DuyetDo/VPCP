@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <groupbox hflex="1" vflex="1"  apply="org.zkoss.bind.BindComposer"
+              viewModel="@id('vm') @init('com.viettel.voffice.action.admin.SysMenuAction')">
+        <tree id="tree" width="100%" height="100%" style="border:none" vflex="1" 
+              model="@load(vm.treeData)" 
+              onSelect="@command('selectedItem', selectId = self.getSelectedItem().getId())">
+            <treecols>
+                <treecol hflex="3" label="Tên menu" />
+                <treecol hflex="5" label="link page" />
+                <treecol hflex="2" label="icon Class" />
+            </treecols>
+            <template name="model">
+                <treeitem open="@load(each.open)" id="${each.data.id}">
+                    <treerow>
+                        <treecell label="${each.data.name}"/>
+                        <treecell label="${each.data.url_page_link}"/>
+                        <treecell label="${each.data.iconsclass}"/>
+                    </treerow>
+                </treeitem>
+            </template>
+        </tree>
+    </groupbox>
+</zk>

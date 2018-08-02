@@ -1,0 +1,425 @@
+/*
+* CSS giao dien bo sung
+*
+* @author hunglm16
+* @since 23/02/2016
+*/
+body { font-family:Arial; background-color:#fff; font-size:100%; color:#333; }
+body, div, h1, h2, h3, h4, h5, h6, p, form, dl, dl dt, dl dd, pre { margin:0; padding:0; text-align:left; }
+pre { font-family:Arial, Geneva, sans-serif; white-space:pre-wrap; }
+ul, li { text-align:left;list-style:none; }
+img { border:none; vertical-align:middle; }
+fieldset { border:none; background:none; margin:0; padding:0; }
+fieldset legend { display: none; }
+a { text-decoration:none; text-align:left; color:#0066cc;outline:none !important; }
+a:focus { outline:#0000FF dotted thin !important; }
+a:hover { text-decoration: none; }
+button, input { font-family:Arial; margin:0; padding:0; }
+textarea { font-family:Arial; padding:0px; margin:0px; overflow:hidden; resize:none; vertical-align:bottom; outline:none; overflow-y:auto; }
+select { font-family:Arial; }
+select option { padding:0 4px; }
+.FixFloat { overflow:hidden; height:auto; }
+.Clear { clear:both; padding:0 !important; }
+.ClearRight { clear:right; }
+.ClearLeft { clear:left; }
+.Wordwrap { word-wrap:break-word; }
+.Wordbreak { display: inline-block; }
+.HideText { text-indent:-1000em; display:block; overflow:hidden; height:auto; }
+.HideDiv { display:none; }
+.VisibleDiv { visibility:hidden; }
+.ResetList, .ResetList li { margin:0; padding:0; list-style:none; }
+object, embed { outline:none; }
+input[disabled="disabled"] { background-color:#ededed; color:#333333; border:1px solid #D0DBEA; }
+/*- ] General -*/
+
+/*- [ Common -*/
+.refreshIcon { cursor: pointer; }
+.CustomStyleSelectBoxInner { height:20px; line-height:20px; }
+.MySelectBoxClass { opacity: 0; position: absolute; cursor:pointer; }
+.SelecSection span.CustomStyleSelectBox { border: 1px solid #98c2ce; }
+.BoxSelect { margin-bottom:9px; }
+.BoxSelectM { margin-right:5px !important; }
+.MySelectBoxClass { height:20px !important; }
+.BoxSelect1 .MySelectBoxClass { width:226px; }
+.BoxSelect1 .CustomStyleSelectBoxInner { width:193px; }
+.BoxSelect2 .MySelectBoxClass { width:208px; }
+.BoxSelect2 .CustomStyleSelectBoxInner { width:173px; }
+.BoxSelect3 .MySelectBoxClass { width:193px; }
+.BoxSelect3 .CustomStyleSelectBoxInner { width:160px; }
+.BoxSelect4 .MySelectBoxClass { width:283px; }
+.BoxSelect4 .CustomStyleSelectBoxInner { width:250px; }
+.BoxSelect5 .MySelectBoxClass { width:187px; }
+.BoxSelect5 .CustomStyleSelectBoxInner { width:154px; }
+.BoxSelect6 .MySelectBoxClass { width:148px; }
+.BoxSelect6 .CustomStyleSelectBoxInner { width:113px; }
+.BoxSelect7 .MySelectBoxClass { width:264px; }
+.BoxSelect7 .CustomStyleSelectBoxInner { width:231px; }
+.BoxSelect8 .MySelectBoxClass { width:553px; }
+.BoxSelect8 .CustomStyleSelectBoxInner { width:520px; }
+.BoxSelect9 .MySelectBoxClass { width:254px; }
+.BoxSelect9 .CustomStyleSelectBoxInner { width:221px; }
+.BoxSelect10 .MySelectBoxClass { width:155px; }
+.BoxSelect10 .CustomStyleSelectBoxInner { width:122px; }
+
+.BoxSelect11 .MySelectBoxClass { width:80px; }
+.BoxSelect11 .CustomStyleSelectBoxInner { width:80px; }
+
+.BoxSelect12 .MySelectBoxClass { width:100px; }
+.BoxSelect12 .CustomStyleSelectBoxInner { width:100px; }
+
+.PhotoSearchSection .BoxSelect3 .MySelectBoxClass { width:114px; }
+.PhotoSearchSection .BoxSelect3 .CustomStyleSelectBoxInner { width:81px; }
+#logo, .AccountFuncList li, #logo a span, .MenuList li, .BreadcrumbList li, .SearchSection, .GuideMapSection, .TSSection, .BtnLSection, .ContentFunc .Text1Style, .Dl2Style dt, .Dl2Style dd, .ComboTreeSection, .ContentSection, .SidebarSection, .CalendarLink, .Dl3Style dt, .Dl3Style dd, .Dl4Style dt, .Dl4Style dd, .GeneralForm .InputTextStyle, .NCSList li, .ImportExcel1Form .LabelStyle, .UploadFileSection, .SearchSection .BoxSelect, .GeneralSSection .InputTextStyle, .GeneralSSection .LabelStyle, .Func1Section, .Func1Section .DownloadSFileStyle, .Func1Section .BtnGeneralStyle, .Func2Section .LabelStyle, .Func2Section .BtnGeneralStyle, .GeneralDetail2Section .Text1Style, .GeneralDetail1Section .Text1Style, .GeneralDetail1Section .BoxSelect, .GeneralDetail1Section, .CTTT1Form .LabelStyle, .Search1Form .LabelStyle, .Search1Form .BtnSearchStyle, .Search1Form .BoxSelect, .ValueStyle, .GeneralMedia1Section, .MediaThumbList li, .Search1Form .BtnSearchStyle, .PhotoCols1, .TempStyle, .PhotoGroupList li, .PhotoCols2, .PhotoList li,
+.SearchInSection .LabelStyle, .InputTextStyle, .Func1Section .BoxSelect, .BoxSelect, .InputCbxStyle, .InputRdoStyle, .SProductForm1Cols, .SProductForm2Cols, .SProductForm3Cols, .SProductForm4Cols, .SProductForm5Cols, .SProductForm7Cols, .TabSection li, .Sidebar1Section, .Content1Section, .Content3Section, .CYList li, .ChildMenuSectionList li, .InfoShop .Avatar { float:left; }
+.AccountFuncSection, .GuideMapSection label, .ContentFunc .Text2Style, .MenuList .EndItem, .Func2Section, .BtnRSection, .GeneralDetail2Section, .GeneralMedia2Section, .GeneralNoTP1Form, .BoxImageMap a.SeeFull, .BoxEditStateLoop .BtnClose, .BtnGeneralRStyle, .FloatRight { float:right; }
+.InputFileStyle { opacity:0; }
+.RichTextSection { font-size:12px; margin:4px 0 5px; width:540px; line-height:1.5em; }
+.InputCbxStyle, .InputRdoStyle { margin:4px 4px 0 0; }
+.LabelCStyle { color:#333 !important; }
+.LabelNPStyle { padding-top:0 !important; margin-top:-6px !important; }
+.BoldStyle { font-weight:bold; }
+.TotalText {text-align:center; font-weight:bold; font-size: 14px}
+.LoadingStyle { width:30px; height:30px; }
+p.genInfo {color: #FFFFFF;font-size: 0.75em;font-weight: bold;}
+/*- ] Common -*/
+.ErrorMsgStyle { color:#e50303; font-size:12px; padding:2px 0 5px 29px; background-position:left -370px; margin:5px 0 0 5px; }
+.SuccessMsgStyle { color:#0587BB; font-size:12px; padding:10px 10px; }
+
+/*-[- Content*/
+#boxSearch { display:none; }
+.LinkSearch { text-align:right; color:#0099CC; padding:0 4px; float:right; text-transform:none; }
+.BtnGeneralDStyle { color:#c0bebe !important; }
+.BtnCenterSection { text-align:center; padding:5px 0 0; }
+.BtnMSection { margin-right:5px; }
+.BtnGeneralStyle { font-weight:bold; cursor:pointer; overflow:visible; font-size:1em; }
+.BtnGeneralDStyle:hover { background:url(../images/bg_input1.jpg) left top repeat-x !important; }
+.GeneralForm .BtnGeneralStyle, .SidebarInSection .BtnGeneralStyle  { background:url(../images/bg_input1.jpg) left top repeat-x; border:1px solid #d1d0d0; padding:5px 10px; color:#333; }
+.SProduct1Form .BtnGeneralStyle { background:url(../images/bg_input1.jpg) left top repeat-x !important; border:1px solid #d1d0d0 !important; padding:5px 10px !important; color:#333; }
+.SidebarInSection .BtnGeneralStyle { width:97%; font-size:0.75em; position:absolute; bottom:-30px; left:1.5%; right:0; }
+.GeneralForm .BtnGeneralDStyle { color:#999999; }
+.GeneralForm .BtnGeneralStyle:hover, .SidebarInSection .BtnGeneralStyle:hover, .SProduct1Form .BtnGeneralStyle:hover, .SearchSection .BtnGeneralStyle:hover { background:url(../images/bg_input1hover.jpg) left top repeat-x !important; }
+.SearchSection .BtnGeneralStyle { padding:1px 9px; background:url(../images/bg_input.jpg) left top repeat-x; border:1px solid #0674b9; }
+a.BtnGeneralStyle { display:inline-block; }
+.CtnOneColSection .ContentSection { background:url(../images/bg_main.jpg) left top repeat-x; padding:1px 0 0; width:100%; }
+.MapSection img, .TextEditorForm img, .MediaPlayerSection img { width:100%; }
+.MapSection { position:absolute; bottom:0; right:0; }
+.LargeMapSection { width:488px !important; height:409px !important; }
+.SmallMapSection {    height: 126px !important;    width: 140px !important;}
+/* .SmallMapSection {    height: 23.8% !important;    width: 140px !important;} */
+.SearchSection { width:36%; }
+.GeneralSSection { width:100%; background: url(../images/bg_main.jpg) repeat-x scroll left top transparent; }
+.TSSection { float: right; width: 141px;  }
+.SearchInSection { border-right:1px solid #c6d5db; padding:8px 12px; }
+.BLineSection { border-bottom:1px solid #C6D5DB !important; }
+.GeneralSSection .SearchInSection { border:none; }
+.SearchSection .ComboTreeSection, .GeneralSSection .BoxSelect { margin-right:10px; }
+.GuideMapInSection { border-left:1px solid #fff; border-right:1px solid #c6d5db; padding:5px 22px 7px 0; }
+.TSInSection { border-left:1px solid #fff; padding:9px 0 0 12px; }
+.SearchSection, .GuideMapSection, .TSSection { font-size:0.75em; }
+.GuideMapSection label { margin:0 0 0 32px; }
+.GuideMapSection label, .TSSection label { font-weight:bold; }
+.GuideMapSection label input, .TSSection label input { margin:0 8px 0 0; vertical-align:middle; }
+.GuideMapSection .LabelStyle span { padding:6px 0 5px 24px; display:inline-block; vertical-align:middle; }
+.GuideMapSection .Label1Style span { background-position:-188px -215px; }
+.GuideMapSection .Label2Style span { background-position:-90px -215px; }
+.GuideMapSection .Label3Style span { background-position:0px -215px; }
+.MapRouteSection { position:relative; }
+.ShadowBgSection { position:absolute; z-index:1000; background:url(../images/bg_shadowMap.png) left top repeat-x;  height:4px; left:0px; right:0px; top:0px; }
+.OnStyle { background-position:right -116px; }
+.OffStyle { background-position:right -88px; }
+.CtnTwoColsSection { border-top:1px solid #c6d5db; padding:1px 0 2px; background:url(../images/bg_content2cols.jpg) 25% top repeat-y; position:relative; }
+.CtnTwoColsSection .SidebarSection { width:24.9%; }
+.SidebarInSection { position:relative; height:auto !important; }
+.CtnTwoColsSection .ContentSection { width:75%; font-size:0.75em; /*position:relative;*/ }
+.ReportTreeSection { padding:10px 5px 53px; overflow:hidden; overflow-x:auto; margin:0 2px; }
+.ReportTree2Section { padding-bottom:157px; }  
+.ReportCtnSection { padding:0 0 10px 1px; }
+.GeneralCntSection .Title2Style, .ReportCtnSection .Title2Style, .SearchSection .Title2Style, .GeneralForm .Title2Style { color:#04528e; font-size:1em; text-transform:uppercase; padding:8px 0 6px 13px; background:url(../images/bg_title2.jpg) left top repeat-x; border-bottom:1px solid #d5e0e4; }
+.GeneralForm .Title2Style { margin:0 0 10px 0; }
+.GeneralForm .Title2MTStyle { margin-top:10px; }
+.SidebarSection .Title2Style { color:#04528e; font-size:0.75em; text-transform:uppercase; padding:8px 0 6px 13px; background:url(../images/bg_title2.jpg) left top repeat-x; border-bottom:1px solid #d5e0e4; }
+.GeneralForm { padding:15px 0 15px; }
+.CTTT1Form, .Search1Form, .ImportExcel1Form { padding:0; }
+.GeneralForm .Dl3Style dt, .GeneralForm .Dl3Style dd { margin-bottom:15px; height:22px; }
+.GeneralForm .LabelStyle, .GeneralSSection .LabelStyle { padding:2px 0 0; text-align:right; color:#215ea2; margin:0 10px 0 0; display:block; }
+.GeneralSSection .Label2Style { padding-left:20px; }
+.GeneralSSection .ValueStyle { padding-top:2px; }
+.Report1Form .Dl3Style dt { width:16%; }
+.Report1Form .Dl3Style dd { width:33%; }
+.Report1Form .Dl4Style dt { width:16%; }
+.Report1Form .Dl4Style dd { width:80%; }
+.ReqiureStyle { color:#F00; }
+.GeneralForm .InputTextStyle, .GeneralSSection .InputTextStyle { border:1px solid #c4c4c4; padding:0 4px; height:20px; line-height:20px; margin-bottom:9px; }
+.Report1Form .InputText3Style { width:226px; }
+.ModuleList3Form .InputText3Style { width:226px; }
+.Report1Form .InputText1Style { width:216px; }
+.Report1Form .InputText2Style { width:194px; }
+.CalendarLink { margin:3px 0 0 6px; display:inline; }
+.GeneralForm .LabelTMStyle { margin-top:-6px; }
+.NoteCustomersStatus { position:absolute; bottom:10px; left:10%; width:80%; border:1px solid #ccc; padding:4px; background-color:#fff; z-index:100000; }
+.BtnGeneralMStyle { margin-left:8px; }
+.CloseStyle { position:absolute; right:4px; top:4px; }
+.ImportExcel1Form .Label1Style { width:60px; }
+.DownloadSFileStyle { padding:8px 0 15px 70px; }
+.DownloadSFileStyle a { color:#0099cc; background-position:0px -388px; padding:0 0 0 20px; }
+.DownloadSFile2Style a { padding:0 7px 0 20px; }
+.ImportExcel1Form .InputText1Style { width:288px; position:relative; z-index:2; }
+.UploadFileSection { width:373px; background-position:right -174px; position:relative; overflow:hidden; }
+.UploadFileSection .UploadFileStyle { cursor:pointer; position:absolute; right:0px; top:0px; z-index:1; -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)'; filter:alpha(opacity=0); -moz-opacity:0; opacity:0; font-size:1.1em; }
+.UploadMediaSection .UploadFileSection { width:139px; height:30px; background-position:right -777px; margin:0 11px 0 0; }
+.UploadMediaSection .UploadFileSection .UploadFileStyle { font-size:2.5em; }
+.GeneralSSection .BoxSelect1 .MySelectBoxClass, .GeneralDetail1Section .BoxSelect1 .MySelectBoxClass { width:156px; }
+.GeneralSSection .BoxSelect1 .CustomStyleSelectBoxInner, .GeneralDetail1Section .BoxSelect1 .CustomStyleSelectBoxInner { width:123px; }
+.GeneralSSection .InputText1Style { width:75px; }
+.GeneralSSection .InputText2Style { width:150px; margin-right:8px; }
+.GeneralSSection .CalendarLink { margin:2px 1px 0 7px; }
+.GeneralCntSection { border-top:1px solid #c6d5db; font-size:0.75em; padding:12px 0; }
+.GeneralCntNPSection { padding-top:0; }
+.CtnOneColSection .GeneralCntSection { border-top:none !important; }
+.Func1Section .DownloadSFileStyle { padding:8px 0 0 4px; }
+.Func1Section .BtnGeneralStyle { margin-right:8px; }
+.Func1Section .BoxSelect { margin:4px 10px 0 0; }
+.GeneralNoTPForm { padding:0 12px; }
+.GeneralNoTP1Form { padding:0 12px 12px 12px; }
+.GeneralNoPForm { padding:0; }
+.Func2Section .Label1Style { color:#333; padding:8px 0 0; }
+.Func2Section .Label1Style input { margin-right:8px; vertical-align:middle; }
+.GridSection { padding:12px; }
+.GridSection2 { width:60%; }
+.GeneralDetail1Section .Text1Style, .GeneralDetail2Section .Text1Style { font-weight:bold; padding:5px 20px 0 0; }
+.GeneralDetail1Section .BoxSelect1 { margin:0 6px 0 0; }
+.GeneralDetail1Section .AddLink { background-position:right -378px; width:22px; height:22px; }
+.GeneralDetailSection { padding:0 12px; }
+.GeneralDetail1Section { width:39%; }
+.GeneralDetail2Section { width:60%; }
+.CTTT1Form .Label1Style { width:90px; }
+.CTTT1Form .InputTextStyle, .ImportExcel1Form .InputText2Style { margin-bottom:10px; }
+.CTTT1Form .InputText1Style { width:216px; }
+.CTTT1Form .InputText2Style { width:195px; }
+.Search1Form { margin-bottom:10px; }
+.Search1Form .Label1Style { width:80px; }
+.Search1Form .Label2Style { width:90px; padding-left:5px; }
+.Search1Form .Label3Style { width:50px; }
+.Search1Form .Label4Style { width:125px; text-align:left; padding-left:15px; }
+.Search1Form .Label5Style { width:200px; text-align:left; padding-left:15px; }
+.Search1Form .Label6Style { width:88px; padding-left:5px; }
+.Search1Form .Label7Style { width:120px; padding-left:5px; }
+.Search1Form .ValueStyle { padding:2px 0 5px; }
+.Search1Form .Value1Style { width:196px; font-weight:bold; }
+.Search1Form .Value2Style { width:400px; }
+.Search1Form .Value3Style { width:80px; font-weight:bold; }
+.Search1Form .InputArea1Style { margin:5px 0 5px 16px; height:60px; width:530px; padding:3px; font-size:1em; }
+.LabelPLStyle { padding-left:3px !important; margin-right:0px !important; width:15px; }
+.Search1Form .InputText2Style, .ImportExcel1Form .InputText2Style { width:135px; }
+.Search1Form .InputText1Style { width:90px; }
+.Search1Form .InputText3Style { width:385px; }
+.Search1Form .InputText4Style { width:183px; }
+.Search1Form .InputText5Style { width:162px; }
+.Search1Form .InputText6Style { width:141px; }
+.Search1Form .BtnSearchStyle { margin-left:10px; }
+.Search1Form .BoxSelect1 .MySelectBoxClass { width:100px; }
+.Search1Form .BoxSelect1 .CustomStyleSelectBoxInner { width:67px; }
+.TextEditorSection { padding:12px; }
+.TextEdiorInSection { padding:3px 3px 8px; border:1px solid #c6d5dc; background-color:#e6e6e6; }
+.TextEditorSection .BtnRSection { padding-top:6px; }
+.TextEditorSection .Text1Style { text-transform:uppercase; font-size:1em; padding:5px 0; font-weight:bold; }
+.UploadMediaSection, .GeneralMediaSection { padding:19px 12px 12px; }
+.UploadMediaSection .Text1Style { font-weight:bold; padding:0 0 10px; }
+.UploadMediaSection .Text2Style { font-weight:bold; padding:5px 0 10px; }
+.TextEditorInSection { background-color:#e6e6e6; border:1px solid #c6d5db; padding:4px 4px 8px; }
+.SearchInSection .LabelStyle { display:inline; padding:3px 0 0 0; margin-bottom:9px;  }
+.SearchInSection .Label1Style { width:10%; }
+.SearchInSection .Label2Style { width:8%; }
+.SearchInSection .Label3Style { width:155px; padding-left:10px; text-align:left; margin-right:0; }
+.SearchInSection .Label4Style { width:200px; padding-left:10px; text-align:left; }
+.SearchInSection .Label5Style { width:17px; padding-left:0; text-align:left; margin-right:2px; }
+.SearchInSection .Label6Style { width:17px; padding-left:237px; text-align:left; margin-right:2px; }
+.SearchInSection .Label7Style { width:20px; text-align:center; margin:0; padding-right:5px; }
+.SearchInSection .Label8Style { width:13%; } 
+.SearchInSection .Label9Style { width:11.8%; } 
+.SearchInSection .Label10Style { width:9.1%; }
+.SearchInSection .Label11Style { width:4.6%; }
+.SearchInSection .Label12Style { width:17%; } 
+.SearchInSection .Label13Style { width:73px; } 
+.SearchInSection .Label14Style { width:109px; } 
+.PopupHContentMid .Label3Style { width:150px; }
+.SearchInSection .InputText1Style { width:133px; }
+.SearchInSection .InputText2Style { width:406px; }
+.SearchInSection .InputText3Style { width:136px; }
+.SearchInSection .InputText4Style { width:88px; margin-right:10px; }
+.SearchInSection .InputText5Style { width:119px; }
+.SearchInSection .InputText6Style { width:173px; }
+.SearchInSection .InputText7Style { width:544px; }
+.SearchInSection .InputText8Style { width:183px; }
+.Func1Section .InputText1Style { margin:4px 5px 0 0; }
+.BoxEditSection { position:absolute; top:15px; left:63px; border:1px solid #afc6ce; background:#fff; z-index:1000; display:block; }
+.BoxEditSection a.Item { display:block; padding:1px 5px 5px 0; }
+.BoxEditSection a.Item span { color:#333; padding:2px 10px 3px 21px; display:block; } 
+.BoxEditSection a.Item:hover { background:#a2d0e7; }
+.BoxEditSection a.Item1 span.Sprite1 { background-position:2px -936px; }
+.BoxEditSection a.Item2 span.Sprite1 { background-position:2px -971px; }
+.BoxEditSection a.Item3 span.Sprite1 { background-position:1px -1437px; }
+.BoxEditSection a.Item4 span.Sprite1 { background-position:2px -1149px; }
+.BoxEditSection a.Item5 span.Sprite1 { background-position:2px -1475px; }
+.BoxEditSection a.Item6 span.Sprite1 { background-position:2px -1235px; }
+.BoxEditSection a.Item7 span.Sprite1 { background-position:2px -1517px; }
+.BoxEditSection a.Item8 span.Sprite1 { background-position:2px -1323px; }
+.BoxEditSection a.Item9 span.Sprite1 { background-position:2px -1557px; }
+.BoxEditSection a.Item10 span.Sprite1 { background-position:2px -1594px; }
+.BoxEditSection a.Item11 span.Sprite1 { background-position:2px -1635px; }
+.BtnCSection { text-align:center; width:100%; }
+.BtnRSection { text-align:right; width:100%; }
+.BtnRSection .InputTextStyle, .BtnRSection .LabelStyle, .BtnRSection .BoxSelect  { margin-top:4px !important; }
+.BtnRSection .InputCbxStyle { margin-top:7px; }
+.BtnRSection .Label1Style { padding-left:48%; }
+.BtnRSection .InputCbx4Style { margin-left:52%; }
+.BtnRSection .InputCbx5Style { margin-left:29%; }
+.BtnRSection .InputCbx6Style { margin-left:59%; }
+/*Calendar LBH*/
+.CalendarYearBox { padding:0 34px; }
+.CalendarYearBox h4 { font-size:25px; color:#1b3a8a; text-align:center; padding:0 0 10px; }
+/*- [ Customize Grid -*/
+.GridSection .panel-header { display:none; }
+.GridSection .datagrid { font-size:1em; }
+.GridSection .datagrid-header, .GridSection .datagrid-header .datagrid-header-over { background:#56abc7; color:#fff; }
+.GridSection .datagrid-header .datagrid-htable { color:#fff; }
+.GridSection .datagrid-header .datagrid-htable .datagrid-cell { font-weight:bold; text-align:center !important; }
+.GridSection .datagrid-td-rownumber { background:#fff; color:#333; vertical-align:middle !important; }
+.GridSection .datagrid-header td, .GridSection .datagrid-body td, .GridSection .datagrid-footer td, .GridSection .panel-body, .GridSection .datagrid-pager { border-color:#C6D5DB; border-style:solid; }
+.GridSection .datagrid .datagrid-pager { background-color:#fff; }
+.GridSection .datagrid-header-rownumber { font-weight:bold; }
+.GridSection .datagrid-body .datagrid-cell { white-space:normal; }
+.GridSection .datagrid-body-inner .datagrid-row-detail { background:url(../images/icon_2.png) center 8px no-repeat; }
+.GridSection .datagrid-body-inner td { vertical-align:top; }
+/*- ] Customize Grid -*/
+.easyui-tree .Temp1Style { color:#0099cc; }
+.easyui-tree li span.Sprite1 { padding:3px 0 2px 20px; }
+.easyui-tree li span.Item1 { background-position:0 -1149px; }
+.easyui-tree li span.Item2 { background-position:0 -1188px; }
+.easyui-tree li span.Item3 { background-position:0 -1235px; }
+.easyui-tree li span.Item4 { background-position:0 -1279px; }
+.easyui-tree li span.Item5 { background-position:0 -1323px; }
+.easyui-tree li span.Item6 { background-position:0 -1364px; }
+.easyui-tree li span.Item7 { background-position:0 -1408px; }
+.easyui-tree li span.Item8 { background-position:0 -1408px; }
+/*- ] Customize Popup -*/
+
+/*- [ Hack Chrome -*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.BoxEditWorkDay { z-index:1000; }
+	.BoxEditState { width:266px; z-index:1000; position:absolute; top:-106px; left:-120px; background:url(../images/bg_calendarChangeTop.png) top left no-repeat; padding-top:4px; }
+	.AccOption .ChildMenuSectionList li > a.Item1 { padding:12px 0 0 150px; }
+ }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+/* .VinamilkTheme .combo {
+	width:225px !important; 
+	} */
+	
+	
+input.k-input.InputTextStyle.InputText1Style {
+	height: 15px !important;
+}	
+span.k-widget.k-combobox.k-header.InputTextStyle.InputText1Style span.k-select {
+	height: 10px;
+    min-height: 13px;
+}
+#gridSaleContainer .wtSpreader {
+	width: inherit !important;
+}
+#gridSaleContainer .htCore {
+	width: inherit !important;
+}
+#gridFreeContainer .wtSpreader {
+	width: inherit !important;
+}
+#gridFreeContainer .htCore {
+    width: inherit !important;
+}
+
+.handsontable .changeInput{color: #1E90FF;}
+
+.TableLevel .datagrid-header { background:#56abc7; color:#fff; }
+
+.divImageUploadFile {
+	float: left;
+	padding: 0 10px 10px 0;
+	width: 250px;
+	height: 50px;
+}
+.divImageUploadFile .imageUpdateShowIcon {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.divImageUploadFile .imageUpdateShowContent {
+	float: left;
+	padding-left: 10px;
+	width: 190px;
+	height: 50px;
+}
+
+/* upload image*/
+.addFileBtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-user-select: none;
+    
+    background-image: linear-gradient(to bottom, #0299cb 0px, #56bfe2 100%);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: transparent;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: solid;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 0px;
+    
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: transparent;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 0px;
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 0px;
+    
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+    padding: 6px 12px 6px 12px;
+   	padding: -1px 12px; 
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: white;
+}
+/*Them dialog insert feedback*/
+.title-lable {height:auto; padding-right:10px; font-weight:700; font-size: 13px;}
+.title-lable-voffice {height:auto; padding-right:10px; font-size: 14px; color: rgb(0, 102, 0);}
+.text-align-center-header {text-align: center; font-weight: bold;}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+    <style>
+        .z-tablechildren{
+        padding:0px 10px 10px 10px;
+        
+        }
+        .z-textbox{
+        width: 100%;
+        }
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        .z-hlayout-inner{
+        margin-left: 10px;   
+        }
+    </style>
+    <window title="Thiết lập mật khẩu" border="normal" closable="true" width="30%" sclass="window" >
+        <tablelayout columns="2" width="100%">
+            <tablechildren>
+                <hbox>
+                    <label value="Mật khẩu hiện tại"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+                
+            <tablechildren>
+                <textbox />
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Mật khẩu mới"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+                
+            <tablechildren>
+                <textbox />
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Xác nhận mật khẩu mới"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+                
+            </tablechildren>
+                
+            <tablechildren>
+                <textbox />
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Mã captcha"/>
+                    <label value="*" style="color: red"/>
+                </hbox>
+            </tablechildren>
+                
+            <tablechildren>
+                <textbox />
+            </tablechildren>
+            
+            <tablechildren>
+                
+            </tablechildren>
+                
+            <tablechildren>
+                <captcha id="cpa" length="5" width="200px" height="50px"/>
+            </tablechildren>
+        </tablelayout>
+        
+        <separator height="20px"/>
+        
+        <hlayout>
+            <label value="Mật khẩu có tối thiểu 8 ký tự, kết hợp giữa chữ cái (hoa và thường), chữ số và các ký tự đặc biệt" style="color: red; font-style: italic;"/>
+        </hlayout>
+        
+        
+        <separator height="10px"/>
+        <div align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Ghi lại" style="margin-right:10px;"  image="/images/icon/save-file-option.png" onClick="" />
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png" onClick=""/>
+            </hbox>
+        </div>
+        
+        
+    </window>
+</zk>

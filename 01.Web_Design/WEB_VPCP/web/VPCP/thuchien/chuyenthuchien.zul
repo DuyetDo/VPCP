@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-chosenbox-input{
+        width : 100%;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        }
+        .z-tablechildren{
+        padding: 5px 10px;
+        }
+    </style>
+    <window title = "Chuyển thực hiện" border = "normal" width = "55%"> 
+        <tablelayout columns = "2" width = "100%">
+            <tablechildren >
+                <label value = "Đơn vị chủ trì "/>
+                <label value = "*" style = "color:red"/>
+            </tablechildren>
+            
+            <tablechildren width = "80%">
+                <chosenbox></chosenbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value  = "Nội dung"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox rows = "2"> </textbox>
+            </tablechildren>
+           
+            <tablechildren></tablechildren>
+            <tablechildren>
+                <div align="center">
+                    <hbox align="center">
+                        <button sclass="bt" label="Chuyển xử lý" style="margin-right:10px;"  image="/images/icon/save-file-option.png" onClick="" />
+                        <button sclass="bt" label="Đóng" image="/images/icon/delete1.png" onClick=""/>
+                    </hbox>
+                </div>
+            </tablechildren>
+
+           
+        </tablelayout>
+    </window>
+    
+</zk>

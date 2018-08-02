@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-image{
+        width: 15px;
+        }
+    </style>
+    <window border="none" width="100%" apply="com.viettel.voffice.controller.MailController">
+        <grid mold="paging" pageSize="2">
+            <columns>
+                <column width="5%"></column>
+                <column label="Người gửi" width="20%"></column>
+                <column label="Tiêu đề" width="40%"></column>
+                <column label="Thời gian" width="30%"></column>
+                <column label="" width="5%"></column>   
+            </columns>
+            <rows>
+                <row>
+                    <hbox>
+                        <image src="/images/icon/email.png"/>
+                        <image src="/images/icon/paperclip.png"/>
+                    </hbox>
+                    <a href="" id="btn1"> 
+                        <label value="Nguyễn Văn A"/>
+                    </a>
+                    <a id="btn2">
+                     <label value="Thông báo lịch làm việc"/>
+                    </a>
+                    <a id="btn3">
+                     <label value="Thứ hai, ngày 10/5/2018 10:00"/>
+                    </a>
+                     <image src="/images/icon/star.png"/>
+                     
+                </row>               
+                
+                <row>
+                    <hbox>
+                        <image src="/images/icon/email1.png"/>
+                        <image src="/images/icon/paperclip.png"/>
+                    </hbox>
+                     <label value="Nguyễn Văn A"/>
+                     <label value="Thông báo lịch làm việc"/>
+                     <label value="Thứ hai, ngày 10/5/2018 10:00"/>
+                     <image src="/images/icon/star1.png"/>
+                     
+                </row>   
+                
+                <row>
+                    <hbox>
+                        <image src="/images/icon/email1.png"/>
+                        <image src="/images/icon/paperclip.png"/>
+                    </hbox>
+                     <label value="Nguyễn Văn A"/>
+                     <label value="Thông báo lịch làm việc"/>
+                     <label value="Thứ hai, ngày 10/5/2018 10:00"/>
+                     <image src="/images/icon/star1.png"/>
+                     
+                </row> 
+            </rows>
+        </grid>
+    </window>
+</zk>

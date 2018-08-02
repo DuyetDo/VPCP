@@ -1,0 +1,1352 @@
+@charset "utf-8";
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+body {
+    padding: 0px;
+}
+
+.projectName {
+    background-color: #2d3e50;
+    height: 38px;
+}
+
+.loginBox {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(248, 250, 247);
+    border-radius: 10px;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgba(0, 117, 147, 0.4);
+}
+
+.loginBox table {
+    width: 100%;
+}
+
+.loginBox span {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.headerTab {
+    display: block;
+    height: 38px;
+}
+
+.headerTab li {
+    display: inline;
+    border: 0px none;
+    border-bottom-width: 0;
+    margin: 0 2px;
+    padding-bottom: 1px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.headerTab ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4584d3;
+    height: 100%;
+    /*    border-top: 1px solid rgb(82,132,188);
+border-left: 1px solid rgb(82,132,188);
+border-right: 1px solid rgb(82,132,188);    */
+}
+
+.headerTab li:hover {
+    display: inline;
+    background-color: bisque;
+    border-bottom-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: -6px;
+    border-bottom-right-radius: -6px;
+    padding: 7px 1.2em 5px 1.2em;
+}
+
+.headerTab .selected {
+    background: #eff6ff;
+    border-bottom-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: -6px;
+    border-bottom-right-radius: -6px;
+    padding: 7px 1.2em 5px 1.2em;
+    color: #365780;
+}
+
+.tabContent {
+    background: linear-gradient(#eff6ff, #c9dff7) repeat scroll 0 0
+        rgba(0, 0, 0, 0);
+    padding: 2px;
+    overflow: auto;
+    display: flex;
+    min-width: 320px;
+}
+
+.tabContent div.group {
+    height: 70px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    margin: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 112px !important;
+    width: auto;
+}
+
+.tabContent div.group:hover {
+    overflow: visible;
+}
+
+.tabContent div.group .item {
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+    text-align: center;
+    vertical-align: top;
+    height: 80px;
+    color: rgb(62, 106, 170);
+    font-size: 11px;
+}
+
+.tabContent div.group .item:hover {
+    background-color: bisque;
+}
+
+.tabContent div.group img {
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    border: 4px double #ccc;
+    border-radius: 35px;
+    padding: 3px;
+    background-color: white;
+}
+
+.tabContent div.group img:hover {
+    border: 4px solid #FEBA79;
+    background-color: #FEF26C;
+}
+
+.tabContent div.group img.selected {
+    border: 4px solid #FEBA79;
+    background-color: #FEF26C;
+}
+
+.tabContent div.group .title {
+    background-color: rgb(194, 217, 241);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 20px;
+    text-align: center;
+    vertical-align: text-bottom;
+    color: rgb(62, 106, 170);
+    font-size: 11px;
+    font-family: Arial,  sans-serif;
+}
+
+.tabContent div.group .function {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 14px;
+    text-align: center;
+    vertical-align: text-bottom;
+    color: rgb(62, 106, 170);
+    font-size: 11px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+/*.tabContent div.group .countValue{
+    position:absolute;     This breaks the div from the normal HTML document. 
+    top: 0px;
+    right:20px;
+    padding:1px 2px 1px 2px;
+    background-color:red;  you could use a background image if you'd like as well 
+    color:white;
+    font-weight:bold;
+    font-size:0.55em;
+
+     The following is CSS3, but isn't crucial for this technique to work. 
+     Keep in mind that if a browser doesn't support CSS3, it's fine! They just won't have rounded borders and won't have a box shadow effect. 
+     You can always use a background image to produce the same effect if you want to, and you can use both together so browsers without CSS3 still have the rounded/shadow look. 
+    border-radius:30px;
+    box-shadow:1px 1px 1px gray;
+    width: 1vw;
+    height: 1vw;
+}*/
+.tabContent div.group span {
+    /*display: inline-block;*/
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    vertical-align: text-top;
+    /*margin-left: 10px;*/
+    padding: 0 5px;
+    line-height: 16px;
+    font-size: 11px;
+    color: white;
+    text-shadow: 0 1px #902a27;
+    background: #e93631;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #f65d5f, #e93631);
+    background-image: -moz-linear-gradient(top, #f65d5f, #e93631);
+    background-image: -o-linear-gradient(top, #f65d5f, #e93631);
+    background-image: linear-gradient(to bottom, #f65d5f, #e93631);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px
+        rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px
+        rgba(0, 0, 0, 0.2);
+}
+
+.clear {
+    clear: both;
+}
+
+.toolBar {
+    height: 34px;
+    background-color: #93BDEF;
+    /*    border-top: 1px solid white;*/
+    /*
+top:152px;
+position: fixed;
+width:100%;
+z-index: 1000;
+    */
+}
+
+.toolBar .img-cal {
+    background-color: #2b6fc2;
+    border-radius: 4px;
+    height: 26px;
+    margin: 4px 2px 2px 2px;
+    padding: 1px;
+    width: 26px;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+}
+
+.btn-toolbar .z-button {
+	background: #2b6fc2;
+	border-radius: 4px;
+    padding: 1px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: arial;
+}
+
+.btn-toolbar .z-button:HOVER {
+	background: #2b6fc2;
+    color: #F90;
+}
+
+.btn-toolbar .z-button.btn-calendar:FOCUS {
+	background: #F08080;
+}
+.toolBar input.searchFullText:FOCUS{
+      border-radius:7px;
+    margin: 0 10px 2px -1px;
+} 
+.toolBar .toolBar-contain {
+    background-color: white;
+    width: 250px;
+    height: 24px;
+    margin-top: 5px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    float: right;
+    
+          
+}
+
+.toolBar img {
+    width: 24px;
+    height: 27px;
+    /*    margin: 4px;*/
+    cursor: pointer;
+    /*    border:1px solid white;float: left;*/
+}
+
+.toolBar .searchImg {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 4px 2px 0px 4px;
+}
+
+.toolBar img:hover {
+    /*    background-color: #1469AB;
+border:1px solid brown;*/
+
+}
+
+.toolBar button {
+    /*color: white;
+float: left;
+height: 28px;
+margin: 2px;
+margin-top: 3px;
+text-align: center;
+background-color: #2b6fc2;
+border-radius: 4px;
+font-weight: bold;
+font-size: 11px;
+font-family: arial;*/
+
+}
+
+.toolBar button:hover {
+    color: #F90;
+    background-color: #1469AB;
+    border: 1px solid brown;
+}
+
+/* Anh huong den toolbar cua phieu trinh, lam lech giao dien
+*/
+.toolBar input.searchFullText {
+    float: left;
+    border: none;
+    margin: 0 2px 2px 7px;
+    font-family: inherit;
+    width: 205px;
+}
+
+.toolBar .toolbarButton {
+    color: white;
+    border-left: 1px solid whitesmoke;
+    float: left;
+    height: 24px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: dodgerblue;
+}
+
+.toolBar .searchButton {
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/icon/search.jpg);
+}
+
+.toolBar .toolbarButton:hover {
+    color: #F90;
+}
+
+.toolbarButtonSelected {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid white;
+    float: left;
+    background-color: #FF9900;
+}
+
+.toolBar .titleForm {
+    font-weight: bold;
+    padding-left: 4px;
+    padding-top: 4px;
+    margin-top: 10px;
+    color: #fff;
+    /*    position: fixed;*/
+}
+
+#vt-home {
+    float: right;
+    padding-left: 26px;
+    background: url(../img/icon/home.gif) no-repeat 0% 0%;
+}
+
+#vt-home:hover {
+    color: #A1D072;
+}
+
+#vt_project {
+    font-weight: bold;
+    font-size: 15pt;
+    color: white;
+    float: left;
+    padding: 3px;
+}
+
+#vt_profile {
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    color: white;
+    padding-top: 18px;
+    font-family: Arial, sans-serif;
+    /*    cursor: pointer;*/
+}
+
+#vt_profile_authority {
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    color: #F5EA95;
+    padding-top: 18px;
+    font-family: Arial, sans-serif;
+    /*    cursor: pointer;*/
+    margin-left: 5px;
+}
+
+#vt_profile:hover {
+    /*    color: #A1D072;*/
+
+}
+
+#vt-changePwd {
+    float: right;
+    padding-left: 21px;
+    background: url(../img/icon/top_menu_pwd.gif) no-repeat 0% 0%;
+}
+
+#vt-help {
+    float: right;
+    padding-left: 21px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: arial,sans-serif;
+    font-size: 11px;
+    background: url(../img/icon/help.png ) no-repeat 0% 0%;
+}
+
+#vt-help:hover {
+    color: #A1D072;
+}
+
+#vt-keyboard {
+    float: right;
+    padding-left: 21px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: arial,sans-serif;
+    font-size: 11px;
+    background: url(../img/icon/keyboard.ico ) no-repeat 0% 0%;
+}
+
+#vt_avatar {
+	float: right;
+	padding-left: 5px;
+	cursor: pointer;
+	margin: 0px 3px 0 0;
+}
+
+#vt_avatar img {
+	/*    background-color: #032557;
+border:1px solid #fd971f;*/
+	margin-top: 1px;
+	width: 36px;
+	height: 36px;
+	border-radius: 36px;
+}
+
+#vt-keyboard:hover {
+    color: #A1D072;
+}
+
+#vt-logout {
+    float: right;
+    padding-left: 25px;
+    margin-right: 10px;
+    background: url(../img/icon/home.gif ) no-repeat 0% 0%;
+}
+
+#vt-logout:hover {
+    color: #A1D072;
+}
+
+.searchTable {
+    width: 80%;
+}
+
+.searchTable input {
+    width: 90%;
+}
+
+.searchTable select {
+    width: 90%;
+}
+
+.searchTable td {
+    text-align: left;
+}
+
+.viewTable, div.viewTable>table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.viewTable td, div.viewTable>table td {
+    padding: 10px 5px 10px 5px;
+    height: 16px;
+    border: 1px solid #d0d0d0;
+}
+
+.createTable input {
+    width: 90%;
+}
+
+.createTable select {
+    width: 90%;
+}
+
+.attachBtn td {
+    padding: 0px;
+    height: 0px;
+}
+
+.contentDiv {
+    margin: 6px;
+}
+
+.contentDivCreate {
+    margin: 0px auto;
+    width: 100%;
+}
+
+.notify {
+    padding: 5px;
+    color: red;
+    /* float: right; cho notify ra giua cho re nhin*/
+    margin-top: 6px;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 35%;
+    text-align: right;
+}
+
+.title {
+    padding: 5px;
+    color: red;
+    float: left;
+    margin-top: 6px;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 35%;
+    text-align: left;
+}
+
+.seperateDiv {
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    background-color: blanchedalmond;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+/*#zk_err{
+    display: none !important;
+}*/
+
+/*
+ * Style for notify
+ *
+*/
+.notifyItem {
+    border: 1px solid rgb(192, 217, 237);
+    padding: 5px;
+    background-color: rgba(137, 200, 248, 0.2);
+    margin-bottom: 5px;
+    clear: both;
+    min-height: 60px;
+    font-family: Arial,  sans-serif;
+    /* cursor: pointer; */ /*quangvv4: b? d?ng tr? chu?t khi click v�o notify kh�ng c� link*/ 
+    word-wrap: break-word;
+    border-radius: 3px;
+}
+
+.notifyItem input[type=textbox] {
+    border: 1px solid #00aeef;
+    height: 25px;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.notifyItem input[type=button] {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.notifyItem img {
+    border: 1px solid goldenrod;
+    border-radius: 60px;
+    background-color: #1469AB;
+    width: 60px;
+    height: 60px;
+}
+/*#zk_err{
+    display: none !important;
+}*/
+
+/*
+ * Style for notify
+ *
+*/
+.notifyItemAlert {
+    clear: both;
+    min-height: 15px;
+    font-family: Arial,  sans-serif;
+    cursor: pointer;
+    word-wrap: break-word;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: square outside none;
+    margin-bottom: 5px;
+}
+
+.notifyItemAlert input[type=textbox] {
+    height: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.headlineDiv {
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    min-height: 60px;
+    border: 1px solid rgb(192, 217, 237);
+    padding: 5px;
+    color: rgba(211, 17, 18, 1);
+    font-size: 18px;
+    font-family: Arial,  sans-serif;
+    /*    font-style: italic;*/
+    cursor: pointer;
+    background-color: rgb(214, 227, 244);
+    min-height: 100px;
+    border-radius: 3px;
+}
+
+.headlineItem {
+    margin-right: 80px;
+    color: rgba(24, 90, 168, 1);
+    font-style: normal;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.commentItems {
+    background-color: azure;
+    padding: 5px;
+}
+
+.titleItems {
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(192, 12, 12);
+}
+
+.contentItems {
+    padding-left: 80px;
+    padding-top: 5px;
+    font-size: 11px;
+    color: rgb(0, 54, 112);
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.5;
+}
+
+.commentItem {
+    clear: both;
+}
+
+.signOfNotifyItem {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    border-radius: 3px;
+}
+
+.titleItem {
+    font-weight: bold;
+}
+
+/*
+End of style for notify
+*/
+
+/*
+ -------------------   Style for calendar ------------------------------
+*/
+.monthHeader td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #1469AB;
+    font-size: 12px;
+    color: white;
+    font-family: arial
+}
+
+.monthContent td {
+    vertical-align: top;
+    height: 120px;
+}
+
+td.noActive {
+    background-color: rgba(157, 192, 219, 0.5);
+}
+
+.divCalendarMonth {
+    border: 1px solid brown;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(118, 104, 151);
+    padding: 3px 10px;
+    margin-top: 2px;
+    font: bold 10px Arial, sans-serif;
+    cursor: pointer;
+}
+
+.divCalendarMonthReject {
+    border: 1px solid rgb(95, 95, 37);
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(153, 151, 94);
+    padding: 3px 10px;
+    margin-top: 2px;
+    font: bold 10px Arial, sans-serif;
+    cursor: pointer;
+}
+
+.divCalendarMonthApprove {
+    border: 1px solid #8B3392;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(216, 89, 155);
+    padding: 3px 10px;
+    margin-top: 2px;
+    font: bold 10px Arial, sans-serif;
+    cursor: pointer;
+}
+
+.timeLineDiv {
+    height: 41px;
+    text-align: right;
+    border-bottom: 1px solid #cccccc;
+    padding-right: 2px;
+}
+
+.monthTable {
+    width: 100%;
+    padding: 0px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-image: url('/voffice/Share/img/background/calendar.jpg')
+}
+
+.monthTable th {
+    margin: 0px;
+    font-weight: bold;
+    padding: 2px 5px;
+    color: #3172D4;
+    background-color: #93B8DA;
+    border-bottom: 1px solid #B0B0B0;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.monthTable td {
+    border: 1px solid #cccccc;
+    vertical-align: top;
+    padding: 3px;
+    word-wrap: break-word;
+}
+
+.weekTable {
+    width: 100%;
+    padding: 0px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /*    background-image: url('/voffice/Share/img/background/calendar.jpg')*/
+}
+
+.weekTable td {
+    border: 1px solid #cccccc;
+}
+
+.inActiveTime td {
+    height: 20px;
+    background-color: #1469AB;
+}
+
+.weekTable th {
+    border: 1px solid #cccccc;
+}
+
+.weekContainerDiv {
+    display: block;
+    margin-right: 10px;
+}
+
+.divCalendarWeek {
+    border: 1px solid rgb(92, 57, 99);
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(118, 104, 151);
+    width: 90%;
+    position: absolute;
+    font: bold 10px Arial, sans-serif;
+    box-shadow: 0px 2px 2px 0px #6C5F6F;
+    cursor: pointer;
+    padding-left: 3px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.divCalendarWeek:hover {
+    z-index: 1;
+    min-width: 100px !important;
+    min-height: 30px !important;
+    background-color: #00aeef;
+}
+
+.divCalendarWeekApprove {
+    border: 1px solid #8B3392;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(216, 89, 155);
+    width: 90%;
+    position: absolute;
+    font: bold 10px Arial, sans-serif;
+    box-shadow: 0px 2px 2px 0px #f3a8f1;
+    cursor: pointer;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.divCalendarWeekApprove:hover {
+    z-index: 1;
+    min-width: 100px !important;
+    min-height: 30px !important;
+    background-color: #00aeef;
+}
+
+.divCalendarWeekReject {
+    border: 1px solid rgb(95, 95, 37);
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(153, 151, 94);
+    width: 90%;
+    position: absolute;
+    font: bold 10px Arial, sans-serif;
+    box-shadow: 0px 2px 2px 0px #665A48;
+    cursor: pointer;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.divCalendarWeekReject:hover {
+    z-index: 1;
+    min-width: 100px !important;
+    min-height: 30px !important;
+    background-color: #00aeef;
+}
+
+.oddDiv {
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.oddDiv:hover {
+    background-color: #FF9900;
+}
+
+.evenDiv {
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.evenDiv:hover {
+    background-color: #FF9900;
+}
+
+.lstTable tr.headerRow {
+    background: url("../images/tabEnabled.png") repeat-x scroll 0 0
+        transparent;
+    background-color: #a8e289;
+    color: white;
+}
+
+.headerRowViewPage th {
+    margin: 0px;
+    font-weight: bold;
+    padding: 2px 5px;
+    color: #d43132;
+    background-color: #93B8DA;
+    border-bottom: 1px solid #B0B0B0;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.lstTable tr {
+    height: 25px;
+}
+
+.lstTable td.dayOfCalendar {
+    background-color: #1469AB;
+    color: white;
+}
+
+.lstTable th {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    color: #15428b;
+}
+
+.lstTable {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    table-layout: fixed;
+    /*    background-image: url('/voffice/Share/img/background/calendar.jpg')        */
+}
+
+.lstTable td {
+    border: 1px solid #cccccc;
+    vertical-align: middle;
+    padding: 3px 5px;
+    word-wrap: break-word;
+    color: #000;
+}
+
+/*
+ End of calendar style
+*/
+
+/* 
+    form style
+*/
+.label-required {
+    color: red;
+}
+
+/* 
+    end of form style
+*/
+
+/* Note style
+*/
+.note {
+    position: absolute;
+    background-color: yellow;
+    border: 1px solid #F90;
+    z-index: 1;
+}
+
+.viewTableAtt {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.viewTableAtt .att-header {
+    background-color: #93bdef;
+}
+
+.viewTableAtt .att-header span {
+    font-weight: bold;
+}
+
+.viewTableAtt .att-cell {
+    border: 1px solid #d0d0d0;
+    padding: 5px;
+    vertical-align: top;
+}
+/*hoangnv*/
+tr.z-listitem, th, td.z-listcell, td.z-row-inner, tr.z-row {
+    border: 1px solid #C5C5C5;
+    border-collapse: collapse;
+    border-color: transparent #E0E0E0 #E0E0E0 transparent;
+}
+
+div.z-listbox-header th.z-listheader {
+    text-align: center;
+    background-color: #93BDEF;
+    border-left: 0px;
+}
+
+div.excel-file {
+    background-image: url("../img/png/file-excel.png");
+    width: 24px;
+    height: 24px;
+}
+
+div.pdf-file {
+    background-image: url("../img/png/file-pdf.png");
+    width: 24px;
+    height: 24px;
+}
+
+div.pdf-file .mnuEdit
+{
+    display: none;
+}
+
+div.word-file {
+    background-image: url("../img/png/file-word.png");
+    width: 24px;
+    height: 24px;
+}
+
+div.xml-file {
+    background-image: url("../img/png/file-xml.png");
+    width: 24px;
+    height: 24px;
+}
+
+button.z-button-os {
+    background-color: #2B6FC2;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+    text-decoration: none;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.35);
+    transition: all 0.15s linear 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0.7em;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+div.z-listbox-body {
+    width: 100% !important;
+}
+
+div.z-listbox-header {
+    width: 100% !important;
+}
+
+.spanTemp:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.vt-language {
+    float: right;
+    margin-top: -5px;
+    /*    margin-right: 3px;*/
+}
+
+.bodyContent {
+    width: 100%;
+    height: 100%;
+    /*padding-top:185px*/
+}
+
+.topDiv {
+    width: 100%;
+    border: 0px solid none;
+    /*position: fixed;
+top: 0;
+z-index: 10000;
+    */
+}
+
+.userPopup, .languagePopup {
+    z-index: 10001 !important;
+}
+
+.imgLanguage {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/*
+.z-window-modal, .z-messagebox-window {
+    z-index: 10001 !important;
+}
+*/
+.z-datebox-shadow {
+    z-index: 10002 !important;
+}
+
+.z-window-content {
+    padding: 0px;
+}
+/* Style window popup*/
+.z-window-close {
+
+}
+
+.z-window-modal.z-window-shadow, .z-window-highlighted.z-window-shadow {
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #2b6fc2 inset, 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.z-window-header, .z-window-header-noborder {
+    padding-top: 1px;
+    padding-right: -1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    margin-right: -4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.z-window {
+    background: #2b6fc2 none repeat scroll 0 0;
+    border: 0px;
+}
+
+.z-window .z-caption-content {
+    line-height: 18px;
+}
+
+.z-window-close {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.z-window-icon {
+    border-radius: 4px;
+    color: #636363;
+    cursor: pointer;
+    float: right;
+    margin-right: 4px;
+    height: 18px;
+    width: 20px;
+}
+
+/*
+.z-button {
+    height: 28px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 3px 8px;
+}
+*/
+
+.vt_user_info {
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 16px
+}
+
+.z-chosenbox-item {
+    height: 25px;
+}
+
+.z-chosenbox-item .z-chosenbox-item-content {
+    height: 25px;
+    margin-top: 3px;
+}
+
+.z-chosenbox-item .z-chosenbox-button {
+    top: 5px;
+}
+
+.imgWorkingtime {
+    /*    margin-top: 2px !important;*/
+
+}
+
+.homeIndex, .logout {
+    float: right;
+    padding-top: 14px;
+}
+
+.homeIndex span, .logout span {
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    cursor: pointer;
+    /*    font-family: inherit;*/
+}
+
+.homeIndex img, .logout img {
+    height: 16px;
+    width: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.td-table-content-doc-view {
+    border: solid 1px #cfcfcf;
+}
+
+.ffolderContent {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    min-height: 400px;
+}
+
+.folderStyle-1 img {
+    width: 24px;
+}
+
+.index-logo {
+    height: 30px;
+}
+
+.z-select {
+    min-height: 24px;
+    border-radius: 3px;
+}
+/**Dung cho thong bao dialog hien thi loi**/
+.errorBox
+{
+	/*background:url(../img/bg-error.jpg) no-repeat;*/
+	background:url(../img/bg-warning.png) no-repeat;
+	width:460px; height:269px;
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	box-shadow: 0 1px 4px #626262;
+}
+.errorInfo {
+    left: 195px;
+    position: absolute;
+    top: 120px;
+    width: 220px;
+}
+.errorInfo strong
+{
+	color:#d63c00;
+}
+
+.backhome a {
+    background: #3b89b7 none repeat scroll 0 0;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.backhome {
+    bottom: -20px;
+    position: relative;
+    text-align: right;
+}
+
+@media (min-width: 375px) and (max-width: 643px){
+	.form-search .z-select-3  {
+		width: 65%;
+	}
+}
+@media (min-width: 709px){
+	.form-search .z-select-3  {
+		width: 250px;
+	}
+}
+
+@media (max-width: 708px) {
+    .previewCalendar{
+         margin-top: 56px;
+    }
+    span.input-icon {
+    display: inline-block;
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 5px;
+    }
+                
+	
+}
+@media (max-width: 374px) {
+	.form-search .z-select-3  {
+		width: 120px;
+	}
+}
+@media (max-width: 394px) {
+	.previewCalendar{
+         margin-top: 80px;
+    }
+	.btn-position-mobile{
+		margin-left: 124px !important;
+        margin-top: 5px;
+	}
+}
+@media (max-width: 400px) {
+	.DnnModule-LICHCONGTAC_TD_LCTT{
+		margin-top:30px;
+	}
+}
+@media (max-width: 1054px) {
+	.positon-mobile{
+		margin-top:36px;
+	}
+	.mt10{margin-top:10px;}
+}
+@media (min-width: 661px) {
+	.z-select-4{
+		width:250px;
+	}
+	.z-select-5{
+		width:150px;
+	}
+}
+@media (max-width: 660px) {
+	.z-select-4, .z-select-5{
+		width:60%;
+	}
+}
+@media (max-width: 626px) {
+	.positon-mobile {
+    margin-top: 75px;
+   }
+}
+@media (max-width: 708px) {
+	.position-mobile-2 {
+		margin-top: 22px;
+	   }
+   .mt35{margin-top: 35px;}
+}
+@media (max-width: 375px) {
+	.position-mobile-2 {
+		margin-top: 50px;
+	   }
+}

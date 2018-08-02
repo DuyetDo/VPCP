@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+   
+    <vlayout sclass="page-content" spacing="20px">
+ 
+	    			
+        <include src="/VPCP/content/timkiembaocaotheodoi.zul" hflex="5"/>
+        <groupbox >
+	    			
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                <caption  label="Nhiệm vụ,công việc Bộ, địa phương trả lại ">
+                    <label style="color:red;">1</label>
+                </caption>
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column label="STT" width="5%"/>
+                    
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Trích yếu" />
+                            <column label="Chuyên viên soạn thảo" width="11%"/>
+                            <column label="ĐV theo dõi" />
+                            <column label="Chuyên viên theo dõi" width="11%" />
+                            <column label="Nội dung theo dõi" />
+                            <column label="Cơ quan được giao" />
+                            <column label="Lý do"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="1"/>
+                                <a href="" id="detail1">value</a>   
+                                <label value="1"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+                   
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+        <groupbox>
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                <caption  label="Nhiệm vụ,công việc đơn vị theo dõi trả lại, thu hồi">
+                    <label style="color:red;">1</label>
+                </caption>
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns>
+                            <column label="STT" width="5%"/>
+                    
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Trích yếu" />
+                            <column label="Chuyên viên soạn thảo" width="11%"/>
+                            <column label="ĐV theo dõi" />
+                            <column label="Chuyên viên theo dõi" width="11%" />
+                            <column label="Nội dung theo dõi" />
+                            <column label="Cơ quan được giao" />
+                            <column label="Trạng thái"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="on huong huong huong"/>
+                                <a href="" id="detail2">value</a>   
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+        
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel> 
+                  
+        </groupbox>
+        <groupbox>
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                <caption  label="Nội dung theo dõi đã nhập">
+                    <label style="color:red;">1</label>
+                </caption>
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns>
+                            <column label="STT" width="5%"/>
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Trích yếu" />
+                            <column label="Chuyên viên soạn thảo" width="11%"/>
+                            <column label="ĐV theo dõi" />
+                            <column label="Chuyên viên theo dõi" width="11%" />
+                            <column label="Nội dung theo dõi" />
+                            <column label="Cơ quan được giao" />
+                            <column label="Trạng thái"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="on huong huong huong"/>
+                                <a href="" id="detail3">value</a>   
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+        
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+                  
+    </vlayout>
+</zk>

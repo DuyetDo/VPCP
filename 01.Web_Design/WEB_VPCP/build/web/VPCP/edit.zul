@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+     <window id="editWindow"  title="FORM"  width="900px" border="normal" apply="">
+     
+         <vbox style="margin-top:10px;">
+           <hbox style="margin-left:340px;" align="center">
+               ID:
+              <textbox id="idTxt" value="${stuSelected.id}" disabled="true"/>
+           </hbox> 
+           <hbox style="margin-left:340px;" align="center" >
+               NAME:
+             <textbox id="nameTxt" value="${stuSelected.username}"/>
+           </hbox> <!--
+-->           <hbox style="margin-left:340px;" align="center" >
+               AGE:
+              <textbox id="ageTxt" value="${stuSelected.password}"/>
+           </hbox> <!--
+            <hbox style="margin-left:340px;" align="center"  >
+               ADDRESS:
+               <textbox id="addressTxt" style="margin-left:6px; width:150px;"/>
+           </hbox>-->
+            <hbox style="margin-left:410px;" align="center"  >
+              
+               <button id="updateBtn" label="Edit" />
+           </hbox>
+         </vbox>
+       
+     </window>
+    
+</zk>

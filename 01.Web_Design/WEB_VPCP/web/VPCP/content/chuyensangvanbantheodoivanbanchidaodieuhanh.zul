@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window sclass="window" title="Chuyển văn bản sang theo dõi Văn bản chỉ đạo điều hành" border="normal" width="85%" closable="true">
+        <?link href="/VPCP/style/fonts.css" rel="stylesheet" type="text/css"?>
+        <?link href="/VPCP/style/style.css" rel="stylesheet" type="text/css"?>
+        <style>
+            .z-caption-content{
+            font-weight: bold;
+            font-size: 13px;
+            }
+            .label{
+            font-weight:bold !important;
+            font-size: 13px;
+            color:#161819;
+            }
+            .z-label{
+            color:#161819;
+            font-size:13px;
+            }
+            .z-tablechildren{
+            padding:5px 10px;
+            }
+            .z-textbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-datebox{
+            display: flex;
+            }
+        
+            .z-chosenbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox{
+            display: flex;
+            }
+        
+            .z-datebox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+            }
+        </style>
+        <groupbox>
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption label="Thông tin văn bản phát hành" sclass=""></caption>
+                <panelchildren>
+                    <tablelayout columns="4" width="100%">
+                        <tablechildren width="11%">
+                            <label value="Ngày nhập" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren width="39%">
+                            <label value="13/06/2018 09:05"/>
+                        </tablechildren>
+                        <tablechildren width="11%">
+                            <label value="Số/ Ký hiệu" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren width="39%">
+                            <label value="136/BC/TH"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Số văn bản đi" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Quyết định quy phạm của Thủ tướng"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Ngày VB" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="12/06/2018"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Loại văn bản" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Quyết định quy phạm"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Độ mật" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="0"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Loại ý kiến" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <label value="Bình thường"/>
+                        </tablechildren>
+                    
+                        <tablechildren>
+                            <label value="Trích yếu" sclass="label"></label>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <textbox placeholder="VBPH 29052018"  rows="2"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Người ký" sclass="label"/>
+                        </tablechildren>
+                    
+                        <tablechildren>
+                            <label value="Vương Văn Huệ"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Chức vụ" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Phó Thủ tướng Chính Phủ"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Đơn vị" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="HC"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Chuyên viên" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Nguyễn Thị An"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Số bản" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="1"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Gửi bản điện tử" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <hbox spacing ="20px">
+                                <checkbox/>
+                                <checkbox label=" Ký điện tử"/>
+                                <checkbox label="Thông báo gia hạn"/>
+                            </hbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Nơi nhận bên ngoài" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value=""/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Nơi nhận nội bộ" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value=""/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Cá nhân nhận" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value=""/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Người nhập" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value=""/>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="File đã đính kèm" sclass="label"/>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <label value="680_2018_NC_CP.pdf" style="color:blue;"></label>
+                        </tablechildren>
+                    
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>
+        <separator height="10px"/>
+        <groupbox>
+        
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption label="Thông tin văn bản đến"></caption>
+                <panelchildren>
+                    <tablelayout width="100%" columns="4">
+                        <tablechildren width="11%">
+                            <label value="Đơn vị trình"/>
+                        </tablechildren>
+                        <tablechildren width="38%">
+                            <chosenbox id="lbx1" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren width="13%">
+                            <label value="Số văn bản trình"/>
+                        </tablechildren>
+                        <tablechildren width="38%">
+                            <textbox placeholder="2205_04" />
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Trích yếu"/>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <textbox width="100%" rows="2"></textbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Ngày tiếp nhận VB"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <datebox />
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Đơn vị chủ trì"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <chosenbox id="lbx2"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Ngày tình LĐCP"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <datebox />
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Ngày LĐCP cho ý kiến"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <datebox />
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Người chỉ đạo"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <chosenbox id="lbx3" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Loại văn bản"/>
+                        </tablechildren>
+                    
+                        <tablechildren>
+                            <combobox >
+                                <comboitem label="--Chọn lại VB--"/>
+                            </combobox>
+                        </tablechildren>
+                    
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>
+        <separator height="10px"/>
+        <groupbox>
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption label="Nội dung công việc"></caption>
+                <panelchildren>
+                    <tablelayout width="100%" columns="2">
+                        <tablechildren width="14%">
+                            <hbox>
+                                <label value="Nội dung công việc"/>
+                                <label value="*" style="color:red"/>
+                            </hbox>
+                        </tablechildren>
+                        <tablechildren >
+                            <textbox width="100%" rows="2"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <hbox>
+                                <label value="Cơ quan được giao"/>
+                                <label value="*" style="color:red"/>
+                            </hbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <chosenbox id="lbx4" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Cơ quan phối hợp"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <chosenbox id="lbx5" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Loại hạn xử lý"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <hbox width="100%">
+                                <combobox hflex="2">
+                                    <comboitem label="--Có thời hạn cụ thể--"/>
+                                    <comboitem label="--Không có thời hạn cụ thể--"/>
+                                </combobox>
+                                <div align="center" hflex="1">
+                                    <hbox>
+                                    
+                                        <label value="Hạn xử lý"/>
+                                        <label value="*" style="color:red"/>
+                                    
+                                    
+                                    </hbox>
+                                </div>
+                                <datebox hflex="2"/> 
+                            </hbox>
+                           
+                        </tablechildren>
+
+                        <tablechildren>
+                            <hbox>
+                                <label value="Đơn vị theo dõi"/>
+                                <label value="*" style="color:red"/>
+                            </hbox>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <chosenbox id="lbx6" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label value="Chuyên viên theo dõi"/>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <chosenbox id="lbx7" width="100%"
+                                       model="${model}" creatable="true" 
+                                       emptyMessage=" Please select some items."
+                                       noResultsText=" No such item - {0} - and it is already in the model."
+                                       createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                                <attribute name="onSearch">
+                                </attribute>
+                            </chosenbox>
+                        </tablechildren>
+                        <tablechildren>
+                            <label></label>
+                        </tablechildren>
+                        <tablechildren colspan="3">
+                            <hbox spacing="40px">
+                                <label value="Tự theo dõi" style="color: blue;"/>
+                                <label value="Hủy theo dõi" style="color: red;"/>
+                            </hbox>
+                        </tablechildren>
+                    
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>
+        
+        <separator height="30px"/>
+        
+        <div align="center">
+            <hbox>
+                <button label="Chuyển theo dõi" image="/images/icon/sent-mail1.png"/>
+                <button label="Đóng" image="/images/icon/delete1.png"/>
+            </hbox>
+                
+        </div>
+            
+        <separator height="20px"/>
+    </window>
+</zk>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    <window sclass="window" border="normal" title="Gia hạn xử lý" width="55%" closable="true" maximizable="true">
+        <style>
+            .font{
+            font-style: italic;
+            }
+            .z-tablechildren{
+            padding:5px 10px 5px 5px;
+            }
+            .        .z-textbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-datebox{
+            display: flex;
+            }
+        
+            .z-chosenbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox{
+            display: flex;
+            }
+        
+            .z-datebox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        </style>
+        <tablelayout width="100%" columns = "4">
+            <tablechildren width="15%">                    
+                <label value="Số/ Ký hiệu"/>
+            </tablechildren>
+            
+            <tablechildren width="30%">                    
+                <label value="211/NQ-CP"/>
+            </tablechildren>
+            
+            <tablechildren width="25%" style="padding-left: 100px">                    
+                <label value="Hạn xử lý"/>
+            </tablechildren>
+            
+            <tablechildren width="30%">                    
+                <label value="30/06/2018"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="Loại gia hạn"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <combobox id="cmbColor" >
+                    <comboitem label="Có thời hạn cụ thể"/>
+                    <comboitem label="Không có thời hạn cụ thể"/>
+                </combobox>
+            </tablechildren>
+            
+            <tablechildren style="padding-left: 100px">
+                <hbox>
+                    <label value="Hạn mới"/>
+                    <label value="*" sclass="note"/>     
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <datebox ></datebox>
+            </tablechildren>
+            
+            <tablechildren> 
+                <hbox>
+                    <label value="Lý do"/>
+                    <label value="*" sclass="note"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren colspan="3">                        
+                <textbox width="100%" multiline="true"/>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="File đính kèm"/>
+            </tablechildren>
+
+            <tablechildren colspan="3">
+              
+                <button id="btn" image="/images/icon/clip1.png" label="Chọn file" upload="true,maxsize=1,multiple=true" style="background: rgb(66, 129, 208); color: white;"/>
+                <label value="Định dạng file hỗ trợ (" style="margin-left: 15px" sclass="font"/> 
+                <label sclass="font" style="color: red">File không được quá 20Mb</label> 
+                <label sclass="font" value= "), Tên file không đặt tiếng Việt có dấu"></label>       
+              
+            </tablechildren>
+            
+            <tablechildren style="margin-top: 10px;">                    
+                <label></label>
+            </tablechildren>
+            
+            <tablechildren colspan="3">                        
+                <a href="#">Day la file! OK</a>
+            </tablechildren>
+
+        </tablelayout>
+        <separator height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Ghi lại" image="/images/icon/save-file-option.png"></button>
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png"></button>
+            </hbox>
+        </div>
+    </window>
+</zk>

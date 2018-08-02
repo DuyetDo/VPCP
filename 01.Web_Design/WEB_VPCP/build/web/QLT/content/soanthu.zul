@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .font{
+        font-style: italic;
+        }
+        .z-chosenbox-input{
+        width: 100%;
+        } 
+        .z-textbox{
+        width: 100%;
+        }
+        .z-chosenbox{
+        width: 100%;
+        }
+        .z-button-image{
+        width: 13px;
+        }
+        .z-tablechildren{
+        padding: 10px 10px 0px 10px;
+        }
+        
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+    </style>
+    <window border="none" width="100%">
+        <tablelayout columns="2" width="100%">
+            
+            <tablechildren width="10%">
+                <label value = "Từ"></label>
+            </tablechildren>
+            
+            <tablechildren width = "90%">
+                <textbox value="" placeholder="huongdtt@dcv.vn"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Người nhận"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <chosenbox>
+                </chosenbox> 
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Nhóm người nhận"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <chosenbox>
+                </chosenbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Tiêu đề thư"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox value=""/>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "File đính kèm"></label>
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <button id="btn" image="/images/icon/clip1.png" label="Chọn file" upload="true,maxsize=1,multiple=true" style="background: rgb(66, 129, 208); color: white;"/>
+                <label value="Định dạng file hỗ trợ (" style="margin-left: 15px" sclass="font"/> 
+                <label sclass="font" style="color: red">File không được quá 20Mb</label> 
+                <label sclass="font" value= "), Tên file không đặt tiếng Việt có dấu"></label>
+            </tablechildren>
+            
+            <tablechildren></tablechildren>
+            <tablechildren>
+                <label value = "The A"></label>
+            </tablechildren>
+            <tablechildren colspan="2">
+                
+                        <ckeditor width="100%" />
+                   
+            </tablechildren>
+        </tablelayout>
+        
+      
+    </window>
+    
+    
+</zk>

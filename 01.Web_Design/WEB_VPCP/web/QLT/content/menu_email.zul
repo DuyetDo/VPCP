@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>     
+        .menu{
+        display: flex; 
+        float:right;
+        }
+        
+        .hbox2{
+        float:right;
+
+        }
+        
+        .z-button-image{
+        width: 15px;
+        }
+        .z-button{
+        background: blue;
+        
+        }
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        .menu_search{
+        float:right;
+        }
+    </style>
+    <window border="none" apply="com.viettel.voffice.controller.MailController">
+        <columnlayout width="100%">
+            <columnchildren width="25%">
+                <hbox sclass="hbox1">
+                    <image src="/images/icon/email2.png" width="15px"></image>
+                    <label value="QUẢN LÝ THƯ NỘI BỘ  >>  Thư đã nhận"></label>
+                </hbox>
+            </columnchildren>
+            
+            <columnchildren width="50%">
+                <hbox sclass="hbox2">
+                    <button image="/images/icon/refresh1.png" id="refresh"></button>
+                    <button image="/images/icon/pencil1.png" id="compose"></button>
+                    <button image="/images/icon/reply.png" id="reply"></button>
+                    <button image="/images/icon/reply-all.png" id="replyall"></button>
+                    <button image="/images/icon/turn-right-arrow.png" id="forward"></button>
+                    <button image="/images/icon/trash.png" id="delete"></button>
+                    <button image="/images/icon/printer1.png" id="print"></button>
+                    <button image="/images/icon/settings.png" id="setting"></button>
+                </hbox> 
+            </columnchildren>
+            
+            <columnchildren width="25%">
+                <panel sclass="menu_search">
+                    <toolbar mold="panel">
+                        <label value="Search:"/>
+                        <bandbox id="bd" autodrop="true" width="250px"
+                                 onChanging="search.model = strset.getSubModel(event.value, 30);">
+                            <bandpopup width="250px">
+                                <!--                        <panel height="215px">
+                                    <panelchildren>
+                                        <listbox class="listbox search" id="search" height="100%"
+                                                 style="background:white;" oddRowSclass="" model="${strset}"
+                                                 onSelect="bd.value=self.selectedItem.label; bd.close();" />
+                                    </panelchildren>
+                                    <toolbar>
+                                        <paging>
+                                            <attribute name="onCreate"><![CDATA[
+                                            search.mold = "paging";
+                                            search.paginal = self;
+                                            search.pageSize = 10;
+                                        ]]></attribute>
+                                        </paging>
+                                    </toolbar>
+                                </panel>-->
+                            </bandpopup>
+                        </bandbox>
+                    </toolbar>
+                </panel>          
+            </columnchildren>
+            
+        </columnlayout>
+    </window>
+</zk>

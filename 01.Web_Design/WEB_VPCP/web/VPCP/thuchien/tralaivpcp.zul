@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-chosenbox-input{
+        width : 100%;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        }
+        .z-tablechildren{
+        padding:10px 10px 5px 10px;
+        }
+    </style>
+    <window title = "Trả lại VPCP" border = "normal" width = "55%"> 
+        <tablelayout columns = "2" width = "100%">
+            <tablechildren width = "15%">
+                <hbox>
+                    <label value = "Lý do trả lại"/>
+                    <label value = "*" style = "color:red"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren width = "85%">
+                <textbox rows = "4"> </textbox>
+            </tablechildren>
+            
+        </tablelayout>
+         
+        <separator height = "20px"/>
+        
+        <div align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Trả lại" style="margin-right:10px;"  image="/images/icon/save-file-option.png" onClick="" />
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png" onClick=""/>
+            </hbox>
+        </div>
+        
+        <separator height = "10px"/>
+    </window>
+</zk>

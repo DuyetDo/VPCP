@@ -1,0 +1,83 @@
+<zk>
+    <window id="eWindow" title="FORM" width="900px"  border="normal" apply="org.zkoss.bind.BindComposer"
+        viewModel="@id('vm') @init('com.viettel.voffice.action.FormMV')">
+        <hbox align="center">
+            Keyword search:
+            <textbox value="@bind(vm.keyword)" />
+            <button label="Search" onClick="@command('search')" />
+        </hbox>
+       <div form="@id('fx') @load(vm.stuSelected) @save(vm.stuSelected, before='add')">
+         <vbox style="margin-top:10px;">
+            <hbox style="margin-left:340px;" align="center" >
+               ID:
+               <textbox disabled="true" id="idTxt" style="margin-left:30px; width:150px;" value="@bind(fx.id)"/>
+           </hbox> 
+           <hbox style="margin-left:340px;" align="center" >
+               NAME:
+               <textbox id="nameTxt" style="margin-left:30px; width:150px;" value="@bind(fx.username)"/>
+           </hbox> 
+           <hbox style="margin-left:340px;" align="center" >
+               PASSWORD::
+               <textbox id="ageTxt" style="margin-left:40px; width:150px;" value="@bind(fx.password)" />
+           </hbox> 
+            <hbox style="margin-left:410px;" align="center"  >
+               <button id="addBtn" label="Add" onClick="@command('add')"/>
+               <button id="BtnClear" label="Clear" onClick="@command('clear')"/>
+           </hbox>
+         </vbox>
+      </div>
+         
+         <grid id="gridst" height="400px" emptyMessage="Not found"  model="@load(vm.students)"  mold="paging" pageSize="10" >
+
+        <columns >
+                 	   <column width="100px">
+                        		 <checkbox id="selectedAllCheckBox" label="Select All" />
+        	                </column>
+                           <column label="Id" width="100px" sort="auto(id)"/>
+                           <column  label="Name" sort="auto(name)" width="200px"      />
+                           <column  label="Age" sort="auto(age)"   width="200px"      />
+                           <column   label=""  width="100px"        />
+                           <column   label=""  width="100px"        />
+	                </columns>
+
+              <template name="model" >
+             
+            <row popup="detail_${each.id}, position=end_before" style="cursor:pointer">
+<!--              <popup id="detail_${each.id}">
+                            <include src="/VPCP/detail.zul"
+                                student="${each}" />
+                        </popup >-->
+              <checkbox forward="onCheck=onModifySelectedList"  />
+                 
+                      
+                <label value="@load(each.id)" />
+                
+             
+                <label value="@load(each.username)" />
+               
+                 
+                <label value="@load(each.password)" />
+              
+                
+                <button onClick="@command('detail',student=each)" label="Delete" />
+              
+                <!--<button forward="onClick=onEdit" label="Detail"/>-->
+                <button onClick="@command('edit',student=each)" label="Edit" />
+            </row>
+             
+                
+                
+               </template>
+         </grid>
+     <button label="Chart" href="/chart.zul" />
+      <button label="ExportAll" id="export" />
+       <button label="Exports" id="exportCh" />
+      <button id="upload" label="Import" width="80px" upload="true"/>
+  
+<button id="updateBtn" label="Deletes" />
+	
+	
+ 
+   
+     </window>
+</zk>

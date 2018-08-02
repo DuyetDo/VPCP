@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:w="client">
+    
+    <style>
+        <!--        .z-north-body{
+        height: 100%;
+        }-->
+
+        .z-tablechildren{
+        padding: 10px 10px 0px 10px;
+        }
+
+        .z-label{
+        color:#161819 !important;
+        font-size:13px !important;
+        font-weight: bold !important;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        .label-right{
+        padding-left: 250px !important;
+        }
+        .z-caption-content{
+        font-size:13px !important;
+        font-weight: bold !important;
+        }
+    </style>
+    <vlayout>
+       
+        <button id="ba" sclass="bt" label="Tìm kiếm nâng cao"  style="float:right;" w:onClick="jq(this.$f('t')).hide().slideDown(),jq(this.$f('ba')).css('display','none')" />
+        <groupbox id="t" style="display:none">		
+            <panel  border="none" collapsible="true" sclass="transparent">
+                <caption  label="Thông tin tìm kiếm "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                                
+                        <tablechildren width="10%">
+                            <label value="Người gửi"></label>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <chosenbox  />
+                        </tablechildren>
+                                
+                        <tablechildren width="30%" sclass="label-right">
+                            <label value="File đính kèm"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <combobox placeholder="Có" >
+                                <comboitem label="Có"/>
+                                <comboitem label="Không"/>
+                            </combobox>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Tiêu đề"/>
+                        </tablechildren>
+                            
+                        <tablechildren colspan="3">
+                            <textbox value="" rows="2"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Thời gian từ"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <datebox />
+                        </tablechildren>
+                        
+                        <tablechildren sclass="label-right">
+                            <label value="Đến"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <datebox />
+                        </tablechildren>
+                                        
+                        <tablechildren colspan="4">
+                            <panel >
+                                <panelchildren >
+                                    <hlayout style="float: right">
+                                        <button sclass="bt" label="Tìm kiếm" style="margin-right:10px;"  image="/images/icon/search.png" onClick="" />
+                                        <button sclass="bt" label="Ẩn tìm kiếm nâng cao"  w:onClick="jq(this.$f('t')).show().slideUp(),jq(this.$f('ba')).css('display','inline')" />
+                                    </hlayout>
+                                </panelchildren>
+                            </panel>
+                        </tablechildren>       
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>	
+    </vlayout>
+</zk>

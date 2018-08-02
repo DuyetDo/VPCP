@@ -1,0 +1,82 @@
+
+<zk>
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+  
+    <vlayout sclass="page-content" spacing="20px">			
+        <include src="/VPCP/content/search.zul" hflex="5"/>
+	      
+        <groupbox >	
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TimKiemNhiemVu">
+                <caption  label="Nhiệm vụ,công việc Bộ, địa phương trả lại "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column label="STT" width="5%"/>
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Trích yếu" />
+                            <column label="Đơn vị soạn thảo"/>
+                            <column label="CV soạn thảo" />
+                            <column label="ĐV theo dõi"  />
+                            <column label="Chuyên viên theo dõi" />
+                            <column label="Nội dung theo dõi " />
+                            <column label="Cơ quan được giao"/>
+                            <column label="Tình hình thực hiện"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="1"/>
+          
+                                <a href="" id="detail">value</a>   
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+                            <row>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+                            <row>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+          
+                            </row>
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+    
+        
+  
+    </vlayout>
+    
+</zk>

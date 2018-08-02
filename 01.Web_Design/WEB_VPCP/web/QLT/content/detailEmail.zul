@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-tablechildren{
+        padding: 5px 10px 5px 5px;
+        }
+        
+        .text{
+        color:#161819;
+        font-size:13px;
+        font-weight: bold;
+        }
+        
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        
+        .table1{
+        padding:10px 0px 30px 0px;
+        }
+    </style>
+    <window border="none" width="100%">
+        <panel border="1" width="100%">
+            <panelchildren>
+                <tablelayout columns="3" width="100%" sclass="table1">
+            <tablechildren rowspan="5" width="7%">
+                <div align= "center">
+                    <image id="" src="/images/logo/avatatest.jpg" width="50px"  height="50px" style="align:center;"/>  
+                </div>
+                          
+            </tablechildren>
+            
+            <tablechildren colspan="2">
+                <label value = "Báo cáo công việc" style="color: #161819; font-size: 20px; font-weight: bold;"></label>
+            </tablechildren>
+            
+            <tablechildren width="10%">
+                <label value = "Từ" sclass="text"></label>
+            </tablechildren>
+            
+            <tablechildren width="83%">
+                <label value = "Nguyễn Văn C"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Người nhận"  sclass="text"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Hanhnt@dcv.vn"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Nhóm người nhận"  sclass="text"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Anhnt@dcv.vn,Hienbt@dcv.vn"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Ngày gửi"  sclass="text"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = " Thứ hai, ngày 10/05/2018 10:00"></label>
+            </tablechildren>
+        </tablelayout>
+        
+        <panel border="1">
+            <panelchildren>
+                <tablelayout columns="2" width="100%">
+                    <tablechildren width="80%">
+                        <label value="Nội dung thư"/>
+                    </tablechildren>
+                    
+                    <tablechildren width="20%">
+                        <vlayout style="background-color: #BBBBBB">
+                            <label value="file1"/>
+                            <label value="file2"/>
+                        </vlayout>
+                        
+                    </tablechildren>
+                </tablelayout>
+            </panelchildren>
+        </panel>
+            </panelchildren>
+            
+            
+        </panel>
+        
+        
+    </window>
+</zk>

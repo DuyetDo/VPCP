@@ -1,0 +1,48 @@
+<?page title="Hệ thống Văn phòng Điện tử VOFFICE" contentType="text/html;charset=UTF-8"?>
+<vlayout xmlns:c="client">
+    <window id="loginWin" title="Hệ thống quản lý văn phòng" width="300px" 
+            position="center" mode="overlapped" visible="true"
+            minimizable="false"  border='normal'
+            apply="com.viettel.voffice.action.LoginAction">
+        <style>
+            div.minimize {
+            border: 1px solid #79858E;
+            background: #D3E1EC;
+            position: absolute;
+            opacity: 0.8;       
+            }
+            div.loginGrid { 
+            border: none;
+            }
+            td.loginCtl {
+            text-align: center;
+            }
+            td.loginCtl .z-label {
+            color: red;         
+            font-style: italic;
+            }
+            .z-loading { top: 50% !important; left: 45% !important; align:
+            center; vertical-align: middle; }
+        </style>
+        <grid sclass="loginGrid">
+            <columns>
+                <column hflex="1" />
+                <column hflex="2" />
+            </columns>
+            <rows>
+                <row>User Name : <textbox id="userNameTV"  c:onFocus="this.select()" /></row>
+                <row>Password : <textbox id="userPass" type="password" c:onFocus="this.select()"/></row>
+                <row>
+                    <cell sclass="loginCtl" colspan="2">
+                        <vlayout>
+                            <button label="Login" id="login" />
+                            <label id="mesg" />
+                        </vlayout>
+                    </cell>
+                </row>
+            </rows>
+        </grid>
+    </window>
+    <script type="text/javascript" src="/style/javascript/jquery-ui-1.10.3.custom.min.js" />
+    <script type="text/javascript" src="/style/javascript/customized_effect.js" />    
+</vlayout>

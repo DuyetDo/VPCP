@@ -1,0 +1,228 @@
+<zk >
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+  
+    <vlayout sclass="page-content" spacing="20px" >
+     			
+        <include src="/VPCP/content/timkiemvanbanphathanhchuyenvien.zul" hflex="5"/>
+        <groupbox >	
+           
+            <label value=" Văn bản chỉ đạo, điều hành phải theo dõi" style="color:blue;"/>
+            <separator bar="true"/>
+          
+            <groupbox >
+               
+                <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.PhathanhChuyenVien">
+                   
+                    <caption  label="Chưa cập nhật "/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Thao tác"/>
+                                <column label="Số/Kí hiệu" />
+                                <column label="Ngày văn bản" />
+                                <column label="Ngày phát hành" />
+                                <column label="Hạn chuyển theo dõi"/>
+                                <column label="Trích yếu" />
+                                <column label="CV soạn thảo"  />
+                                <column label="CV theo dõi" />
+                                <column label="Người kí" />
+                                <column label="Hạn cập nhật"/>
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>
+                                    <hbox>
+                                        <a href="" id="btn1">
+                                            <image  src="/images/icon/calendar.png"/>
+                                        </a>
+                                        <a href="" id="btn2"> 
+                                            <image  src="/images/icon/pencil.png"/>
+                                        </a>
+                                        <a href="" id="btn3"> 
+                                            <image  src="/images/icon/sent-mail.png"/>
+                                        </a>
+                                        <a href="" id="btn4"> 
+                                            <image  src="/images/icon/books-stack1.png"/>
+                                        </a>
+                                        <a href="" id="btn5"> 
+                                            <image  src="/images/icon/clip.png"/>
+                                        </a>     
+                                    </hbox>
+                                    <a href="" id="btn6">value</a>   
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                
+                                </row>
+        
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+
+            </groupbox>
+    
+            <separator spacing="20px"/>
+            <groupbox  >
+                <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                    <caption  label="Đã cập nhật "/>
+ 
+                    <panelchildren >
+                        <separator />
+                        <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                            <columns >
+                                <column label="STT" width="5%"/>
+                                <column label="Thao tác"/>
+                                <column label="Số/Kí hiệu" />
+                                <column label="Ngày văn bản" />
+                                <column label="Ngày phát hành" />
+                                <column label="Hạn chuyển theo dõi"/>
+                                <column label="Ngày cập nhật"/>
+                                <column label="Trích yếu" />
+                                <column label="CV soạn thảo"  />
+                                <column label="CV theo dõi" />
+                                <column label="Người kí" />
+                   
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="1"/>
+          
+          
+                                    <hbox>
+                                       
+                                        <a href="" id=""> 
+                                            <image  src="/images/icon/books-stack1.png"/>
+                                        </a>
+                                        <a href="" id=""> 
+                                            <image  src="/images/icon/clip.png"/>
+                                        </a>   
+                                    </hbox>
+                                    <a href="" id="btn7">value</a>   
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                    <label sclass="green" value="$16.45"/>
+                                    <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                    <label value="on huong huong huong"/>
+                                 
+                                </row>
+        
+        
+                            </rows>
+                        </grid>
+                    </panelchildren>
+                </panel>
+            </groupbox>
+        </groupbox>
+        <groupbox >
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                <caption  label="Văn bản chỉ đạo, điều hành không phải theo dõi "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column label="STT" width="5%"/>
+                            <column label="Thao tác"/>
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Ngày phát hành" />
+                            <column label="Hạn chuyển theo dõi"/>
+                            <column label="Trích yếu" />
+                            <column label="CV soạn thảo"  />
+                            <column label="CV theo dõi" />
+                            <column label="Người kí" />
+                  
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="1"/>
+                                <hbox>
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/pencil.png"/>
+                                    </a>
+                                        
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/books-stack1.png"/>
+                                    </a>
+                                          
+                                </hbox>
+                                <a href="" id="">value</a>   
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                            </row>
+        
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+
+        </groupbox>
+    
+        <groupbox  >
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.TaskedController">
+                <caption  label="Văn bản không thuộc văn bản chỉ đạo, điều hành "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column label="STT" width="5%"/>
+                            <column label="Thao tác"/>
+                            <column label="Số/Kí hiệu" />
+                            <column label="Ngày văn bản" />
+                            <column label="Ngày phát hành" />
+                            <column label="Hạn chuyển theo dõi"/>
+                            <column label="Trích yếu" />
+                            <column label="CV soạn thảo"  />
+                            <column label="CV theo dõi" />
+                            <column label="Người kí" />
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="1"/>
+                                <hbox>
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/pencil.png"/>
+                                    </a>
+                                        
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/books-stack1.png"/>
+                                    </a>  
+                                </hbox>
+                                <a href="" id="">value</a>   
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                               
+          
+                            </row>
+        
+        
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+    </vlayout>
+	
+</zk>

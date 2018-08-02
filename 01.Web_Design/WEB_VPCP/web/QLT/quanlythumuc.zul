@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+    <style>
+<!--        .z-button-image{
+        width: 15px;
+        }-->
+<!--        .z-caption-content,.z-column-content{
+        color: blue;
+        }-->
+        .z-tablechildren{
+        padding: 10px 30px 0px 30px;
+        }
+        .label-right{
+        padding-left: 130px;
+        }
+        
+        .z-combobox{
+        width: 100%;
+        }
+        .z-combobox-input{
+        width: 95%;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        }
+        
+<!--        .z-image{
+        width: 13px;
+        }-->
+    </style>
+    
+    <window border="none" width="100%">
+      <groupbox>
+       <panel  border="none" collapsible="true" sclass="transparent">
+                <caption  label="Thông tin thư mục"/>
+ 
+                <panelchildren >
+                    <separator />
+                
+                <tablelayout columns="4" width="100%">
+            
+                    <tablechildren width="11%">
+                        <label value = "Thư mục cha"></label>
+                    </tablechildren>
+            
+                    <tablechildren width="35%">
+                        <combobox>
+                            <comboitem label="--Chọn thư mục cha--"/>
+                        </combobox>
+                    </tablechildren>
+                    
+                    <tablechildren width="19%" sclass="label-right">
+                        <label value = "Tên thư mục"></label>
+                        <label value = "*" style ="color: red"  ></label>
+                    </tablechildren>
+                    
+                    <tablechildren width="35%">
+                        <textbox value=""/>
+                    </tablechildren>
+                    
+            
+                    <tablechildren colspan="4">
+                        <div align= "right">
+                            <hbox align= "right">
+                                <button label="Ghi lại" onClick="" src="/images/icon/save-file-option.png"></button>
+                            </hbox>
+                        </div>
+                
+                    </tablechildren>
+                    
+                </tablelayout>
+                
+                <separator height="10px"></separator>
+
+            </panelchildren>
+        </panel>
+      </groupbox>
+        
+        <separator height="10px"></separator>
+          <groupbox>              
+        <panel  border="none" collapsible="true" sclass="transparent">
+                <caption  label="Danh sách thư mục"/>
+ 
+                <panelchildren >
+                    <separator />
+                <grid >
+                    <columns sizable="true">
+                        <column label="STT" sort="auto" width="5%" />
+                        <column label="Thao tác" width="10%" sort="auto" />
+                        <column label="Tên thư mục" width="45%" sort="auto" />
+                        <column label="Thư mục cha"  width="40%" sort="auto" />
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="1" style="padding-left:15px"/>
+                            <div >
+                                <hbox>
+                                    <image src="/images/icon/pencil.png"/>
+                                    <image src="/images/icon/garbage.png"/>
+                                </hbox>
+                            </div>
+                            <label value="Thư đã nhận" />
+                            <label value="" />
+                        </row>
+                        <row>
+                            <label value="2" style="padding-left:15px"/>
+                            <label value="" />
+                            <label value="Thư đã xóa" />
+                            <label value="" />      
+                        </row>
+                        <row>
+                            <label value="3" style="padding-left:15px"/>
+                            <label value="" />
+                            <label value="Thư đã gửi" />
+                            <label value="" />            
+                        </row>
+                        <row>
+                            <label value="4" style="padding-left:15px"/>
+                            <label value="" />
+                            <label value="Thư nháp" />
+                            <label value="" />     
+                        </row>
+                    </rows>
+                </grid>
+            </panelchildren>
+        </panel>
+          </groupbox>
+    </window>
+</zk>

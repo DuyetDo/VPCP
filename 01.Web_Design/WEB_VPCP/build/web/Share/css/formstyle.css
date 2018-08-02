@@ -1,0 +1,608 @@
+.highlight {
+    color: #1469AB;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    margin-left: 2px;
+}
+
+.label-required {
+    color: red;
+}
+
+.button {
+    height: 30px;
+    text-align: center;
+}
+
+.button-search {
+    height: 25px;
+    text-align: center;
+}
+
+.txtInput {
+    height: 20px;
+}
+
+.createTable {
+    border-spacing: 2px;
+    border-collapse: separate;
+    line-height: 30px;
+}
+
+.textbox {
+    width: 80%;
+}
+
+.label-info {
+    color: #CC0000;
+}
+
+.docInfo {
+    margin-bottom: 3px;
+}
+
+.divSeperator .spanSeperator {
+    border-bottom: 1px solid gray;
+    height: 1px;
+    margin: 4px;
+}
+
+.divSeperator table {
+    width: 100%;
+}
+
+.divSeperator-c1 {
+    border-radius: 6px;
+    background-color: #cccccc;
+    height: 18px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.divSeperator-c1 span {
+    color: #F25D45;
+}
+
+.divSeperator-c2 {
+    border-bottom: 1px solid gray;
+    height: 1px;
+    margin: 4px;
+}
+
+.toolbarAction {
+    background: #f9f9f9;
+    border-bottom: 1px solid #BFD2DE;
+    height: 35px;
+}
+
+.btnAction {
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
+.btnAction {
+    font-family: arial;
+    background: #2b6fc2;
+    border: medium none;
+    border-radius: 2px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 26px;
+    text-shadow: none;
+    padding: 0px 5px;
+}
+
+.btnAction:hover {
+    border: medium none;
+    background: #2b6fc2;
+}
+
+.btnAction:first-child {
+    margin-left: 2px;
+}
+
+.btnAction:last-child {
+    margin-left: 1px;
+}
+
+.z-vlayout-inner .attNotify {
+    float: right;
+}
+
+.sendNotify {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px;
+    height: 35px;
+    position: relative;
+    bottom: 0px
+}
+
+.sendNotify img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 1px;
+    margin-top: 3px;
+}
+
+.rowUnread .z-listcell div {
+    color: black;
+    font-weight: bold !important;
+}
+
+.rowUnread .z-listitem div {
+    color: black;
+    font-weight: bold !important;
+}
+
+.retrieved.z-listitem {
+    background-color: yellow;
+}
+
+.rowWarning.z-listitem>.z-listcell>.z-listcell-content, 
+.rowWarning.z-listitem:hover>.z-listcell>.z-listcell-content
+{
+    color: blue;
+}
+
+.rowWarningUnread.z-listitem>.z-listcell>.z-listcell-content,
+.rowWarningUnread.z-listitem:hover>.z-listcell>.z-listcell-content {
+    font-weight: bold !important;
+    color: blue;
+}
+
+.rowExpired.z-listitem>.z-listcell>.z-listcell-content, 
+.rowExpired.z-listitem:hover>.z-listcell>.z-listcell-content
+{
+    color: red;
+}
+
+.rowExpiredUnread.z-listitem>.z-listcell>.z-listcell-content,
+.rowExpiredUnread.z-listitem:hover>.z-listcell>.z-listcell-content {
+    font-weight: bold !important;
+    color: red;
+}
+
+.rowNormalUnread.z-listitem>.z-listcell>.z-listcell-content,
+.rowNormalUnread.z-listitem:hover>.z-listcell>.z-listcell-content,
+.rowUnread.z-listitem>.z-listcell>.z-listcell-content, 
+.rowUnread.z-listitem:hover>.z-listcell>.z-listcell-content
+{
+    font-weight: bold !important;
+    color: black;
+}
+
+.rowNormal.z-listitem>.z-listcell>.z-listcell-content, 
+.rowNormal.z-listitem:hover>.z-listcell>.z-listcell-content,
+.rowReadNormal.z-listitem>.z-listcell>.z-listcell-content,
+.rowReadNormal.z-listitem:hover>.z-listcell>.z-listcell-content {
+    color: black;
+}
+
+.rowReturn, .rowReturn.z-listitem>.z-listcell>.z-listcell-content,
+.rowReturn.z-listitem:hover>.z-listcell>.z-listcell-content {
+    color: red;
+}
+
+.rowReturnUnread.z-listitem>.z-listcell>.z-listcell-content,
+.rowReturnUnread.z-listitem:hover>.z-listcell>.z-listcell-content {
+    color: red;
+    font-weight: bold !important;
+}
+
+.textbox-uppercase {
+    text-transform: uppercase;
+}
+
+.timeNotify {
+    color: #b0b0b0;
+    float: right;
+    font-size: 9px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.lstDocPublish {
+
+}
+
+.lstDocPublish .lst-header {
+
+}
+
+.lstDocPublish .firstColumn {
+
+}
+
+.lstdoc-table {
+    border-spacing: 2px;
+    line-height: 27px;
+}
+
+.lstdoc-table select, 
+.lstdoc-table input, 
+.lstdoc-table textArea {
+    border: 1px solid #D6F0FD;
+}
+
+.lstdoc-table select {
+    height: 25px;
+}
+
+.lb-create {
+    color: #2063B4;
+    font-size: 16px;
+}
+
+.z-groupbox-header {
+    font-weight: bold;
+    font-size: 11px;
+    font-family: arial;
+    color: #2063B4;
+}
+
+.gb-form-create .z-groupbox-cnt {
+    margin-top: 8px;
+    border-width: 5px 5px 5px;
+}
+
+.gb-form-create .z-groupbox-hr {
+    border-width: 5px 5px 5px;
+}
+
+.viewTable {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+}
+
+.treeTask tr:nth-child(even) {
+    background: #FFF;
+}
+
+.treeTask tr:nth-child(odd) {
+    background: #FFF;
+}
+
+.treeTask tr:nth-child(odd) td {
+    border-bottom: 1px solid #D3EFFA;
+    border-top: 1px solid #D3EFFA;
+}
+
+.emptyMessage {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #7D7D7D;
+    font-style: italic;
+    text-align: center;
+}
+
+.errormsg {
+    margin: 0.5em 0px 0px;
+    display: block;
+    color: #DD4B39;
+    line-height: 17px;
+}
+
+.attachBtn {
+    border-radius: 5px;
+    background: none repeat scroll 0 0 #f0f0f0;
+}
+
+.attachBtn .z-button-cm {
+    color: #F25D45 !important;
+    font-weight: bold;
+}
+
+.attachBtn .z-button-cl,
+.attachBtn .z-button-cm,
+.attachBtn .z-button-cr,
+.attachBtn .z-button-tl,
+.attachBtn .z-button-tm,
+.attachBtn .z-button-tr,
+.attachBtn .z-button-bl, 
+.attachBtn .z-button-bm, 
+.attachBtn .z-button-br
+
+.attachBtn .z-button-cl, 
+.attachBtn .z-button-cm, 
+.attachBtn .z-button-cr,
+.attachBtn .z-button-tl, 
+.attachBtn .z-button-tm, 
+.attachBtn .z-button-tr,
+.attachBtn .z-button-bl, 
+.attachBtn .z-button-bm, 
+.attachBtn .z-button-br
+{
+    background-image: none;
+}
+
+.fileAtt .z-groupbox-cnt {
+    margin-top: 0px !important;
+}
+
+.comboitem-deptUser>.z-comboitem-image>img {
+    width: 20px;
+    height: 20px;
+}
+
+.z-chosenbox-del-btn {
+    margin: 0 2px -2px;
+}
+
+.attNotify {
+    width: 28px;
+    height: 28px;
+    float: right;
+}
+
+.calendar-toolbar .z-toolbar-start {
+    float: none !important;
+}
+
+.p-sp {
+    border-bottom: 1px solid gray;
+    height: 30px;
+    width: 90%;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.p-tableview {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    line-height: 27px;
+}
+
+.profileFullName {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.label-mail {
+    color: blue;
+    text-decoration: underline;
+}
+
+.label-phone-number {
+    color: coral;
+}
+
+.label-user-name {
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ckbCenter {
+    text-align: center;
+}
+
+.s-mainProcess,
+ .s-mainProcess:HOVER {
+    background-color: red;
+}
+
+.s-cooperateProcess,
+ .s-cooperateProcess:HOVER {
+    background-color: RoyalBlue;
+}
+
+.s-rtnProcess,
+ .s-rtnProcess:HOVER {
+    background-color: OliveDrab;
+}
+
+.mini-btn {
+    font-size: 11px;
+    height: 18px;
+    width: 40px;
+}
+
+.hr-mainProcess {
+    background-color: red;
+    color: red;
+    width: 15px;
+    height: 7px;
+}
+
+.hr-helpProcess {
+    background-color: RoyalBlue;
+    color: RoyalBlue;
+    width: 15px;
+    height: 7px;
+}
+
+.hr-receivedToKnow {
+    background-color: OliveDrab;
+    color: OliveDrab;
+    width: 15px;
+    height: 7px;
+}
+
+.hr-proclaim {
+    background-color: greenyellow;
+    color: OliveDrab;
+    width: 15px;
+    height: 7px;
+}
+
+.hr-opinion {
+    background-color: orange;
+    color: OliveDrab;
+    width: 15px;
+    height: 7px;
+}
+
+.hr-normalOpinion {
+    background-color: #141823;
+    width: 15px;
+    height: 7px;
+}
+
+.s-opinion-proclaim-3 .s-mainProcess {
+    background-color: orange !important;
+}
+
+.s-opinion-proclaim-6 .s-mainProcess {
+    background-color: greenyellow !important;
+}
+
+.li-main {
+    background-color: red;
+}
+
+.li-cooperate {
+    background-color: RoyalBlue;
+}
+
+.li-receiveToKnow {
+    background-color: OliveDrab;
+}
+
+.liLeft {
+    width: 5px;
+    float: left;
+    height: 13px;
+}
+
+.liRight {
+    width: 90%;
+    float: right;
+}
+
+.btnSaveAndCreate {
+    background: #D46F04 !important;
+}
+
+.btnSaveAndClose {
+    background: #0DA51A !important;
+}
+
+.btnSaveAndCopy {
+    background: #146EE0 !important;
+}
+
+.docOutCreate input:focus, 
+.docOutCreate select:focus, 
+.docOutCreate textarea:focus,
+.docOutCreate .z-chosenbox:focus {
+    border: 1px solid #F90;
+}
+
+.docInCrudForm input:focus, 
+.docInCrudForm select:focus, 
+.docInCrudForm textarea:focus, 
+.docInCrudForm .z-chosenbox:focus {        
+    border:1px solid #F90; 
+    font-size: 17px; 
+} 
+
+.docInCrudForm .btnSaveAndCreate {
+    background: #D46F04 !important; 
+}
+
+.docInCrudForm input, 
+.docInCrudForm select, 
+.docInCrudForm textarea, 
+.docInCrudForm .z-chosenbox { 
+    font-size: 15px;
+}
+
+.divDept {
+    background: url(../img/icon/office-building.png) no-repeat 0% 0%;
+    float: left;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+}
+
+.vbtoimat.z-listitem>.z-listcell>.z-listcell-content,
+ .vbtoimat.z-listitem:hover>.z-listcell>.z-listcell-content,
+.vbtoimat {
+    color: #FF4500;
+}
+
+.vbmat.z-listitem>.z-listcell>.z-listcell-content,
+ .vbmat.z-listitem>.z-listcell:hover>.z-listcell-content,
+.vbmat {
+    color: #FF4500;
+}
+
+.vbhoatoc.z-listitem>.z-listcell>.z-listcell-content,
+ .vbhoatoc.z-listitem:hover>.z-listcell>.z-listcell-content,
+.vbhoatoc {
+    color: #FF4500;
+}
+
+.vbthuongkhan.z-listitem>.z-listcell>.z-listcell-content,
+ .vbthuongkhan.z-listitem:hover>.z-listcell>.z-listcell-content,
+.vbthuongkhan {
+    color: #FF4500;
+}
+
+.vbkhan.z-listitem>.z-listcell>.z-listcell-content, 
+.vbkhan.z-listitem:hover>.z-listcell>.z-listcell-content,
+.vbkhan {
+    color: #FF4500;
+}
+
+.z-listitem>.mainProcess>div>span, 
+.mainProcess.z-label {
+    color: red !important;
+}
+
+.z-listitem>.cooperateProcess>div>span, 
+.cooperateProcess.z-label {
+    color: RoyalBlue !important;
+}
+
+.z-listitem>.receiveToKnowProcess>div>span, 
+.receiveToKnowProcess.z-label
+{
+    color: OliveDrab !important;
+}
+
+.z-comboitem-disabled * {
+    color: #aaa !important;
+    cursor: default !important;
+}
+
+.dropOverlay {
+    position: fixed;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    border-radius: 0;
+    opacity: 0.7;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.dropOverlay>div {
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    color: #888;
+    padding-top: 20px;
+    border: 2px dotted #888;
+    text-align: center;
+}
+

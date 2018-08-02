@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    <window sclass="window" border="normal" title="Đôn đốc thực hiện nhiệm vụ, công việc" width="55%" closable="true">
+        <style>
+            .z-tablechildren{
+            padding:5px 10px;
+            }
+            .font{
+            font-style: italic;
+            }
+            .z-textbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-datebox{
+            display: flex;
+            }
+        
+            .z-chosenbox{
+            width: 100%;
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox{
+            display: flex;
+            }
+        
+            .z-datebox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        
+            .z-combobox-input{
+            display: flex;
+            -webkit-flex: 1;  /* Safari 6.1+ */
+            -ms-flex: 1;  /* IE 10 */    
+            flex: 1;
+            }
+        </style>
+        <tablelayout columns="4" width="100%">
+            <tablechildren width="15%">                    
+                <label value="Lần đôn đốc thứ"/>
+            </tablechildren>
+
+            <tablechildren width="33%">                    
+                <textbox placeholder="2" width="100%"/>
+            </tablechildren>
+
+            <tablechildren width="19%"></tablechildren>
+            <tablechildren width="33%"></tablechildren>
+
+            <tablechildren>
+                <hbox>
+                    <label value="Ngày đôn đốc"/>
+                    <label sclass="note" value="*" />
+                </hbox>
+            </tablechildren>
+
+            <tablechildren> 
+                <datebox/>
+            </tablechildren>
+
+            <tablechildren style="float:right;">
+                <hbox>
+                    <label value="Loại đôn đốc"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+                    
+            </tablechildren>
+
+            <tablechildren>
+                <combobox id="cmbColor">
+                    <comboitem label="Có thời hạn cụ thể"/>
+                    <comboitem label="Không có thời hạn cụ thể"/>
+                </combobox>
+            </tablechildren>
+
+            <tablechildren>
+                <hbox>
+                    <label value="Nội dung đôn đốc"></label>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+
+            <tablechildren colspan="3">
+                <textbox width="100%" multiline="true"/>
+            </tablechildren>
+
+
+            <tablechildren>                    
+                <label value="File đính kèm"/>
+            </tablechildren>
+
+            <tablechildren colspan="3"> 
+                <button id="btn" image="/images/icon/clip1.png" label="Chọn file" upload="true,maxsize=1,multiple=true" style="background: rgb(66, 129, 208); color: white;"/>
+                <label value="Định dạng file hỗ trợ (" style="margin-left: 15px" sclass="font"/> 
+                <label sclass="font" style="color: red">File không được quá 20Mb</label> 
+                <label sclass="font" value= "), Tên file không đặt tiếng Việt có dấu"></label>   
+            </tablechildren>
+
+            <tablechildren style="margin-top: 10px;">                    
+                <label></label>
+            </tablechildren>
+
+            <tablechildren colspan="3">
+                <a href="#">Day la file! OK</a>
+            </tablechildren>
+
+        </tablelayout>
+        
+        <separator height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Cập nhật và Chuyển theo dõi" image="/images/icon/save-file-option.png"></button>
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png"></button>
+            </hbox>
+        </div>
+        <separator height="10px"/>
+    </window>
+</zk>

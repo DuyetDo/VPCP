@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:w="client">
+    <style>
+
+        .z-tablechildren{
+        padding:5px;
+        
+        }
+
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        .label-right{
+        padding-left: 150px;
+        }
+    </style>
+    <vlayout>
+       
+     
+        <groupbox id="t" >		
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption  label="Thông tin tìm kiếm "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                                
+                                   
+                        <tablechildren width="14%">
+                            <label value="Số văn bản đi"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <textbox  />
+                        </tablechildren>
+                                
+                        <tablechildren width="26%" sclass="label-right">
+                            <label value="Độ mật"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <combobox placeholder="0" >
+                                        
+                            </combobox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Ngày văn bản từ"/>                         
+                        </tablechildren>
+                                
+                        <tablechildren >
+                            <hbox spacing="30px" width="100%">
+                                <datebox hflex="1"></datebox>
+                                <label value="Đến"/>
+                                <datebox  hflex="1"></datebox>
+                            </hbox>
+                        </tablechildren>
+                        
+                        <tablechildren rowspan="2" sclass="label-right">
+                            <label value="Trích yếu"/>
+                        </tablechildren>
+                                
+                        <tablechildren rowspan="2">
+                            <textbox multiline="true" rows="2"/>
+                        </tablechildren>
+                                  
+                        <tablechildren>
+                            <label value="Có hồ sơ"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Tất cả--">
+                                <comboitem label="--Loại ý kiến--" />
+                            </combobox>
+                        </tablechildren>  
+                                   
+                            
+                        <tablechildren>
+                            <label value="Loại ý kiến"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Loại ý kiến--">
+                                <comboitem label="--Loại ý kiến--" />
+                            </combobox>
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            
+                            <label value="Loại văn bản"/>
+                            
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Tất cả--">
+                                <comboitem label="--Tất cả--" />
+                            </combobox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Người kí"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            <label value="Kí hiệu"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <textbox />
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Loại chuyển theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Loại theo dõi--" >
+                                <comboitem label="--Loại ý kiến--" />
+                            </combobox>
+                        </tablechildren>
+                        <tablechildren sclass="label-right">
+                                <label value="Thời gian theo dõi"/>
+                            
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Chọn thời gian chuyển theo dõi--"  >
+                                <comboitem label="--Loại ý kiến--" />
+                            </combobox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="File đính kèm"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Tất cả--" >
+                                <comboitem label="--Tất cả--" />
+                            </combobox>
+                        </tablechildren>       
+                                
+                        <tablechildren sclass="label-right">
+                                <label value="Thông báo giao ban"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <checkbox/>
+                        
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Trạng thái"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox   placeholder="--Tất cả--" >
+                                <comboitem label="Chưa bị thu hồi"/>
+                                <comboitem label="Đã bị thu hồi"/>
+                            </combobox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren sclass="label-right">
+                                <label value="Kí số"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox   placeholder="--Tất cả--" >
+                                <comboitem label="Có"/>
+                                <comboitem label="Không"/>
+                            </combobox>
+                        </tablechildren>
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+            
+            <separator height="10px"/>
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption  label="Nơi nhận văn bản "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                                
+                                   
+                        <tablechildren width="14%">
+                            <label value="Nơi nhận bên ngoài"/>
+                        </tablechildren>
+                        <tablechildren width="30%">
+                            <chosenbox ></chosenbox>
+                        </tablechildren>
+                        <tablechildren width="26%" sclass="label-right">
+                                <label value="Nơi nhận nội bộ"/>
+                        </tablechildren>
+                        <tablechildren width="30%">
+                            <chosenbox ></chosenbox>
+                        </tablechildren>                        
+                        <tablechildren >
+                            <label value="Số kí hiệu VB đến"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <textbox />
+                        </tablechildren>              
+                        <tablechildren sclass="label-right">
+                                <label value="Báo cáo giải trình"/>
+                        </tablechildren>
+                        <tablechildren>
+                            <combobox   placeholder="--Tất cả--" >
+                                <comboitem label=""/>
+                             
+                            </combobox>
+                        </tablechildren>                         
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+            <separator height="10px;"/>                  
+            <hlayout style="float: right; ">
+                                       
+                <button sclass="bt" label="Báo cáo chi tiết" image=""/>
+                <button sclass="bt" label="Báo cáo tổng hợp" image=""/>
+                <button sclass="bt" label="Tìm kiếm" style="margin-right:10px;"  image="/images/icon/search.png" onClick="" />
+                                    
+            </hlayout>                     
+                    
+        </groupbox>	
+    </vlayout>
+</zk>

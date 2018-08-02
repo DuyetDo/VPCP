@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window border="none" width="100%">
+        <style>
+            <!--        .z-button-image{
+            width: 15px;
+            }-->
+            <!--        .z-caption-content,.z-column-content{
+            color: blue;
+            }-->
+
+            .label-right{
+            padding-left: 150px;
+            }
+        
+            .z-combobox{
+            width: 100%;
+            }
+            .z-combobox-input{
+            width: 95%;
+            }
+        
+            .z-textbox{
+            width: 100%;
+            }
+        
+                    .z-image{
+            width: 13px;
+            }
+        </style>
+        <grid >
+            <columns sizable="true">
+                <column label="STT" sort="auto" width="5%" />
+                <column label="Thao tác" width="10%" sort="auto" />
+                <column label="Tên nhóm" width="15%" sort="auto" />
+                <column label="Danh sách email"  width="30%" sort="auto" />
+                <column label="Thời gian tạo"  width="30%" sort="auto" />
+            </columns>
+            <rows>
+                <row>
+                    <label value="1"/>
+                    <div >
+                        <hbox>
+                            <image src="/images/icon/pencil.png"/>
+                            <image src="/images/icon/garbage.png"/>
+                        </hbox>
+                    </div>
+                    <label value="Nhóm" />
+                    <label value="anhnt@gmail.com" />
+                    <label value="Thứ 2, ngày 10 thàng 10 năm 2010 10:00" />
+                </row>
+                        
+                <row>
+                    <label value="1"/>
+                    <div >
+                        <hbox>
+                            <image src="/images/icon/pencil.png"/>
+                            <image src="/images/icon/garbage.png"/>
+                        </hbox>
+                    </div>
+                    <label value="Nhóm" />
+                    <label value="anhnt@gmail.com" />
+                    <label value="Thứ 2, ngày 10 thàng 10 năm 2010 10:00" />
+                </row>
+            </rows>
+        </grid>
+    </window>
+</zk>

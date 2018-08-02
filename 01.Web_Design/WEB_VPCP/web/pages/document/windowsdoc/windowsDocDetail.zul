@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<window id="modalDialog" title="Coffee Order" border="normal" width="80%"
+        position="center,center" closable="true" 
+        height="90%" maximizable="true"
+        action="show: slideDown;hide: slideUp" contentStyle="overflow:auto;"
+      >
+   
+    <style>
+        table.z-tablelayout {
+            border-spacing: 0px;
+        }
+        td.z-tablechildren {
+            padding: 10px;
+        } 
+        .z-tablelayout {
+        box-sizing: border-box;
+        -webkit-box-sizing: -webkit-box-sizing;
+        }
+    </style>
+    <panel height="100%" >
+        <panelchildren>
+            <zk>
+                <div id="breadcrumbs" class="breadcrumbs breadcrumbs-fixed">
+                    <div class="tableTools-container">
+                        <div class="btn-group btn-overlap">
+                            <button class="DTTT_button btn btn-white btn-primary" sclass="btn-calendar"
+                                    iconSclass ="fa fa-share-alt" tooltiptext="${labels.toolbar.thisYear}" 
+                                    style="color: #478fca;border-color: #8fbcd9;height: 28px;float:left;margin-right: 5px;">
+                                Xem luồng
+                                <custom-attributes time="year" />
+                            </button>
+                            <button class="DTTT_button pink btn btn-white btn-primary " iconSclass =" fa  fa-eye" sclass="btn-calendar"
+                                    style="color: #c6699f !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;" tooltiptext="${labels.toolbar.thisMonth}">
+                                Theo dõi
+                                <custom-attributes time="month" />
+                            </button>
+                            <button class="DTTT_button btn btn-white btn-primary green" iconSclass ="fa  fa-paper-plane" sclass="btn-calendar"
+                                    style="color:#69aa46 !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;" tooltiptext="${labels.toolbar.thisWeek}">
+                                Công bố
+                                <custom-attributes time="week" />
+                            </button>
+                            <button class="DTTT_button btn btn-white btn-primary red" sclass="btn-calendar"
+                                    tooltiptext="${labels.toolbar.thisDay}" iconSclass ="fa  fa-comment-o" 
+                                    style="color:#dd5a43 !important;border-color: #8fbcd9;height: 28px;margin-right: 5px;float:left;">
+                                Xin ý kiến
+                                <custom-attributes time="today" />
+                            </button>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </zk>
+            <borderlayout height="100%">
+                <center border="0">
+                    <borderlayout>
+                        <center style="border-bottom: none;">
+                            <tablelayout columns="3" width="100%">
+                                <tablechildren>
+                                    <label value="Sổ văn bản: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren>
+                                <tablechildren>
+                                    <label value="Nội dung: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren>
+                                <tablechildren>
+                                    <label value="Số đến: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren>
+                        
+                        
+                                <tablechildren>
+                                    <label value="Nơi gửi: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label value="" style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Số phụ: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label value="" style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Số đến cấp trên: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label value="" style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                        
+                                <tablechildren>
+                                    <label value="Số / Ký hiệu: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Ngày đến: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Ngày ban hành: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                        
+                                <tablechildren>
+                                    <label value="Người ký: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Độ mật: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label value="${$composer.getDocumentEntity().getSecurity_Name()}" style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Độ khẩn: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren>
+                        
+                                <tablechildren>
+                                    <label value="Hạn xử lý: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Hạn xử lý (Bằng số): " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Loại văn bản: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                        
+                                <tablechildren>
+                                    <label value="Văn bản Quy phạm pháp luật: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Số bản: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren> 
+                                <tablechildren>
+                                    <label value="Số trang: " style="color:#161819;font-size:13px;font-weight: bold" />
+                                    <label  style="color:#161819;font-size:13px" />
+                                </tablechildren>
+                            </tablelayout>
+                        </center>
+                        <east title="Ý kiến xử lý" style="border-left: none;border-bottom: none;" size="20%" flex="true" collapsible="true">
+                            <div style="background:#fcfcfc">
+                                <label value=""
+                                       style="color:#161819;font-size:50px" />
+                            </div>
+                        </east>
+                    </borderlayout>
+                </center>
+                <south title="Tệp chứa nội dung xử lý">
+                    <div height="200px" style="background:#f4f6f7;color:#161819;">FileDoc.pdf</div>
+                </south>
+            </borderlayout>
+        </panelchildren>
+    </panel>
+</window>

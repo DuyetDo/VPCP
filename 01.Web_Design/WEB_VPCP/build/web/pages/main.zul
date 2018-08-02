@@ -1,0 +1,134 @@
+<?page title="Hệ thống Văn phòng Điện tử VOFFICE" contentType="text/html;charset=UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+<!--        .labelstyle {
+        font-weight: bold;
+        font-family: 'Helvetica';
+        color: white;
+        font-size: 20px;
+        text-align:center;
+        }
+        .nameAvata{
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+        height: 45px; 
+        padding-top: 10px; 
+        text-align:left;
+        }
+        .header-shadow{
+        width:55px;
+        height:55px;background-size: 100%;
+        float:left;  
+        border-radius: 50%; 
+        border: 1px solid #a1a1a1; 
+        height: 40px; 
+        margin: 8px; 
+        padding: 10px; 
+        text-align: center; 
+        width: 40px;
+        }
+        
+        
+
+        .div_infoUser:hover{
+        background-color:#90b5e5;
+        }
+
+        .labelstyle1 {
+        font-weight: bold;
+        font-family: 'Helvetica';
+        color: white;
+        font-size: 14px;
+        text-align:center;
+        }
+        .labelstyle1 {
+        font-weight: bold;
+        font-family: 'Helvetica';
+        color: white;
+        font-size: 12px;
+        text-align:center;
+        }-->
+    </style>
+    <?link href="/VPCP/style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="/VPCP/style/style.css" rel="stylesheet" type="text/css"?>
+   
+<!--    <style src="/style/widgets/menu/navbar/style.css"/>
+    <style src="/style/widgets/stylecommon.css"/>
+    <style src="/Share/app2/assets/css/bootstrap.css?v=0.1"/>
+    <style src="/applications2/bootstrap/css/bootstrap.css"/>
+    <style src="/applications2/css/fonts.css"/>
+    <style src="/Share/app2/assets/css/font-awesome.css"/>
+    <style src="/Share/app2/assets/css/ace-fonts.css"/>
+    <style src="/Share/app2/assets/css/ace-skins.css"/>
+    <style src="/Share/app2/assets/css/ace.css?v=0.3"/>
+    <style src="/Share/css/styleCustom.css?v=1.7"/>
+    <style src="/Share/app2/assets/css/common.css"/>-->
+    
+    <borderlayout style="padding:0px;margin:0px" height="100%"
+                  apply="org.zkoss.bind.BindComposer"
+                  viewModel="@id('vm') @init('com.viettel.voffice.action.components.navbar.NavigationViewModel')">
+        <north height="45px" border="none">
+            <include src="navbar.zul"/>     
+            <!--            <div  height="55px" style="width: 100%;min-width: 800px;margin: 0 auto;background:#3c66a0;color:white;text-align: center;">
+                <div style="float:left; display: inline-block;">
+                    <image height="55px" style="margin-left: 70px; align: left" src="/images/logo/flag.png"/>
+                </div>
+                <div style="float:center;padding-top:15px; display: inline-block;width: max-content;">
+                    <label sclass="labelstyle" width="100px"  value="HỆ THỐNG QUẢN LÝ VĂN BẢN VÀ HỒ SƠ CÔNG VIỆC"></label>
+                </div>
+                <div  sclass="div_infoUser" style="width:190px;float:right; display: inline-block">
+                    <div class="header-shadow" style="background-image: url('/images/logo/avatatest.jpg');">
+                        <image style="border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;width: 50px;height: 50px; margin: 2px;" src="/images/logo/avatatest.jpg"/> 
+                    </div>
+                    <tablelayout columns="1" style="padding-top: 8px">
+                        <tablechildren style="padding:0px">
+                            <label class="child" sclass="labelstyle1" width="140px" height="55px"  value="${vm.userNameLogin}"></label>
+                        </tablechildren>
+                        <tablechildren style="padding:0px">
+                            <label  class="child" sclass="labelstyle2" width="140px" height="55px"  value="Trợ lý nghiệp vụ"></label>
+                        </tablechildren>
+                    </tablelayout>
+                </div>
+            </div>-->
+        </north>
+         <west   width="200px" flex="true" maxsize="250" splittable="true" 
+                collapsible="true" >
+            <div   style="background:white;overflow:auto"  >
+                <navbar id="navbar" sclass="mymenubar"  children="@load(vm.listMenuLevelOne)"  orient="vertical" collapsed="false"
+                        onSelect="@command('navigatePage', target=self.selectedItem.attributes['navigationPage'])">
+                    <template name="children" var="child">
+                        <nav label="@load(child.name)" iconSclass="@load(child.iconsclass)"
+                             children="@load(vm.pageMap[child.id].values()) @template('navitem')"/>
+                    </template>
+                    <template name="navitem" var="navigationPage">
+                        <navitem label="@load(navigationPage.title)" iconSclass="@load(navigationPage.iconsclass)"
+                                 onClick ="@command('menuItemSelect', idMenuSelect=navigationPage,tbox=tbox)" 
+                                 selected="@load(navigationPage.selected)"/>
+                        <!--                        <nav label="Get Started" iconSclass="z-icon-th-list" badgeText="3">
+                            <navitem label="Step One" />
+                            <navitem label="Step Two" />
+                            <navitem label="Step Three" />
+                        </nav>-->
+                    </template>
+                </navbar>
+            </div>
+        </west>
+        <center border="none">
+            <div style="background:white" vflex="1" >
+                <tabbox id="tbox" width="100%" height="100%" model="@bind(vm.tabInfos)" 
+                        selectedTab="@bind(vm.selected)">
+                    <template name="model:tab">
+                        <tab iconSclass="@load(each.iconsclass)"  label="@load(each.title)" 
+                             closable="true" onClose="@command('closeTab',idTab=each.id)" selected="@load(each.selected)"/>
+                    </template>
+                    <template name="model:tabpanel">
+                        <tabpanel style="overflow:auto">
+                            <include src="@load(each.path)"></include>
+                        </tabpanel>
+                    </template>
+                </tabbox>
+            </div>
+        </center>
+    </borderlayout>
+</zk>

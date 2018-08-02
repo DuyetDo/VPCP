@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style1.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style5.css" rel="stylesheet" type="text/css"?>
+   
+    <vlayout sclass="page-content" spacing="20px">   			
+        <include src="LHC/search.zul" hflex="5"/>
+        <groupbox>
+            <panel border="none" collapsible="true" sclass="transparent" apply="com.viettel.voffice.controller.MeetingScheduleController">
+               
+                <caption>
+                    <label value="Danh sách lịch họp chờ(value)" sclass="caption-table" />
+                                
+                </caption>    
+ 
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="2" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column label="STT" width="3%"/>
+                            <column label="Thao tác" width="7%"/>
+                            <column label="Ngày yêu cầu" width="10%" />
+                            <column label="Lãnh đạo VPCP" width="15%"/>
+                            <column label="Thành phần tham gia" width="30%"/>
+                            <column label="Nội dung" width="20%"/>
+                            <column label="Ghi chú"  width="15%"/>
+                  
+                        </columns>
+                        <rows>
+                            <row>
+                                <label value="1"/>
+          
+                                <hbox>
+                                    <a href="" id="btn1">
+                                        <image  src="/images/icon/aroww-up.png" sclass="image"/>
+                                    </a>
+                                    <a href="" id="btn2"> 
+                                        <image  src="/images/icon/pencil.png" sclass="image"/>
+                                    </a>
+                                    <a href="" id="btn3"> 
+                                        <image  src="/images/icon/delete.png" sclass="image"/>
+                                    </a>   
+                                </hbox>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="1"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                        
+                            </row>
+                            <row>
+                                <label value="1"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                        
+          
+                            </row>
+                            <row>
+                                <label value="1"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                                <label sclass="green" value="$16.45"/>
+                                <label value="approved" sclass="label label-success arrowed-in arrowed-in-right"/>
+                                <label value="on huong huong huong"/>
+                        
+                            </row>
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+    </vlayout>
+</zk>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+    <groupbox>
+<vlayout sclass="page-content" spacing="20px"> 
+ <include src="/QLT/content/menu_email.zul" hflex="5"/>			
+<include src="/QLT/content/search.zul" hflex="5"/>
+<include src="/QLT/content/email.zul" hflex="5"/>
+<include src="/QLT/content/detailEmail.zul" hflex="5"/>   
+ 
+</vlayout>
+    </groupbox>
+</zk>

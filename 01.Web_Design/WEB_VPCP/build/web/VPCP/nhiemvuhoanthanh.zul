@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <?link href="style/fonts.css" rel="stylesheet" type="text/css"?>
+    <?link href="style/style.css" rel="stylesheet" type="text/css"?>
+ 
+    <vlayout sclass="page-content" spacing="20px">
+ 
+	    			
+        <include src="/VPCP/thuchien/search.zul" hflex="5"/>
+        <groupbox>
+            <panel border="1" collapsible="true" sclass="transparent">
+                <caption  label="Kết quả tìm kiếm :">
+                    <label style="color:red;">1</label>
+                    <label style="color:blue;">nhiệm vụ</label>
+                </caption>
+                <panelchildren >
+                    <separator />
+                    <grid sclass="domain" mold="paging"  pageSize="5" style="border:1px solid #cfcfcf" >
+                        <columns >
+                            <column width="30px">STT</column>
+                            <column>Thao tác</column>
+                            <column>Số/Ký hiệu</column>
+                            <column>Ngày văn bản</column>
+                            <column>Trích yếu</column>
+                            <column>ĐV theo dõi</column>
+                            <column>Chuyên viên theo dõi</column>
+                            <column>Nội dung theo dõi</column>
+                            <column>Hạn xử lý</column>
+                            <column>Đơn vị cập nhật</column>
+                            <column>Tình hình TH</column>
+                            <column>Tình hình T/H nội bộ</column>
+                            <column>Trạng thái</column>
+                        </columns>
+                        <rows>
+                            <row>
+                       
+                                <label value="1"/>
+                                <hbox>
+                                    <a href="" id="">
+                                        <image  src="/images/icon/graph1.png" sclass="image"/>
+                                    </a>
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/send.png" sclass="image"/>
+                                    </a>
+                                    <a href="" id=""> 
+                                        <image  src="/images/icon/check.png" sclass="image"/>
+                                    </a>   
+                                    <a href="" id="">
+                                        <image  src="/images/icon/reply.png" sclass="image"/>
+                                    </a>
+                    
+                                </hbox>
+                                <label value="136/BC/TH"/>
+                                <label value="10/03/2018"/>
+                                <label value="VBPH 13062018"/>
+                                <label value="Vụ hành chính"/>
+                                <label value ="Phạm Kiểu Hưng"/>
+                                <label value ="1306 công việc 1"/>
+                                <label value ="02/06/2018"/>
+                                <label value ="Bộ công an"/>
+                                <label value =""/>
+                                <label value ="Đang thực hiện Hoàn thành 100%"/>
+                                <label value ="Đã hoàn thành"/>
+                       
+                            </row>
+          
+                        </rows>
+                    </grid>
+                </panelchildren>
+            </panel>
+        </groupbox>
+	      
+    </vlayout>
+</zk>

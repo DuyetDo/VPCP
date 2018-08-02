@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style>
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        
+        .z-tablechildren{
+        padding: 10px 10px 10px 10px;
+        }
+        .z-button{
+        background: rgb(66, 129, 208);
+        color: white;
+        }
+        .z-button-image{
+        width: 13px;
+        }
+        
+        .z-checkbox-content{
+        color:#161819;
+        font-size:13px;
+        }
+    </style>
+    <window border="none" width="100%">
+        <tablelayout columns="3" width="100%">
+            
+            <tablechildren width="10%">
+                <label value = "Chữ ký"></label>
+            </tablechildren>
+            
+            <tablechildren colspan="2">
+                <ckeditor></ckeditor>            
+            </tablechildren>
+            
+            <tablechildren>
+                <label value = "Sử dụng chữ ký"></label>
+            </tablechildren>
+            
+            <tablechildren colspan="2">
+                <hbox spacing="20px">
+                    <checkbox id="l1" label="Khi soạn mới mail" onCheck=""/> 
+                    <checkbox id="l2" label="Khi trả lời mail" onCheck=""/>
+                </hbox>
+                
+            </tablechildren>
+            
+            <tablechildren colspan="3">
+                <div align= "right">
+                    <hbox align= "right">
+                        <button label="Ghi lại" onClick="" src="/images/icon/save-file-option.png"></button>
+                    </hbox>
+                </div>
+                
+            </tablechildren>
+        </tablelayout>
+        
+    </window>
+      
+</zk>

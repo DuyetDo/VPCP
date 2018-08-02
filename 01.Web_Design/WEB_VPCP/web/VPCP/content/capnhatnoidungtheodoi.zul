@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+    <window sclass="window" title="Cập nhật nội dung theo dõi" border="normal" width="55%" closable="true">
+        <tablelayout width="100%" columns="2">
+            <tablechildren width="20%">
+                <hbox>
+                    <label value="Nội dung công việc"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <textbox height="10px" width="100%" multiline="true"></textbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox>
+                    <label value="Cơ quan được giao"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <chosenbox id="lbx1" width="100%"
+                           model="${model}" creatable="true" 
+                           emptyMessage=" Please select some items."
+                           noResultsText=" No such item - {0} - and it is already in the model."
+                           createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                    <attribute name="onSearch">
+                    </attribute>
+                </chosenbox>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="Hạn thực hiện"></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox spacing="20px" width="100%">
+                    <combobox id="cmbColor" width="100%" hflex="3">
+                        <comboitem label="Có thời hạn cụ thể"/>
+                        <comboitem label="Không có thời hạn cụ thể"/>
+                    </combobox>
+                    <label value="Thời hạn" hflex="1"/>
+                    <datebox hflex="3"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>                        
+                <hbox>
+                    <label value="Đơn vị theo dõi"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>                        
+                <chosenbox id="lbx3" width="100%"
+                           model="${model}" creatable="true" 
+                           emptyMessage=" Please select some items."
+                           noResultsText=" No such item - {0} - and it is already in the model."
+                           createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                    <attribute name="onSearch">
+                    </attribute>
+                </chosenbox>            
+            </tablechildren>
+            
+            <tablechildren>                    
+                <label value="Chuyên viên theo dõi"/>
+            </tablechildren>
+            
+            <tablechildren>
+                <chosenbox id="lbx4" width="100%"
+                           model="${model}" creatable="true" 
+                           emptyMessage=" Please select some items."
+                           noResultsText=" No such item - {0} - and it is already in the model."
+                           createMessage=" No such item -{0} - but it is not in model either, you can try to create it.">
+                    <attribute name="onSearch">
+                    </attribute>
+                </chosenbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <label></label>
+            </tablechildren>
+            
+            <tablechildren>
+                <hbox spacing="20px">
+                        <label value="Tự theo dõi" style="color: blue"/>                     
+                        <label value="Hủy theo dõi" style="color: red"/>                    
+                </hbox>
+            </tablechildren>
+            
+        </tablelayout>
+        <separator height="30px" />
+        
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Cập nhật và Chuyển theo dõi" image="/images/icon/save-file-option.png"></button>
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png"></button>
+            </hbox>
+        </div>
+    </window>
+</zk>

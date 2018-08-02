@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:w="client">
+    <style>
+        .z-north-body{
+        height: 100%;
+        }
+
+        .z-tablechildren{
+        padding: 5px;
+        }
+
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        font-weight: bold
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox{
+        display: flex;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-combobox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+    </style>
+    <vlayout>
+       
+        <button id="search" sclass="bt" label="Tìm kiếm nâng cao"  style="float:right;" w:onClick="jq(this.$f('tk')).hide().slideDown(),jq(this.$f('search')).css('display','none')" />
+        <groupbox id="tk" style="display:none">		
+            <panel  border="none" collapsible="true" sclass="transparent" >
+                <caption  label="Thông tin tìm kiếm "/>
+ 
+                <panelchildren >
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                            
+                        <tablechildren width="15%">
+                            <label value="Ngày yêu cầu từ"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <datebox></datebox>
+                        </tablechildren>
+                                
+                        <tablechildren width="25%">
+                            <label value="Đến"/>
+                        </tablechildren>
+                                
+                        <tablechildren width="30%">
+                            <datebox></datebox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Nội dung"/>
+                        </tablechildren>
+                                
+                        <tablechildren colspan="3">
+                            <textbox multiline="true" rows="3"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            
+                        </tablechildren>
+                                
+                        <tablechildren>
+                           
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Đơn vị được giao"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Đơn vị phối hợp"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Đơn vị soạn thảo"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Chuyên viên soạn thảo"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Đơn vị theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Chuyên viên theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Người chỉ đạo"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox></chosenbox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Hạn xử lý"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox   placeholder="--Tất cả--">
+                                <comboitem label=""/>
+                            </combobox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Thời hạn ban hành từ"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <datebox/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Đến"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <datebox/>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="VB có nội dụng theo dõi"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox  placeholder="--Có nội dung theo dõi--">
+                                <comboitem label=""/>
+                            </combobox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Trạng thái"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox placeholder="--Nhập để thực hiện tìm kiếm và chọn trạng thái--">
+                                <comboitem label=""/>
+                            </combobox>
+                        </tablechildren>
+                                
+                                
+                        <tablechildren>
+                            <label value="Tìm theo VBPH"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox   placeholder="--Chọn--"> 
+                                <comboitem label=""/>
+                            </combobox>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <label value="Trạng thái theo dõi của VPCP"/>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <combobox  placeholder="--Tất cả--">
+                                <comboitem label=""/>
+                            </combobox>
+                        </tablechildren>
+                         
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+            <hlayout style="float: right;" >
+                <button sclass="bt" label="Tìm kiếm" style="margin-right:10px;"  image="/images/icon/search.png" onClick="" />
+                <button sclass="bt" label="Ẩn nội dung tìm kiếm"  w:onClick="jq(this.$f('t')).show().slideUp(),jq(this.$f('ba')).css('display','inline')" />
+            </hlayout>
+        </groupbox>	
+    </vlayout>
+</zk>

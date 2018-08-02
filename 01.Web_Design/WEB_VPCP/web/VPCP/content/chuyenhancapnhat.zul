@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    
+    <window sclass="window" title="Chuyển hạn cập nhật" border="normal" width="55%" closable="true">
+        <style>
+            .z-tablechildren{
+            padding: 10px;
+            }
+        </style>
+        
+        <radiogroup id="sv1"/>
+        <tablelayout sclass="grid" style="border: none;" columns="2" width="100%">
+            <tablechildren width="20%">
+                <hbox>
+                    <label value="Hạn cập nhật"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>
+                <vbox spacing="15px">
+                    <radio label="Loại thường (Có 3 ngày xử lý)" radiogroup="sv1" checked="true"></radio>
+                    <radio label="Có nhiều nội dung giao nhiệm vụ (Có 10 ngày xử lý)" radiogroup="sv1"></radio>
+                </vbox>
+            </tablechildren>
+            
+            <tablechildren style="padding-top:10px">
+                <hbox>
+                    <label value="Lý do chuyển"/>
+                    <label sclass="note" value="*"/>
+                </hbox>
+            </tablechildren>
+            
+            <tablechildren>                    
+                <textbox width="100%" multiline="true" rows="3"/>
+            </tablechildren>
+            
+        </tablelayout>
+        
+        <separator height="30px"/>
+        <div sclass="gbt" align="center">
+            <hbox align="center">
+                <button sclass="bt" label="Cập nhật và Chuyển theo dõi" image="/images/icon/save-file-option.png"></button>
+                <button sclass="bt" label="Đóng" image="/images/icon/delete1.png"></button>
+            </hbox>
+        </div>
+        <separator height="10px"/>
+    </window>
+</zk>

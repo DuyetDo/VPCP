@@ -1,0 +1,43 @@
+ 
+        .z-column-content{
+        color: rgb(66, 129, 208);
+        background: rgb(216, 229, 240);
+        font-weight: normal;
+        }
+        .header{
+        color:black  !important;
+        font-weight: bold;
+        }
+        .title {
+        color: blue !important;
+        font-size: 13px;
+        }
+        .tt{
+        color: blue !important;
+        }
+        .window{
+        background: blue !important;
+        }
+        .z-window-header 
+        {
+        font-weight: bold;
+        color: #f7f7f7;
+        font-size:13px;
+        }
+        .gbt{
+        margin-top: 15px;
+        }
+        .bt {
+        background: #008CBA !important;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+    
+        }   
+       

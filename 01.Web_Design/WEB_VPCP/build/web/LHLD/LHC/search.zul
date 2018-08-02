@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns:w="client">
+    <style>
+       
+        .z-tablechildren{
+        padding: 10px 10px 0px 10px;
+        }
+
+        .z-label{
+        color:#161819;
+        font-size:13px;
+        }
+        
+        .z-textbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox{
+        display: flex;
+        }
+        
+        .z-chosenbox{
+        width: 100%;
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+        .z-datebox-input{
+        display: flex;
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        }
+        
+      
+        .label-right{
+        padding-left: 170px;
+        }
+    </style>
+    <script type="text/javascript">
+        
+        function slideDown()
+        {
+        jq("$search").hide().slideDown();
+        jq("$search_btn").css('display','none');
+        }
+        function slideUp()
+        {
+        jq("$search").show().slideUp();
+        jq("$search_btn").css('display','inline');
+        }
+    </script>
+    <vlayout>
+       
+        <button id="search_btn" sclass="bt" label="Tìm kiếm nâng cao"  style="float:right;" onClick='Clients.evalJavaScript("slideDown()")' />
+        <groupbox id="search" style="display:none">		
+            <panel  border="none" collapsible="true" sclass="transparent">
+                <caption label="Điều kiện tìm kiếm"/>
+ 
+                <panelchildren>
+                    <separator />
+                    <tablelayout columns="4" width="100%">
+                                
+                        <tablechildren width="10%">
+                            <label value="Ngày yêu cầu từ"></label>
+                        </tablechildren>
+                                
+                        <tablechildren width="33%">
+                            <datebox />
+                        </tablechildren>
+                                
+                        <tablechildren width="24%" sclass="label-right">
+                            <label value="Đến"/>
+                        </tablechildren>
+                        
+                        <tablechildren width="33%">
+                            <datebox />
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Nội dung"/>
+                        </tablechildren>
+                                
+                        <tablechildren colspan="3">
+                            <textbox rows="2" />
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Lãnh đạo VPCP"></label>
+                        </tablechildren>
+                                
+                        <tablechildren>
+                            <chosenbox/>
+                        </tablechildren>
+                                
+                        <tablechildren sclass="label-right">
+                            <label value="Thành phần tham gia"/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <chosenbox/>
+                        </tablechildren>
+                        
+                        <tablechildren>
+                            <label value="Ghi chú"/>
+                        </tablechildren>
+                                
+                        <tablechildren colspan="3">
+                            <textbox rows="2"  />
+                        </tablechildren>
+                            
+                        <tablechildren colspan="4">
+                            <panel >
+                                <panelchildren >
+                                    <hlayout style="float: right;">
+                                        <button sclass="bt" label="Tìm kiếm"   image="/images/icon/search.png" onClick="" />
+                                        <button sclass="bt" label="Ẩn tìm kiếm nâng cao"  onClick='Clients.evalJavaScript("slideUp()")' />
+                                    </hlayout>
+                                </panelchildren>
+                            </panel>   
+                        </tablechildren>    
+                        
+                    </tablelayout>
+                </panelchildren>
+            </panel>
+        </groupbox>	
+    </vlayout>
+</zk>

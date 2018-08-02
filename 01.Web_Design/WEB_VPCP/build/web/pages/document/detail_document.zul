@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+     <style src="../style/widgets/getting_started/menu_toolbar/style.css" />
+      <div vflex="1" >
+        <toolbar>
+            <toolbarbutton image="../style/widgets/getting_started/menu_toolbar/img/file_new.png" tooltiptext="New"/>
+            <toolbarbutton image="../style/widgets/getting_started/menu_toolbar/img/edit_undo.png" tooltiptext="Undo" onClick=""/>
+            <toolbarbutton image="../style/widgets/getting_started/menu_toolbar/img/edit_cut.png" tooltiptext="Cut"/>
+            <toolbarbutton image="../style/widgets/getting_started/menu_toolbar/img/edit_copy.png" tooltiptext="Copy"/>
+            <toolbarbutton image="../style/widgets/getting_started/menu_toolbar/img/edit_paste.png" tooltiptext="Paste"/>
+        </toolbar>
+      </div>
+</zk>
