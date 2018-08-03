@@ -5,6 +5,8 @@
  */
 package com.viettel.voffice.controller;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonParser;
 import com.viettel.voffice.entity.document.Demo;
 import com.viettel.voffice.share.FunctionCommon;
 import com.viettel.voffice.web.library.basecore.CoreLibWebCommon;
@@ -64,10 +66,13 @@ public class DemoController {
 
         CoreLibWebCommon libWebCommon = new CoreLibWebCommon();
         Map<String, Object> params = new LinkedHashMap<>();
+           Gson gson = new Gson();
+          String jDemo =  gson.toJson(demo);
 //        params.put("data", demo);
-        params.put("id", demo.getId());
-        params.put("password", demo.getPassword());
-        params.put("username", demo.getUsername());
+//        params.put("id", demo.getId());
+//        params.put("password", demo.getPassword());
+//        params.put("username", demo.getUsername());
+        params.put("data", jDemo);
         CoreDataResponseEntity coreDataResponseEntity
                 = libWebCommon.requestDataToServer("demo.add", params, sysUserEntity);
 //        String strDataList =  coreDataResponseEntity.getData();

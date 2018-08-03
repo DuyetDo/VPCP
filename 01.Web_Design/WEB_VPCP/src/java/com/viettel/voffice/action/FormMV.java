@@ -110,7 +110,7 @@ public class FormMV {
 		
     }
       @Command
-      @NotifyChange("students")
+      @NotifyChange({"students", "stuSelected"})
     public void add()
     {
           System.out.println(stuSelected);
